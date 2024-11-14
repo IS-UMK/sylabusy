@@ -5,7 +5,7 @@ Celem tego kursu jest zapewnienie studentom, którzy nie mieli wcześniej doświ
 ### Tematyka kursu:
 
 1. **Podstawowe komendy w bashu**
-   - `cp`, `cd`, `grep`, `cat`, `touch`, `man`, `apt update/upgrade`, `find`, `>>`, itd
+   - `cp`, `cd`, `grep`, `cat`, `touch`, `man`, `apt update/upgrade`, `find`, `>>`, `wget` itd
    - Umiejętność wykonywania operacji z poziomu basha.
 
 2. **System plików**
@@ -13,12 +13,13 @@ Celem tego kursu jest zapewnienie studentom, którzy nie mieli wcześniej doświ
    - Operacje na plikach i folderach.
 
 3. **Zarządzanie procesami**
-   - Praktyczne aspekty basha: 
+   - Praktyczne aspekty basha w tym
      - Wykonywanie równoległe (`&`)
      - Wykonywanie sekwencyjne (`&&`)
 
+
 4. **Przydatne aplikacje**
-   - Edytory tekstu (np. `vim` do szybkich poprawek).
+   - Edytory tekstu (np. `vim` do szybkich poprawek), IDEs np. `Visual Studio Code`
    - Monitor systemowy (nadzorowanie zasobów).
 
 5. **Proste skrypty bashowe**
