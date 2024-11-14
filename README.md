@@ -1,4 +1,9 @@
 
+- [Ogólne uwagi](#ogólne-uwagi)
+- [Kalendarz](#kalendarz)
+  - [Semestr I](#semestr-i)
+  - [Semestr II](#semestr-ii)
+
 
 # Ogólne uwagi
 
