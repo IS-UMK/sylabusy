@@ -5,7 +5,7 @@ Celem tego kursu jest zapewnienie studentom, którzy nie mieli wcześniej doświ
 ### Tematyka kursu:
 
 1. **Podstawowe komendy w bashu**
-   - `cp`, `cd`, `grep`, `cat`, `touch`, `man`, `apt update/upgrade`
+   - `cp`, `cd`, `grep`, `cat`, `touch`, `man`, `apt update/upgrade`, `find`, `>>`, itd
    - Umiejętność wykonywania operacji z poziomu basha.
 
 2. **System plików**
