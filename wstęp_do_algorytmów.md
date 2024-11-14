@@ -1,6 +1,6 @@
-## Wstęp do algorytmów
+## Wstęp do algorytmów I i II
 
-Kurs "Wstęp do Programowania" jest kluczowy dla studentów na pierwszym roku studiów, rozpoczynając od pierwszego semestru. Celem kursu jest wprowadzenie do podstaw programowania oraz rozwijanie umiejętności analitycznego myślenia i rozwiązywania problemów.
+Kurs "Wstęp do Algorytmów" jest kluczowy dla studentów na pierwszym roku studiów. Celem kursu jest wprowadzenie do podstaw programowania oraz rozwijanie umiejętności analitycznego myślenia i rozwiązywania problemów.
 
 ### Tematyka kursu:
 
@@ -16,15 +16,15 @@ Kurs "Wstęp do Programowania" jest kluczowy dla studentów na pierwszym roku st
    - Drzewa binarne (zadania)
 
 3. **Składnia i semantyka**
-   - Składnia i semantyka instrukcji (ćwiczenia: wyszukiwanie binarne)
-   - Procedury i funkcje (ćwiczenia)
+   - Składnia i semantyka instrukcji np. wyszukiwanie binarne
+   - Procedury i funkcje
 
 4. **Pamięć i zarządzanie zasobami**
-   - Pamięć dynamiczna (ćwiczenia: wskaźniki)
-   - Pliki (ćwiczenia)
+   - Pamięć dynamiczna 
+   - Pliki 
 
 5. **Rekurencja**
-   - Rekursja (ćwiczenia) oraz dowodzenie poprawności rekurencji
+   - Rekursja  oraz dowodzenie poprawności rekurencji
 
 ### Cele edukacyjne:
 
