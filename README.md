@@ -42,3 +42,5 @@ Wszystkie przedmioty obowiązkowe. Być może należy scalić Wstęp do algorytm
 - `Wstęp do html, css, javascript`.
 - `Matematyka dyskretna`. Kontynuacja wstępu do matematyki i informatyki. Omawiane są bardziej złożone zagadnienia takie jak rekurencja,  złożoności programów, kombinatoryka, drzewa, grafy, itp.
 - `Wstęp do algorytmów II`, wprowadzane są bardziej złożone stuktury danych takie jak listy, drzewa binarne i algorytmy z nimi związane. Do implementacji używane jest `c++` który jest dużo bardziej naturalny dla struktur danych niż c (np. naturalne encapsulation poprzez `class` i `struct`).
+- `Analiza matematyczna II`. Omawiany jest rachunek funkcji wielu zmiennych oraz zastosowania np. w uczeniu maszynowym np. spadek gradientowy.
+- `Algebra liniowa II` Omawiane są macierze. Jako zastosowania przedstawiany jest np. model feedforward. Ponadto pojawia się pojęcie tensora. Możliwość skorzystania np. pytorch dla praktyki w operawaniu na tensorach.
