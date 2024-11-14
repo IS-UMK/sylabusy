@@ -9,7 +9,7 @@
     - Sieciowe (już przygotowane przez Piotr Ablewski)
     - sztuczna inteligencja, python
     - neuroscience, szeregi czasowe
-    - gaming, C#
+    - gaming
     - c++
 - Powinniśmy w ramach ścieżek mieć zaplanowane pewne długofalowe projekty w tym takie na których mogłaby korzystać nasza katedra pod różnymi względami np. automatyzacja biurokracji, ułatwianie dydaktyki, wsparcie dla badań naukowych. Np.
     - Rozszerzanie funkcjonalności systemu dydaktycznego Michała Pierzchalskiego w tym zarówno ścieżka sieciowa (rozwijanie github app) lub automatyzacji pewnych czynności (uczenie maszynowe) jak np. AI recenzent, które mogłoby być częścią tego systemu.
