@@ -42,7 +42,7 @@ Wszystkie przedmioty obowiązkowe. Być może należy scalić Wstęp do algorytm
 - `Wstęp do html, css, javascript`.
 - `Matematyka dyskretna`. Kontynuacja wstępu do matematyki i informatyki. Omawiane są bardziej złożone zagadnienia takie jak rekurencja,  złożoności programów, kombinatoryka, drzewa, grafy, itp.
 - `Wstęp do algorytmów II`, wprowadzane są bardziej złożone stuktury danych takie jak listy, drzewa binarne i algorytmy z nimi związane. Do implementacji używane jest `c++` który jest dużo bardziej naturalny dla struktur danych niż c (np. naturalne encapsulation poprzez `class` i `struct`).
-- `Analiza matematyczna II`. Omawiany jest rachunek funkcji wielu zmiennych oraz zastosowania np. w uczeniu maszynowym np. spadek gradientowy.
+- `Analiza matematyczna II`. Omawiany jest rachunek funkcji wielu zmiennych oraz zastosowania np. w uczeniu maszynowym np. spadek gradientowy. Pojawia się też pojęcie miary, w tym miara Lebesgue'a.
 - `Algebra liniowa II` Omawiane są macierze. Jako zastosowania przedstawiany jest np. model feedforward. Ponadto pojawia się pojęcie tensora. Możliwość skorzystania np. pytorch dla praktyki w operawaniu na tensorach.
 
 (Prawdopodobnie Piotr Ablewski się nie zgodzi ale w ramach odciążenia studentów na pierwszym roku  przedmiot `Wstęp do html, css, javascript` mógłby pojawić się na 2 roku - z perspektywy programowej to jest też uzasadnione gdyż dla pełnego zrozumienia jak działa js potrzebne są takie pojęcia jak event loop a dla zrozumienia czym jest DOM ogólne drzewo - te pojęcia dopiero są usystematyzowane na 2 roku). Kolejnym argumentem za może być to że na MIMUW te zagadnienia też pojawiają się dopiero na 4 semestrze.
