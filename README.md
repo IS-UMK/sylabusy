@@ -22,6 +22,8 @@
 
 ## Semestr 1
 
+Wszystkie poniższe przedmioty są obowiązkowe.
+
 - `Wstęp do matematyki i informatyki`. Obejmuje podstawowe pojęcia matematyczne i informatyczne niezbędne każdemu informatykowi.
 - `Wstęp do systemu Unix`. Kurs ten ma sprawić aby student swobodnie się czuł i poruszał w środowisku Unix. W szczególności pozna podstawową strukturę systemu,  nauczy się terminala (w tym różnych komend oraz pisania prostych skryptów. W skrócie pozna wszystko to co może mu ułatwić oraz usprawnić pracę nad projektami.
 - `Wstęp do programowania`. Kurs koncentruję się na przygotowaniu studenta do programowania pod kątem uniwesalnych (niezależnych od konkretnego języka programowania) zasad programowania. W szczególności przygotowania środowiska pracy ( w tym git, Github, dobór edytora/ide), zasad dobrego programowania, zasad testowania, umiejętności recenzowania z użyciem Github, pracy w grupie oraz umiejętności zaplanowania realizacji projektu (np. zasada "od ogółu od szczegółu"). Ponadto przedmiot wprowadza studenta w temat dobóru narzędzi ułatwiający utrzymanie kodu na przykładzie dwu typu języków `c` (kompilowany), `python` (skryptowy): sztuczna inteligencja (generowanie kodu, testów, ocena kodu) oraz klasyczne lintery, formattery. Może również zostać omówiony system githubowego CI-CD. 
