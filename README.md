@@ -1,4 +1,4 @@
-# sylabusy
+
 
 # Ogólne uwagi
 
@@ -19,6 +19,7 @@
 - Powinniśmy ujednolicić system oceniania/robienia zadań/kolokwiów/egzaminów. Np. kolokwia powinny być wspólne dla wszystkich studentów danego przedmiotu a nie robione lokalnie przez ćwiczeniowców. Wyjątkiem mogą być grupy *, które rządziłyby się własnymi prawami. Podobnie dla zadań/projektów zaliczeniowych powinny być globalne a nie lokalne dla danej grupy.
 - Powinniśmy dążyć do zwiększenia poziomu kształcenia (stąd też niezbędna jest zmiana sylabusów) oraz wymagań stawianych studentom. Pozwoli nam to uzyskać renomę oraz docelowo pozyskać najlepszych studentów którzy mogliby chcieliby zająć się pracą naukową. W potoku * możliwe rozszerzenie programu o ogólne pojęcie przestrzeni wektorowej.
 - 
+
 
 # Kalendarz
 
