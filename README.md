@@ -33,11 +33,11 @@ Wszystkie poniższe przedmioty są obowiązkowe.
 - `Analiza matematyczna I`. Przedmiot ten wprowadza studenta w podstawowe pojęcia analizy matematycznej funkcji jednej zmiennej które są niezbędne m.in. do zrozumienia algorytmów sztucznej inteligencji. Ponadto omawanie takie pojęcia jak supremum infimum (niezbędne dla postawienia problemu optymilizacji), ciągi, szeregi, granice.
 - `Algebra liniowa I`. Przedmiot ten zajmuje się głownie pojęciem wektora w przestrzeni euklidesowej.Kładziony jest nacisk na intuicje geometryczne. Możliwe jest również przestawienie podstawowych problemów uczenia maszynowego np. regresja liniowa, svm. W potoku * możliwe jest wprowadzenie ogólnego pojęcia przestrzeni wektorowej.
 
-## Semest 2
+## Semest II
 
-Wszystkie przedmioty obowiązkowe. 
+Wszystkie przedmioty obowiązkowe. Być może należy scalić Wstęp do algorytmów I i II w jeden kurs robiony w tym semestrze a wyrzucony z semestru I. Po pierwsze odciąża pierwszy semestr. Po drugie dzieki matematyce dyskretnej możliwe już jest omawianie rekurencyjnych struktur danych takich jak listy czy drzewa binarne.
 
 - wstęp do `c, c++`. Wskaźniki, referencje, struktury danych. Spojrzenie na te zagadnienia z punktu widzienia c++ np. std::vector i std::array.
 - wstęp do `html, css, javascript`
 - matematyka dyskretna Kontynuacja wstępu do matematyki i informatyki. Omawiane są bardziej złożone zagadnienia takie jak rekurencja, równania rekurencyjne, złożoności programów, kombinatoryka itd.
-- `Wstęp do algorytmów II`, wprowadzane są bardziej złożone stuktury danych takie jak listy, drzewa binarne i algorytmy z nimi związane.
+- `Wstęp do algorytmów II`, wprowadzane są bardziej złożone stuktury danych takie jak listy, drzewa binarne i algorytmy z nimi związane. Używane jest c++ który jest dużo bardziej naturalny dla struktur danych niż c (np. naturalne encapsulation poprzez `class` i `struct`).
