@@ -17,8 +17,7 @@
 - Powinniśmy w ramach projektów zapewnić studentom (przynajmniej tym najbardziej obiecującym) dodatkowe fundusze.
 - W ramach każdego przedmiotu powinna być co najmniej jedna grupa gwiazdkowa aby zapewnić odpowiedni poziom/ofertę lepszym lub/i zainteresowanym studentom.
 - Powinniśmy ujednolicić system oceniania/robienia zadań/kolokwiów/egzaminów. Np. kolokwia powinny być wspólne dla wszystkich studentów danego przedmiotu a nie robione lokalnie przez ćwiczeniowców. Wyjątkiem mogą być grupy *, które rządziłyby się własnymi prawami. Podobnie dla zadań/projektów zaliczeniowych powinny być globalne a nie lokalne dla danej grupy.
-- Powinniśmy dążyć do zwiększenia poziomu kształcenia (stąd też niezbędna jest zmiana sylabusów) oraz wymagań stawianych studentom. Pozwoli nam to uzyskać renomę oraz docelowo pozyskać najlepszych studentów którzy mogliby chcieliby zająć się pracą naukową. W potoku * możliwe rozszerzenie programu o ogólne pojęcie przestrzeni wektorowej.
-- 
+- Powinniśmy dążyć do zwiększenia poziomu kształcenia (stąd też niezbędna jest zmiana sylabusów) oraz wymagań stawianych studentom. Pozwoli nam to uzyskać renomę oraz docelowo pozyskać najlepszych studentów którzy mogliby chcieliby zająć się pracą naukową. 
 
 
 # Kalendarz
