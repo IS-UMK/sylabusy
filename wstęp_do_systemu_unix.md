@@ -1,17 +1,35 @@
 ## Wstęp do systemu UNIX
 
-Celem tego kursu jest zapewnienie studentom, którzy nigdy wcześniej nie korzystali z systemu Linux, komfortu w jego obsłudze. Osobiście pamiętam, że przejście z Windowsa na Linux było dla mnie dużym krokiem.
+Celem tego kursu jest zapewnienie studentom, którzy nie mieli wcześniej doświadczenia z systemem Linux, komfortu w jego obsłudze. Kurs ma na celu nie tylko naukę podstawowych komend, ale także zrozumienie struktury i funkcjonowania systemu UNIX, co jest kluczowe dla dalszej nauki w dziedzinie informatyki.
 
 ### Tematyka kursu:
 
-- **Podstawowe komendy w bashu**
-  - `cp`, `cd`, `grep`, `cat`, `touch`, `man`, `apt update/upgrade` itp.
-  - Celem jest umożliwienie studentom wykonywania wszystkich operacji z poziomu basha. W tym temacie istnieje wiele ukrytych podtematów, takich jak:
-    - System plików (`ls`): foldery, pliki, pliki ukryte itp.
-    - Temat procesów: praktyczne aspekty basha, np. `&` (wykonywanie równoległe) oraz `&&` (wykonywanie sekwencyjne).
-    - Przydatne aplikacje: edytory (np. `vim` do szybkich poprawek), monitor systemowy (nadzorowanie zasobów) itp.
+1. **Podstawowe komendy w bashu**
+   - `cp`, `cd`, `grep`, `cat`, `touch`, `man`, `apt update/upgrade`
+   - Umiejętność wykonywania operacji z poziomu basha.
 
-- **Proste skrypty bashowe**
-  - Skrypty te mogą być użyteczne do automatyzacji pewnych operacji.
+2. **System plików**
+   - Zrozumienie struktury systemu plików (`ls`): foldery, pliki, pliki ukryte.
+   - Operacje na plikach i folderach.
 
-Kurs ten ma na celu nie tylko naukę podstawowych komend, ale także zrozumienie struktury i funkcjonowania systemu UNIX, co jest kluczowe dla dalszej nauki w dziedzinie informatyki.
+3. **Zarządzanie procesami**
+   - Praktyczne aspekty basha: 
+     - Wykonywanie równoległe (`&`)
+     - Wykonywanie sekwencyjne (`&&`)
+
+4. **Przydatne aplikacje**
+   - Edytory tekstu (np. `vim` do szybkich poprawek).
+   - Monitor systemowy (nadzorowanie zasobów).
+
+5. **Proste skrypty bashowe**
+   - Tworzenie skryptów do automatyzacji operacji.
+
+### Cele edukacyjne:
+
+- Zrozumienie podstawowych koncepcji systemu UNIX i jego architektury.
+- Umiejętność poruszania się po systemie plików oraz zarządzania plikami i folderami.
+- Znajomość podstawowych komend bashowych oraz ich zastosowania w codziennej pracy.
+- Umiejętność pisania prostych skryptów bashowych w celu automatyzacji zadań.
+- Zrozumienie procesów działających w systemie oraz umiejętność ich zarządzania.
+
+Kurs ten ma na celu przygotowanie studentów do efektywnego korzystania z systemu UNIX w kontekście dalszej nauki oraz pracy w dziedzinie informatyki.
