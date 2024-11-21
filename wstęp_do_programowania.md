@@ -16,17 +16,8 @@ Kurs ten koncentruje się na programowaniu proceduralnym, ze szczególnym uwzgl�
      - Liczba argumentów funkcji
      - Zasada pojedynczej odpowiedzialności (SRP)
 
-3. **Zagadnienia z języka C**
-   - Wprowadzenie do podstawowych konstrukcji języka C.
-   - Struktura projektów w C.
 
-4. **Wprowadzenie do C++**
-   - Analogiczne struktury z C w C++:
-     - `std::array` dla statycznych rozmiarów
-     - `std::vector` zamiast dynamicznych tablic
-     - `std::list` jako gotowe rozwiązanie
-
-5. **Narzędzia wspomagające programowanie**
+3. **Narzędzia wspomagające programowanie**
    - **CMake**: Przykłady zastosowania, np. dołączanie zewnętrznych bibliotek z GitHub (submodules).
    - **Prehooki**: Automatyzacja procesów przed commitowaniem kodu.
    - **Formatery kodu i analiza kodu**:
@@ -35,18 +26,18 @@ Kurs ten koncentruje się na programowaniu proceduralnym, ze szczególnym uwzgl�
    - **IDE**: Użycie Visual Studio lub CLion.
    - **Inteligentne generowanie kodu**: Narzędzia takie jak Tabnine czy GitHub Copilot.
 
-6. **Debugowanie**
+4. **Debugowanie**
    - Użycie GDB pod Linuxem oraz debugowanie w IDE.
    - Techniki używania breakpointów.
 
-7. **Testowanie**
+5. **Testowanie**
    - Ogólna wiedza na temat testowania.
    - Typy testów, np. testy jednostkowe.
    - Przykładowy framework, np. Google Test.
 
 ### Cele edukacyjne:
 
-- Zrozumienie podstaw programowania proceduralnego oraz różnic między językiem C a C++.
+- Zrozumienie podstaw programowania proceduralnego.
 - Umiejętność korzystania z narzędzi wspomagających proces programowania.
 - Nabycie umiejętności pisania czytelnego i dobrze zorganizowanego kodu.
 - Zrozumienie procesów debugowania oraz testowania aplikacji.
