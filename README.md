@@ -15,11 +15,6 @@
     - TODO student powinien być "czujnym" na współzależność między pojęciami, tzn. być świadomym tego że wiele pojęć, których się nauczył/będzie się uczył powiązanych ze sobą. Powinien wychwytywać symetrie pomiedzy pojęciami A i B, ponadto ze współzależności pojęc A i B w nowe pojęcie C.
 - motywacja tzn. powinniśmy w taki sposób prowadzić i reklamować zajęcia aby student był przekonany że warto  włożyć wysiłek w uczenie się  danego tematu.  np. poprzez wskazanie perspektywy zrozumienia działania algorytmów sztucznej inteligencji. 
 
-- Przedmioty `Wstęp do systemu Unix` oraz `Wstęp do programowania` w zamierzeniu mają m.in.
-  1. ułatwić studentowi programowanie
-  2. ustandaryzować nasze wymagania/oczekiwania
-  
-  Same w sobie nie są obciążeniem m.in. nie wymagane jest zaliczanie projektów itp. Ich głównych celem jest zaznajomienie studenta z narzędzimi które mu ułatwią/przyspieszą pracę na innych przedmiotach takich jak `wstęp do algorytmów` gdzie bedzie wymagane napisanie programów/projektów oraz zaliczenie kolowków/kartkówek/egzaminów. W tym sensie poza obciążeniem godzinowym w tygodniu te przedmioty nie będą wymagały właściwie żadnej pracy domowej.
 - Pierwsze 2 lata studiów mają zapewnić więdzę/praktykę/zrozumienie niezbędną każdemu wykształconemu informatykowi. Ponadto podczas dwu pierwszych lat student powinien poznać możliwie szeroki wachlarz zagadnień zarówno teorytycznych jak i praktycznych tak aby każdy ze studentów mógł możliwie świadomie wybrać dziedzinę, która mu najbardziej odpowiada.
 - Podczas ostatniego 1.5 roku studiów student robi specjalizację (jedną lub więcej) oraz pisze pracę inżynierską. Powinniśmy przygotować kilka ścieżek do wyboru:
     - Sieciowe (już przygotowane przez Piotr Ablewski)
