@@ -7,18 +7,18 @@ Kurs "Wstęp do Algorytmów" jest kluczowy dla studentów na pierwszym roku stud
 1. **Podstawy programowania**
    - Funkcje i programy
    - Dowodzenie poprawności programów (np. niezmienniki pętli)
-   - Wprowadzenie do algorytmów (ćwiczenia: prostokąty i odcinki)
+   - Wprowadzenie do algorytmów. Przykłady prostych algorytmów i ich rozwiązywania.
 
 2. **Struktury danych**
-   - Reprezentacja liczb (ćwiczenia)
-   - Tablice (ćwiczenia)
-   - Listy (zadania)
-   - Drzewa binarne (zadania)
+   - Reprezentacja liczb
+   - Tablice 
+   - Listy 
+   - Drzewa binarne
+   - Grafy
 
 3. **Składnia i semantyka**
    - Składnia i semantyka instrukcji np. wyszukiwanie binarne
-   - Procedury i funkcje
-
+   
 4. **Pamięć i zarządzanie zasobami**
    - Pamięć dynamiczna 
    - Pliki 
