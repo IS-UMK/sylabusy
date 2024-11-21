@@ -1,16 +1,19 @@
+- [Algebra 1 oraz 2 (Algebra Liniowa)](#algebra-1-oraz-2-algebra-liniowa)
+  - [Tematyka kursu:](#tematyka-kursu)
+
 ## Algebra 1 oraz 2 (Algebra Liniowa)
 
 Kurs powinien koncentrować się na dwóch głównych tematach: wektorach i macierzach.
 
 ### Tematyka kursu:
 
-- **Wektory w przestrzeniach Euklidesowych $$ \mathbb{R}^d $$**
+- **Wektory w przestrzeniach Euklidesowych $` \mathbb{R}^d `$**
   - Działania na wektorach
   - Liniowa niezależność
   - Układ współrzędnych
-  - Iloczyn skalarny i wektorowy
+  - Iloczyn skalarny 
   - Prostopadłość
-  - Intuicje geometryczne (studenci powinni mieć możliwość zapoznania się z rysunkami ilustrującymi pewne fakty, dowody i pojęcia)
+  - Intuicje geometryczne w tym proste, płaszczyzny, rzutowania itd.
 
 - **Macierze**
   - Działania na macierzach
@@ -20,12 +23,14 @@ Kurs powinien koncentrować się na dwóch głównych tematach: wektorach i maci
   - Twierdzenie Kroneckera-Capellego
   - Wzory Cramera
   - Metoda eliminacji Gaussa
-  - Zastosowanie macierzy w uczeniu maszynowym (zrozumienie macierzy oraz różniczkowania jest kluczowe dla studentów informatyki)
+  - Iloczyn wektorowy
+  - Zastosowanie macierzy w uczeniu maszynowym 
+  
 
 - **Przekształcenia liniowe**
   - Spojrzenie na macierze przez pryzmat przekształceń liniowych oraz ich własności
 
 - **Tensory**
-  - Wprowadzenie do pojęcia tensorów i ich zastosowań
+  - Wprowadzenie do pojęcia tensorów i ich zastosowań (w grupie gwiazdkowej możliwe zadanie projektowe z tensorów np. w pytorch)
 
 Ten program ma na celu zapewnienie solidnych podstaw w algebrze liniowej, niezbędnych dla dalszej nauki w dziedzinie matematyki i informatyki.
