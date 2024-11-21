@@ -44,7 +44,7 @@ Wszystkie przedmioty obowiązkowe. Być może należy scalić Wstęp do algorytm
 
 - `Wstęp do c, c++`. Wskaźniki, referencje, struktury danych. Spojrzenie na te zagadnienia z punktu widzienia c++ np. std::vector i std::array. Pierwsze większe projekty zaliczeniowe ok 1000 lini kodu.
 - `Wstęp do html, css, javascript`.
-- `Matematyka dyskretna`. Kontynuacja wstępu do matematyki i informatyki. Omawiane są bardziej złożone zagadnienia takie jak rekurencja,  złożoności programów, kombinatoryka, drzewa, grafy, itp.
+- `Matematyka dyskretna`. Patrz [tutaj](https://github.com/IS-UMK/sylabusy/blob/master/matematyka_dyskretna.md). Kontynuacja wstępu do matematyki i informatyki. Omawiane są bardziej złożone zagadnienia takie jak rekurencja,  złożoności programów, kombinatoryka, drzewa, grafy, itp.
 - `Wstęp do algorytmów II`, wprowadzane są bardziej złożone stuktury danych takie jak listy, drzewa binarne i algorytmy z nimi związane. Do implementacji używane jest `c++` który jest dużo bardziej naturalny dla struktur danych niż c (np. naturalne encapsulation poprzez `class` i `struct`).
 - `Analiza matematyczna II`. Patrz [tutaj](https://github.com/IS-UMK/sylabusy/blob/master/analiza_matematyczna.md). Omawiany jest rachunek funkcji wielu zmiennych oraz zastosowania np. w uczeniu maszynowym np. spadek gradientowy. Pojawia się też pojęcie miary, w tym miara Lebesgue'a.
 - `Algebra liniowa II`. Patrz [tutaj](https://github.com/IS-UMK/sylabusy/blob/master/algebra_liniowa.md) Omawiane są macierze. Jako zastosowania przedstawiany jest np. model feedforward. Ponadto pojawia się pojęcie tensora. Możliwość skorzystania np. pytorch dla praktyki w operawaniu na tensorach.
