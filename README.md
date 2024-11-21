@@ -48,7 +48,7 @@ Wszystkie poniższe przedmioty są obowiązkowe.
 
 Wszystkie przedmioty obowiązkowe. Być może należy scalić Wstęp do algorytmów I i II w jeden kurs robiony w tym semestrze a wyrzucony z semestru I. Po pierwsze odciąża pierwszy semestr. Po drugie dzieki matematyce dyskretnej możliwe już jest omawianie rekurencyjnych struktur danych takich jak listy czy drzewa binarne.
 
-- `Wstęp do c, c++`. Wskaźniki, referencje, struktury danych. Spojrzenie na te zagadnienia z punktu widzienia c++ np. std::vector i std::array. Pierwsze większe projekty zaliczeniowe ok 1000 lini kodu.
+- `Projektowy c`. Pierwsze większe projekty zaliczeniowe ok 1000 lini kodu.
 - `Wstęp do html, css, javascript`.
 - `Matematyka dyskretna`. Patrz [tutaj](https://github.com/IS-UMK/sylabusy/blob/master/matematyka_dyskretna.md). Kontynuacja wstępu do matematyki i informatyki. Omawiane są bardziej złożone zagadnienia takie jak rekurencja,  złożoności programów, kombinatoryka, drzewa, grafy, itp.
 - `Wstęp do algorytmów II`. Patrz [tutaj](https://github.com/IS-UMK/sylabusy/blob/master/wst%C4%99p_do_algorytm%C3%B3w.md) . Wprowadzane są bardziej złożone stuktury danych takie jak listy, drzewa binarne i algorytmy z nimi związane. Do implementacji używane jest `c++` który jest dużo bardziej naturalny dla struktur danych niż c (np. naturalne encapsulation poprzez `class` i `struct`).
