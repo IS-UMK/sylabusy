@@ -8,10 +8,11 @@
 # Ogólne uwagi
 
 - cele studiów inżynierskich
-    - student powinien posiąść intuicje związane z obiektami teorytycznymi, które powinny być zobrazowane np. przykładami lub zastosowaniami. Ułatwi to zrozumienie pojęć jak i ich zapamiętanie.
-    - nauczenie się znajdowania rozwiązań problemów zdefiniowanych modelem matematycznym za pomocą modelu obliczeniowego w postaci programu komputerowego.
-    - powinniśmy studentów uczyć podejścia: "kod piszemy dla kogoś i obowiązuje kultura współpracy tzn. osoba czytająca nasz kod powinna włożyć tyle wysiłku w zrozumienie naszego kodu ile to konieczne ale nie więcej. W szczególności powinniśmy szybko uświadamiać studentów w kontekście naszych minimalnych wymagań m.in. co do stylu i jakości kodu.
-    - powinniśmy możliwie szybko nauczyć/pokazać studentom narzędzia które mogą mu pomóc w pracy np. AI, IDE, github itd. Ponadto winniśmy ich uczyć "lenistwa" tzn aby w rozwiązywanie problemu wkładali tyle wysiłku ile to konieczne ale nie więcej.
+    - studenci powinni posiąść intuicje związane z obiektami teorytycznymi, które powinny być zobrazowane np. przykładami lub zastosowaniami. Ułatwi to zrozumienie pojęć jak i ich zapamiętanie.
+    - kształtowanie u studentóœ umiętności  znajdowania rozwiązań problemów zdefiniowanych modelem matematycznym za pomocą modelu obliczeniowego w postaci programu komputerowego.
+    - powinniśmy u studentów kształtować kulturę współpracy: "osoba czytająca nasz kod powinna włożyć tyle wysiłku w zrozumienie naszego kodu ile to konieczne ale nie więcej". 
+    - student powinien być "leniwy" tzn. "student powinien włożyć tyle wysiłku w rozwiązanie problemu ile to konieczne ale nie więcej".
+    - TODO student powinien być "czujnym" na współzależność między pojęciami, tzn. być świadomym tego że wiele pojęć, których się nauczył/będzie się uczył powiązanych ze sobą. Powinien wychwytywać symetrie pomiedzy pojęciami A i B, ponadto ze współzależności pojęc A i B w nowe pojęcie C.
 - każdy kurs teorytyczny powinien mieć uzasadnienie praktyczne. Powinniśmy dawać jasną perspektywę studentów dlaczego ich uczymy danego tematu.  Powinniśmy również możliwie często podawać zastosowania teorii np. w programowaniu. Niewątpliwie ułatwi to zrozumienie pojęć i ułatwi to ich zapamiętanie. Dla przykładu,  celem kursów matematycznych `analiza matematyczna` oraz `algebra liniowa` może być/powinno być przygotowanie studenta pod kątem  możliwości zrozumienia algorytmów  uczenia maszynowego lub/i matematyki obliczeniowej
 - Przedmioty `Wstęp do systemu Unix` oraz `Wstęp do programowania` w zamierzeniu mają m.in.
   1. ułatwić studentowi programowanie
