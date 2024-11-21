@@ -11,9 +11,10 @@
     - studenci powinni posiąść intuicje związane z obiektami teorytycznymi, które powinny być zobrazowane np. przykładami lub zastosowaniami. Ułatwi to zrozumienie pojęć jak i ich zapamiętanie.
     - kształtowanie u studentów umiętności  znajdowania rozwiązań problemów zdefiniowanych modelem matematycznym za pomocą modelu obliczeniowego w postaci programu komputerowego.
     - powinniśmy u studentów kształtować kulturę współpracy: "osoba czytająca nasz kod powinna włożyć tyle wysiłku w zrozumienie naszego kodu ile to konieczne ale nie więcej". 
-    - student powinien być "leniwy" tzn. "student powinien włożyć tyle wysiłku w rozwiązanie problemu ile to konieczne ale nie więcej".
+    - student powinien być "leniwy" tzn. "student powinien włożyć tyle wysiłku w rozwiązanie problemu ile to konieczne ale nie więcej". W szczególności powinniśmy studentów zapoznać z współczesnymi formami pracy i rozwinia projektów.
     - TODO student powinien być "czujnym" na współzależność między pojęciami, tzn. być świadomym tego że wiele pojęć, których się nauczył/będzie się uczył powiązanych ze sobą. Powinien wychwytywać symetrie pomiedzy pojęciami A i B, ponadto ze współzależności pojęc A i B w nowe pojęcie C.
-- każdy kurs teorytyczny powinien mieć uzasadnienie praktyczne. Powinniśmy dawać jasną perspektywę studentom dlaczego ich uczymy danego tematu.  Powinniśmy również możliwie często podawać zastosowania teorii np. w programowaniu. Niewątpliwie ułatwi to zrozumienie pojęć i ułatwi to ich zapamiętanie. Dla przykładu,  celem kursów matematycznych `analiza matematyczna` oraz `algebra liniowa` może być/powinno być przygotowanie studenta pod kątem  możliwości zrozumienia algorytmów  uczenia maszynowego lub/i matematyki obliczeniowej
+- motywacja tzn. powinniśmy w taki sposób prowadzić i reklamować zajęcia aby student był przekonany że warto  włożyć wysiłek w uczenie się  danego tematu.  np. poprzez wskazanie perspektywy zrozumienia działania algorytmów sztucznej inteligencji. 
+
 - Przedmioty `Wstęp do systemu Unix` oraz `Wstęp do programowania` w zamierzeniu mają m.in.
   1. ułatwić studentowi programowanie
   2. ustandaryzować nasze wymagania/oczekiwania
