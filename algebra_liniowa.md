@@ -8,6 +8,7 @@ Kurs powinien koncentrować się na dwóch głównych tematach: wektorach i maci
 ### Tematyka kursu:
 
 - **Wektory w przestrzeniach Euklidesowych $` \mathbb{R}^d `$**
+
   - Działania na wektorach
   - Liniowa niezależność
   - Układ współrzędnych
