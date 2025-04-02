@@ -3,35 +3,33 @@
 
 ## Algebra 1 oraz 2 (Algebra Liniowa)
 
-Kurs powinien koncentrować się na dwóch głównych tematach: wektorach i macierzach.
+Kurs powinien koncentrować się na dwóch głównych tematach: wektorach i macierzach. Nadrzędnymi celami są:
+0) dążymy do przestawienia metod uczenia maszynowego np. regresja liniowa, SVM, ... etc.
+1) jeśli chodzi o algebra I: geometryczne intuicje 
+2) algorytmy ML, rozwiązywanie układów równań, predykcja liniowa
 
 ### Tematyka kursu:
 
 - **Wektory w przestrzeniach Euklidesowych $` \mathbb{R}^d `$**
 
   - Działania na wektorach
-  - Liniowa niezależność
-  - Układ współrzędnych
-  - Iloczyn skalarny 
-  - Prostopadłość
   - Intuicje geometryczne w tym proste, płaszczyzny, rzutowania itd.
-
+  - Iloczyn skalarny, prostopadłość + rzuty
+  - Liniowa niezależność, bazy, układ współrzędnych
+  - Wypukłość
+  - *opcjonalnie Iloczyn wektorowy + nieformalnie pojęcie orientacji
+  
 - **Macierze**
   - Działania na macierzach
-  - Wyznacznik macierzy oraz jej rząd
-  - Macierz odwrotna
+  - Eliminacja Gaussa + elementarne macierze
+  - Wyznacznik macierzy oraz jej rząd, interpretacja wyznaczniki (objętość równoległościanu)
+  - Macierz odwrotna (+ po co np. rozwiązywanie równań)
   - Układy równań liniowych
-  - Twierdzenie Kroneckera-Capellego
-  - Wzory Cramera
-  - Metoda eliminacji Gaussa
-  - Iloczyn wektorowy
   - Zastosowanie macierzy w uczeniu maszynowym 
+
+**Tematy dla grupy gwiazdkowej**
+  - Spojrzenie na macierze przez pryzmat przekształceń liniowych oraz ich własności + rotacje + symetrie, izometrie
+  - Wprowadzenie do pojęcia tensorów i ich zastosowań (w grupie gwiazdkowej możliwe zadanie     projektowe z tensorów np. w pytorch)
+  - programowanie kwantowe  + macierzy uniterne  + pojęcie kubitu 
   
 
-- **Przekształcenia liniowe**
-  - Spojrzenie na macierze przez pryzmat przekształceń liniowych oraz ich własności
-
-- **Tensory**
-  - Wprowadzenie do pojęcia tensorów i ich zastosowań (w grupie gwiazdkowej możliwe zadanie projektowe z tensorów np. w pytorch)
-
-Ten program ma na celu zapewnienie solidnych podstaw w algebrze liniowej, niezbędnych dla dalszej nauki w dziedzinie matematyki i informatyki.
