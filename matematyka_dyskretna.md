@@ -8,14 +8,13 @@ Kurs "Matematyka Dyskretna" ma na celu wprowadzenie studentów w kluczowe koncep
    - Rekurencja i równania rekurencyjne
    - Dowodzenie poprawności rekurencji
 
-2. **Kombinatoryka**
+2. Opcjonalnie **Kombinatoryka**
    - Podstawowe pojęcia kombinatoryki
-   - Interpretacje kombinatoryczne (np. dwumian Newtona)
+   - Interpretacje kombinatoryczne (np. dwumian Newtona) + probabilistyka (rozkład dwumianowy) +          kopce (efektywna implementacja) + oszacowania złożoności
 
 3. **Asymptotyka i Złożoność Algorytmu**
    - Notacja asymptotyczna
    - Twierdzenie o rekursji uniwersalnej
-   - Metoda przybliżeń
 
 4. **Drzewa Binarne**
    - Struktura i operacje na drzewach binarnych
