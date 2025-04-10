@@ -8,9 +8,8 @@ Kurs "Matematyka Dyskretna" ma na celu wprowadzenie studentów w kluczowe koncep
    - Rekurencja i równania rekurencyjne
    - Dowodzenie poprawności rekurencji
 
-2. Opcjonalnie **Kombinatoryka**
-   - Podstawowe pojęcia kombinatoryki
-   - Interpretacje kombinatoryczne (np. dwumian Newtona) + probabilistyka (rozkład dwumianowy) +          kopce (efektywna implementacja) + oszacowania złożoności
+2. **Kombinatoryka**
+   - Podstawowe pojęcia kombinatoryki: wariacje, permutacje, rozbicia  
 
 3. **Asymptotyka i Złożoność Algorytmu**
    - Notacja asymptotyczna
@@ -18,11 +17,12 @@ Kurs "Matematyka Dyskretna" ma na celu wprowadzenie studentów w kluczowe koncep
 
 4. **Drzewa Binarne**
    - Struktura i operacje na drzewach binarnych
-   - Zastosowania drzew binarnych w algorytmice
+   - Zastosowania drzew binarnych w algorytmice (problemy łatwo rozwiązywalne przez rekurencję)
 
 5. **Teoria Grafów**
-   - Podstawowe pojęcia teorii grafów
-   - Problemy Eulera i Hamiltona
+   - Podstawowe pojęcia teorii grafów: wierzchołki, krawędzie, ścieżki, cykle, kliki, spójność
+   - Problemy Eulera, Hamiltona
+   - Kolorowanie
 
 ### Cele edukacyjne:
 
