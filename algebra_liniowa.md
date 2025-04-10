@@ -1,7 +1,7 @@
 - [Algebra 1 oraz 2 (Algebra Liniowa)](#algebra-1-oraz-2-algebra-liniowa)
   - [Tematyka kursu:](#tematyka-kursu)
 
-## Algebra 1 oraz 2 (Algebra Liniowa)
+## Algebra liniowa 1
 
 Kurs powinien koncentrować się na dwóch głównych tematach: wektorach i macierzach. Nadrzędnymi celami są:
 0) dążymy do przestawienia metod uczenia maszynowego np. regresja liniowa, SVM, ... etc.
@@ -18,8 +18,11 @@ Kurs powinien koncentrować się na dwóch głównych tematach: wektorach i maci
   - Liniowa niezależność, bazy, układ współrzędnych
   - Wypukłość
   - *opcjonalnie Iloczyn wektorowy + nieformalnie pojęcie orientacji
-  
+
+## Algebra liniowa 2
+
 - **Macierze**
+  - Pojęcie macierzy, spojrzenie na macierze przez pryzmat przekształceń liniowych (zależność Analiza matematyczna II: macierz Jakobiego)
   - Działania na macierzach
   - Eliminacja Gaussa + elementarne macierze
   - Wyznacznik macierzy oraz jej rząd, interpretacja wyznaczniki (objętość równoległościanu)
@@ -27,8 +30,7 @@ Kurs powinien koncentrować się na dwóch głównych tematach: wektorach i maci
   - Układy równań liniowych
   - Zastosowanie macierzy w uczeniu maszynowym 
 
-**Tematy dla grupy gwiazdkowej**
-  - Spojrzenie na macierze przez pryzmat przekształceń liniowych oraz ich własności + rotacje + symetrie, izometrie
+  - **Tematy dla grupy gwiazdkowej**
   - Wprowadzenie do pojęcia tensorów i ich zastosowań (w grupie gwiazdkowej możliwe zadanie     projektowe z tensorów np. w pytorch)
   - programowanie kwantowe  + macierzy uniterne  + pojęcie kubitu 
   
