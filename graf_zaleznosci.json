@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Graf zależności między przedmiotami i zagadnieniami w programie Informatyki Stosowanej",
+    "last_updated": "2025"
+  },
+  "concepts": {
+    "indukcja_matematyczna": {
+      "name": "Indukcja matematyczna",
+      "semester": 1,
+      "course": "Wstęp do matematyki i informatyki",
+      "dependencies": [],
+      "required_for": ["rekurencja", "dowodzenie_poprawnosci"]
+    },
+    "logika_podstawowa": {
+      "name": "Logika podstawowa (and, or, not, kwantyfikatory)",
+      "semester": 1,
+      "course": "Wstęp do matematyki i informatyki",
+      "dependencies": [],
+      "required_for": ["dowodzenie_poprawnosci", "algorytmy_podstawowe"]
+    },
+    "funkcje_matematyczne": {
+      "name": "Funkcje - typy i własności",
+      "semester": 1,
+      "course": "Wstęp do matematyki i informatyki",
+      "dependencies": [],
+      "required_for": ["funkcje_programowanie", "zlozonosc_algorytmow"]
+    },
+    "zbiory": {
+      "name": "Zbiory i operacje na zbiorach",
+      "semester": 1,
+      "course": "Wstęp do matematyki i informatyki",
+      "dependencies": [],
+      "required_for": ["struktury_danych", "teoria_grafow"]
+    },
+    "relacje": {
+      "name": "Relacje i relacje równoważności",
+      "semester": 1,
+      "course": "Wstęp do matematyki i informatyki",
+      "dependencies": ["zbiory"],
+      "required_for": ["teoria_grafow"]
+    },
+    "porzadki": {
+      "name": "Porządki (częściowe, liniowe)",
+      "semester": 1,
+      "course": "Wstęp do matematyki i informatyki",
+      "dependencies": ["relacje", "indukcja_matematyczna"],
+      "required_for": ["sortowanie", "drzewa"]
+    },
+    "git_github": {
+      "name": "Git i GitHub",
+      "semester": 1,
+      "course": "Wstęp do programowania",
+      "dependencies": [],
+      "required_for": ["projekty_programistyczne"]
+    },
+    "dobre_praktyki_kodu": {
+      "name": "Zasady dobrego programowania",
+      "semester": 1,
+      "course": "Wstęp do programowania",
+      "dependencies": [],
+      "required_for": ["projekty_programistyczne"]
+    },
+    "debugowanie": {
+      "name": "Debugowanie (GDB, IDE)",
+      "semester": 1,
+      "course": "Wstęp do programowania",
+      "dependencies": ["podstawy_programowania"],
+      "required_for": ["projekty_programistyczne"]
+    },
+    "testowanie": {
+      "name": "Testowanie (jednostkowe, frameworki)",
+      "semester": 1,
+      "course": "Wstęp do programowania",
+      "dependencies": ["podstawy_programowania"],
+      "required_for": ["projekty_programistyczne", "tdd"]
+    },
+    "podstawy_unix": {
+      "name": "Podstawy systemu UNIX",
+      "semester": 1,
+      "course": "Wstęp do systemu Unix",
+      "dependencies": [],
+      "required_for": ["skrypty_bash", "git_github"]
+    },
+    "bash_komendy": {
+      "name": "Podstawowe komendy bash",
+      "semester": 1,
+      "course": "Wstęp do systemu Unix",
+      "dependencies": ["podstawy_unix"],
+      "required_for": ["skrypty_bash", "automatyzacja"]
+    },
+    "skrypty_bash": {
+      "name": "Proste skrypty bashowe",
+      "semester": 1,
+      "course": "Wstęp do systemu Unix",
+      "dependencies": ["bash_komendy"],
+      "required_for": ["automatyzacja", "ci_cd"]
+    },
+    "podstawy_programowania": {
+      "name": "Podstawy programowania (funkcje, programy)",
+      "semester": 1,
+      "course": "Wstęp do algorytmów I",
+      "dependencies": [],
+      "required_for": ["struktury_danych", "algorytmy_podstawowe"]
+    },
+    "funkcje_programowanie": {
+      "name": "Funkcje w programowaniu",
+      "semester": 1,
+      "course": "Wstęp do algorytmów I",
+      "dependencies": ["podstawy_programowania", "funkcje_matematyczne"],
+      "required_for": ["rekurencja", "algorytmy_zaawansowane"]
+    },
+    "dowodzenie_poprawnosci": {
+      "name": "Dowodzenie poprawności programów (niezmienniki pętli)",
+      "semester": 1,
+      "course": "Wstęp do algorytmów I",
+      "dependencies": ["indukcja_matematyczna", "logika_podstawowa"],
+      "required_for": ["algorytmy_zaawansowane"]
+    },
+    "tablice": {
+      "name": "Tablice",
+      "semester": 1,
+      "course": "Wstęp do algorytmów I",
+      "dependencies": ["podstawy_programowania"],
+      "required_for": ["sortowanie", "wyszukiwanie"]
+    },
+    "wektory_euklidesowe": {
+      "name": "Wektory w przestrzeniach euklidesowych",
+      "semester": 1,
+      "course": "Algebra liniowa I",
+      "dependencies": [],
+      "required_for": ["grafika_komputerowa", "uczenie_maszynowe_podstawy"]
+    },
+    "iloczyn_skalarny": {
+      "name": "Iloczyn skalarny i geometria wektorów",
+      "semester": 1,
+      "course": "Algebra liniowa I",
+      "dependencies": ["wektory_euklidesowe"],
+      "required_for": ["uczenie_maszynowe_podstawy", "grafika_komputerowa"]
+    },
+    "niezaleznosc_liniowa": {
+      "name": "Liniowa niezależność i bazy",
+      "semester": 1,
+      "course": "Algebra liniowa I",
+      "dependencies": ["wektory_euklidesowe"],
+      "required_for": ["macierze", "uczenie_maszynowe_podstawy"]
+    },
+    "ciagi_granice": {
+      "name": "Ciągi i granice",
+      "semester": 1,
+      "course": "Analiza matematyczna I",
+      "dependencies": [],
+      "required_for": ["pochodne", "optymalizacja"]
+    },
+    "szeregi": {
+      "name": "Szeregi liczbowe",
+      "semester": 1,
+      "course": "Analiza matematyczna I",
+      "dependencies": ["ciagi_granice"],
+      "required_for": ["analiza_numeryczna"]
+    },
+    "ciaglość_funkcji": {
+      "name": "Ciągłość funkcji",
+      "semester": 1,
+      "course": "Analiza matematyczna I",
+      "dependencies": ["ciagi_granice"],
+      "required_for": ["pochodne", "optymalizacja"]
+    },
+    "pochodne": {
+      "name": "Pochodne funkcji jednej zmiennej",
+      "semester": 1,
+      "course": "Analiza matematyczna I",
+      "dependencies": ["ciaglość_funkcji"],
+      "required_for": ["optymalizacja", "gradient"]
+    },
+    "ekstrema_1d": {
+      "name": "Ekstrema funkcji jednej zmiennej",
+      "semester": 1,
+      "course": "Analiza matematyczna I",
+      "dependencies": ["pochodne"],
+      "required_for": ["optymalizacja"]
+    },
+    "calki": {
+      "name": "Całki Riemanna",
+      "semester": 1,
+      "course": "Analiza matematyczna I",
+      "dependencies": ["pochodne"],
+      "required_for": ["prawdopodobienstwo", "analiza_numeryczna"]
+    },
+    "rekurencja": {
+      "name": "Rekurencja i równania rekurencyjne",
+      "semester": 2,
+      "course": "Matematyka dyskretna",
+      "dependencies": ["indukcja_matematyczna", "funkcje_programowanie"],
+      "required_for": ["algorytmy_rekurencyjne", "struktury_rekurencyjne"]
+    },
+    "kombinatoryka": {
+      "name": "Kombinatoryka (wariacje, permutacje)",
+      "semester": 2,
+      "course": "Matematyka dyskretna",
+      "dependencies": ["indukcja_matematyczna"],
+      "required_for": ["zlozonosc_algorytmow", "algorytmy_probabilistyczne"]
+    },
+    "notacja_asymptotyczna": {
+      "name": "Notacja asymptotyczna i złożoność",
+      "semester": 2,
+      "course": "Matematyka dyskretna",
+      "dependencies": ["funkcje_matematyczne", "ciagi_granice"],
+      "required_for": ["zlozonosc_algorytmow", "optymalizacja_algorytmow"]
+    },
+    "zlozonosc_algorytmow": {
+      "name": "Analiza złożoności algorytmów",
+      "semester": 2,
+      "course": "Matematyka dyskretna",
+      "dependencies": ["notacja_asymptotyczna", "rekurencja"],
+      "required_for": ["algorytmy_zaawansowane"]
+    },
+    "drzewa_binarne": {
+      "name": "Drzewa binarne",
+      "semester": 2,
+      "course": "Matematyka dyskretna",
+      "dependencies": ["rekurencja", "porzadki"],
+      "required_for": ["struktury_rekurencyjne", "bazy_danych"]
+    },
+    "teoria_grafow": {
+      "name": "Teoria grafów (podstawy)",
+      "semester": 2,
+      "course": "Matematyka dyskretna",
+      "dependencies": ["zbiory", "relacje"],
+      "required_for": ["algorytmy_grafowe", "sieci"]
+    },
+    "listy": {
+      "name": "Listy (jednokierunkowe, dwukierunkowe)",
+      "semester": 2,
+      "course": "Wstęp do algorytmów II",
+      "dependencies": ["rekurencja", "wskazniki"],
+      "required_for": ["struktury_rekurencyjne", "algorytmy_zaawansowane"]
+    },
+    "struktury_rekurencyjne": {
+      "name": "Rekurencyjne struktury danych",
+      "semester": 2,
+      "course": "Wstęp do algorytmów II",
+      "dependencies": ["rekurencja", "drzewa_binarne", "listy"],
+      "required_for": ["algorytmy_zaawansowane"]
+    },
+    "algorytmy_rekurencyjne": {
+      "name": "Algorytmy rekurencyjne",
+      "semester": 2,
+      "course": "Wstęp do algorytmów II",
+      "dependencies": ["rekurencja", "dowodzenie_poprawnosci"],
+      "required_for": ["algorytmy_zaawansowane"]
+    },
+    "wskazniki": {
+      "name": "Wskaźniki i pamięć dynamiczna",
+      "semester": 2,
+      "course": "Wstęp do algorytmów II",
+      "dependencies": ["podstawy_programowania"],
+      "required_for": ["listy", "struktury_rekurencyjne"]
+    },
+    "macierze": {
+      "name": "Macierze i operacje na macierzach",
+      "semester": 2,
+      "course": "Algebra liniowa II",
+      "dependencies": ["wektory_euklidesowe", "niezaleznosc_liniowa"],
+      "required_for": ["uczenie_maszynowe_podstawy", "grafika_komputerowa"]
+    },
+    "uklady_rownan": {
+      "name": "Układy równań liniowych",
+      "semester": 2,
+      "course": "Algebra liniowa II",
+      "dependencies": ["macierze"],
+      "required_for": ["uczenie_maszynowe_podstawy", "grafika_komputerowa"]
+    },
+    "wyznaczniki": {
+      "name": "Wyznaczniki macierzy",
+      "semester": 2,
+      "course": "Algebra liniowa II",
+      "dependencies": ["macierze"],
+      "required_for": ["transformacje_liniowe"]
+    },
+    "gradient": {
+      "name": "Gradient i pochodne funkcji wielu zmiennych",
+      "semester": 2,
+      "course": "Analiza matematyczna II",
+      "dependencies": ["pochodne", "wektory_euklidesowe"],
+      "required_for": ["optymalizacja", "uczenie_maszynowe_podstawy"]
+    },
+    "ekstrema_nd": {
+      "name": "Ekstrema funkcji wielu zmiennych",
+      "semester": 2,
+      "course": "Analiza matematyczna II",
+      "dependencies": ["gradient", "ekstrema_1d"],
+      "required_for": ["optymalizacja"]
+    },
+    "optymalizacja": {
+      "name": "Metody optymalizacji (gradient descent)",
+      "semester": 2,
+      "course": "Analiza matematyczna II",
+      "dependencies": ["gradient", "ekstrema_nd"],
+      "required_for": ["uczenie_maszynowe_podstawy"]
+    },
+    "macierz_jacobiego": {
+      "name": "Macierz Jacobiego",
+      "semester": 2,
+      "course": "Analiza matematyczna II",
+      "dependencies": ["gradient", "macierze"],
+      "required_for": ["uczenie_maszynowe_zaawansowane"]
+    },
+    "html_css": {
+      "name": "HTML i CSS",
+      "semester": 2,
+      "course": "Wstęp do html, css, javascript",
+      "dependencies": [],
+      "required_for": ["javascript", "web_development"]
+    },
+    "javascript_podstawy": {
+      "name": "JavaScript podstawy",
+      "semester": 2,
+      "course": "Wstęp do html, css, javascript",
+      "dependencies": ["html_css", "podstawy_programowania"],
+      "required_for": ["web_development", "event_loop"]
+    },
+    "dom": {
+      "name": "DOM (Document Object Model)",
+      "semester": 2,
+      "course": "Wstęp do html, css, javascript",
+      "dependencies": ["javascript_podstawy", "drzewa_binarne"],
+      "required_for": ["web_development"]
+    },
+    "projekty_c": {
+      "name": "Projekty w C (1000+ linii)",
+      "semester": 2,
+      "course": "Projektowy C",
+      "dependencies": ["dobre_praktyki_kodu", "git_github", "testowanie", "debugowanie"],
+      "required_for": ["projekty_programistyczne"]
+    },
+    "uczenie_maszynowe_podstawy": {
+      "name": "Uczenie maszynowe - podstawy (regresja, SVM)",
+      "semester": 2,
+      "course": "Algebra liniowa II / warsztaty ML",
+      "dependencies": ["macierze", "gradient", "optymalizacja", "iloczyn_skalarny"],
+      "required_for": ["ai_specialization"]
+    }
+  },
+  "courses": {
+    "wstep_do_matematyki_i_informatyki": {
+      "name": "Wstęp do matematyki i informatyki",
+      "semester": 1,
+      "ects": 6,
+      "type": "obowiązkowy",
+      "concepts": ["indukcja_matematyczna", "logika_podstawowa", "funkcje_matematyczne", "zbiory", "relacje", "porzadki"],
+      "dependencies": [],
+      "required_for": ["matematyka_dyskretna", "wstep_do_algorytmow_1"]
+    },
+    "wstep_do_systemu_unix": {
+      "name": "Wstęp do systemu Unix",
+      "semester": 1,
+      "ects": 3,
+      "type": "obowiązkowy",
+      "concepts": ["podstawy_unix", "bash_komendy", "skrypty_bash"],
+      "dependencies": [],
+      "required_for": ["wstep_do_programowania"]
+    },
+    "wstep_do_programowania": {
+      "name": "Wstęp do programowania",
+      "semester": 1,
+      "ects": 5,
+      "type": "obowiązkowy",
+      "concepts": ["git_github", "dobre_praktyki_kodu", "debugowanie", "testowanie"],
+      "dependencies": ["wstep_do_systemu_unix"],
+      "required_for": ["wstep_do_algorytmow_1", "projektowy_c"]
+    },
+    "wstep_do_algorytmow_1": {
+      "name": "Wstęp do algorytmów I",
+      "semester": 1,
+      "ects": 6,
+      "type": "obowiązkowy",
+      "concepts": ["podstawy_programowania", "funkcje_programowanie", "dowodzenie_poprawnosci", "tablice"],
+      "dependencies": ["wstep_do_programowania", "wstep_do_matematyki_i_informatyki"],
+      "required_for": ["wstep_do_algorytmow_2", "matematyka_dyskretna"]
+    },
+    "algebra_liniowa_1": {
+      "name": "Algebra liniowa I",
+      "semester": 1,
+      "ects": 5,
+      "type": "obowiązkowy",
+      "concepts": ["wektory_euklidesowe", "iloczyn_skalarny", "niezaleznosc_liniowa"],
+      "dependencies": [],
+      "required_for": ["algebra_liniowa_2", "analiza_matematyczna_2"]
+    },
+    "analiza_matematyczna_1": {
+      "name": "Analiza matematyczna I",
+      "semester": 1,
+      "ects": 6,
+      "type": "obowiązkowy",
+      "concepts": ["ciagi_granice", "szeregi", "ciaglość_funkcji", "pochodne", "ekstrema_1d", "calki"],
+      "dependencies": [],
+      "required_for": ["analiza_matematyczna_2", "matematyka_dyskretna"]
+    },
+    "matematyka_dyskretna": {
+      "name": "Matematyka dyskretna",
+      "semester": 2,
+      "ects": 6,
+      "type": "obowiązkowy",
+      "concepts": ["rekurencja", "kombinatoryka", "notacja_asymptotyczna", "zlozonosc_algorytmow", "drzewa_binarne", "teoria_grafow"],
+      "dependencies": ["wstep_do_matematyki_i_informatyki", "analiza_matematyczna_1"],
+      "required_for": ["wstep_do_algorytmow_2"]
+    },
+    "wstep_do_algorytmow_2": {
+      "name": "Wstęp do algorytmów II",
+      "semester": 2,
+      "ects": 6,
+      "type": "obowiązkowy",
+      "concepts": ["listy", "struktury_rekurencyjne", "algorytmy_rekurencyjne", "wskazniki"],
+      "dependencies": ["matematyka_dyskretna", "wstep_do_algorytmow_1"],
+      "required_for": []
+    },
+    "projektowy_c": {
+      "name": "Projektowy C",
+      "semester": 2,
+      "ects": 4,
+      "type": "obowiązkowy",
+      "concepts": ["projekty_c"],
+      "dependencies": ["wstep_do_programowania", "wstep_do_algorytmow_1"],
+      "required_for": []
+    },
+    "algebra_liniowa_2": {
+      "name": "Algebra liniowa II",
+      "semester": 2,
+      "ects": 5,
+      "type": "obowiązkowy",
+      "concepts": ["macierze", "uklady_rownan", "wyznaczniki", "uczenie_maszynowe_podstawy"],
+      "dependencies": ["algebra_liniowa_1"],
+      "required_for": []
+    },
+    "analiza_matematyczna_2": {
+      "name": "Analiza matematyczna II",
+      "semester": 2,
+      "ects": 6,
+      "type": "obowiązkowy",
+      "concepts": ["gradient", "ekstrema_nd", "optymalizacja", "macierz_jacobiego"],
+      "dependencies": ["analiza_matematyczna_1", "algebra_liniowa_1"],
+      "required_for": []
+    },
+    "wstep_do_html_css_js": {
+      "name": "Wstęp do HTML, CSS, JavaScript",
+      "semester": 2,
+      "ects": 4,
+      "type": "obowiązkowy",
+      "concepts": ["html_css", "javascript_podstawy", "dom"],
+      "dependencies": ["matematyka_dyskretna"],
+      "required_for": []
+    }
+  },
+  "specializations": {
+    "ai": {
+      "name": "Sztuczna Inteligencja",
+      "description": "Specjalizacja w uczeniu maszynowym, deep learning i AI",
+      "key_concepts": ["uczenie_maszynowe_podstawy", "optymalizacja", "gradient", "macierze", "prawdopodobienstwo"],
+      "recommended_courses": ["Python dla AI", "Machine Learning", "Deep Learning", "Computer Vision", "NLP"],
+      "foundation_courses": ["algebra_liniowa_1", "algebra_liniowa_2", "analiza_matematyczna_2", "wstep_do_algorytmow_2"]
+    },
+    "gaming": {
+      "name": "Gaming i Grafika Komputerowa",
+      "description": "Specjalizacja w tworzeniu gier i grafice komputerowej",
+      "key_concepts": ["wektory_euklidesowe", "macierze", "transformacje_liniowe", "grafika_komputerowa"],
+      "recommended_courses": ["Unity/Unreal Engine", "Grafika 3D", "Fizyka w grach", "Game Design"],
+      "foundation_courses": ["algebra_liniowa_1", "algebra_liniowa_2", "wstep_do_algorytmow_2", "projektowy_c"]
+    },
+    "networking": {
+      "name": "Sieci i Systemy Rozproszone",
+      "description": "Specjalizacja w sieciach komputerowych i systemach rozproszonych",
+      "key_concepts": ["teoria_grafow", "algorytmy_grafowe", "protokoly_sieciowe"],
+      "recommended_courses": ["Sieci komputerowe", "Protokoły sieciowe", "Bezpieczeństwo", "Cloud computing"],
+      "foundation_courses": ["matematyka_dyskretna", "wstep_do_systemu_unix", "wstep_do_html_css_js"]
+    },
+    "cpp_systems": {
+      "name": "C++ i Programowanie Systemowe",
+      "description": "Specjalizacja w niskopoziomowym programowaniu i systemach",
+      "key_concepts": ["wskazniki", "pamiec_dynamiczna", "struktury_danych", "optymalizacja_algorytmow"],
+      "recommended_courses": ["Zaawansowany C++", "Systemy operacyjne", "Kompilatory", "Embedded systems"],
+      "foundation_courses": ["wstep_do_algorytmow_2", "projektowy_c", "wstep_do_systemu_unix"]
+    },
+    "web_development": {
+      "name": "Web Development i Aplikacje Internetowe",
+      "description": "Specjalizacja w tworzeniu aplikacji webowych",
+      "key_concepts": ["html_css", "javascript_podstawy", "dom", "bazy_danych", "web_frameworks"],
+      "recommended_courses": ["React/Angular", "Node.js", "Bazy danych", "REST APIs", "DevOps"],
+      "foundation_courses": ["wstep_do_html_css_js", "wstep_do_programowania", "projektowy_c"]
+    },
+    "data_science": {
+      "name": "Data Science i Analiza Danych",
+      "description": "Specjalizacja w analizie danych i statystyce",
+      "key_concepts": ["uczenie_maszynowe_podstawy", "prawdopodobienstwo", "statystyka", "wizualizacja_danych"],
+      "recommended_courses": ["Python dla Data Science", "Statystyka", "Wizualizacja danych", "Big Data"],
+      "foundation_courses": ["algebra_liniowa_2", "analiza_matematyczna_2", "wstep_do_algorytmow_2"]
+    }
+  }
+}
