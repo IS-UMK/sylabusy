@@ -1,59 +1,99 @@
-## Matematyka Dyskretna
+## Matematyka dyskretna
 
-Kurs "Matematyka Dyskretna" ma na celu wprowadzenie studentów w kluczowe koncepcje matematyki dyskretnej, które są niezbędne w informatyce i algorytmice.
+Dzielenie całkowitoliczbowe, relacja podzielności
 
-**UWAGA KLUCZOWA:** To tutaj po raz pierwszy pojawia się **rekurencja** (po indukcji z semestru 1). Bez tego kursu niemożliwe jest efektywne nauczanie struktur rekurencyjnych (listy, drzewa) w "Wstępie do algorytmów II".
 
-### Tematyka kursu:
+Algorytm Euklidesa i poszukiwania wspólnego dzielnika liczb całkowitych, dowód jego poprawności i oszacowanie złożoności czasowej
 
-1. **Rekurencja**
-   - Rekurencja i równania rekurencyjne
-   - Dowodzenie poprawności rekurencji
 
-2. **Kombinatoryka**
-   - Podstawowe pojęcia kombinatoryki: wariacje, permutacje, rozbicia  
+Rozszerzony algorytm Euklidesa
 
-3. **Asymptotyka i Złożoność Algorytmu**
-   - Notacja asymptotyczna
-   - Twierdzenie o rekursji uniwersalnej
 
-4. **Drzewa Binarne**
-   - Struktura i operacje na drzewach binarnych
-   - Zastosowania drzew binarnych w algorytmice (problemy łatwo rozwiązywalne przez rekurencję)
+Liczby pierwsze, złożone i wzglednie pierwsze
 
-5. **Teoria Grafów**
-   - Podstawowe pojęcia teorii grafów: wierzchołki, krawędzie, ścieżki, cykle, kliki, spójność
-   - Problemy Eulera, Hamiltona
-   - Kolorowanie
 
-### Cele edukacyjne:
+Rozkład na czynniki pierwsze i zasadnicze twierdzenie arytmetyki
 
-- Zrozumienie podstawowych koncepcji rekurencji oraz umiejętność rozwiązywania równań rekurencyjnych.
-- Nabycie umiejętności w zakresie kombinatoryki oraz interpretacji kombinatorycznych.
-- Zrozumienie pojęcia asymptotyki oraz umiejętność analizy złożoności algorytmów.
-- Umiejętność pracy z drzewami binarnymi oraz ich zastosowań w praktyce.
-- Zrozumienie podstaw teorii grafów oraz rozwiązywania problemów związanych z grafami.
 
-### Połączenie ze specjalizacjami:
+Gęstość liczb pierwszych
 
-- **AI/ML**: Złożoność algorytmów ML, drzewa decyzyjne, teoria grafów dla sieci neuronowych
-- **Gaming**: Drzewa dla scen graficznych, grafy dla pathfinding (A*)
-- **Networking**: Teoria grafów KLUCZOWA - sieci to grafy, routing to algorytmy grafowe
-- **C++/Systems**: Analiza złożoności dla optymalizacji wydajności
-- **Data Science**: Kombinatoryka dla statystyki, grafy dla analizy sieci społecznych
-- **Web Development**: DOM jako drzewo
 
-### Zależności:
+Sito Eratostenesa
 
-**Wymagane wcześniejsze zagadnienia:**
-- Indukcja matematyczna (sem. 1) - **KLUCZOWE dla rekurencji**
-- Funkcje i zbiory (sem. 1)
-- Ciągi i granice (sem. 1) - dla asymptotyki
 
-**Przygotowuje do:**
-- Wstęp do algorytmów II (struktury rekurencyjne: listy, drzewa)
-- HTML/CSS/JavaScript (DOM jako drzewo)
-- Algorytmy zaawansowane (sem. 3+)
-- Wszystkie kursy wymagające analizy złożoności
+Relacja przystawania, pierścienie reszt liczb całkowitych
 
-Kurs ten ma na celu przygotowanie studentów do dalszej nauki w dziedzinie informatyki, zwłaszcza w kontekście algorytmiki i analizy danych.
+
+Funkcja Eulera, małe twierdzenie Fermata
+
+
+Pierścienie wielomianów i pierścienie reszt wielomianów, konstrukcja ciał skończonych
+
+
+Kongruencje liniowe, chińskie twierdzenie o resztach
+
+
+Kody korygujące błędy, kodowanie nadmiarowe, odległość Hamminga
+
+
+Ograniczenie Hamminga i Singletona
+
+
+Kody cykliczne
+
+
+Kody Reeda-Solomona
+
+
+Grupy, podgrupy, homomorfizmy grup, jądro i obraz
+
+
+Działanie grupy na zbiorze, orbity i stabilizatory
+
+
+Warstwy, dzielnik normalny, grupa ilorazowa, twierdzenie Lagrange'a
+
+
+Klasyfikacja grup skończonych, twierdzenie Sylowa
+
+
+Twierdzenie Cayleya
+
+
+Grupa multiplikatywna pierścienia, logarytm dyskretny
+
+
+Algorytm Fermata, metoda p-1 Pollarda, metoda szybkiego potęgowania, metoda $rho$ Pollarda
+
+
+Test Leibnitza, test Millera-Rabina, liczby pseudopierwsze i silnie pseudopierwsze, Test Lucasa
+
+
+Metoda Gaussa znajdowania rzędu elementu
+
+
+Metody wyznaczania logarytmu dyskretnego - Shanksa, $rho$ Pollarda, Pohlinga-Hellmana
+
+
+Kryptosystem El-Gammal - szyfrowanie i podpis
+
+
+Kryptosystem RSA - szyfrowanie i podpis
+
+
+Przestrzeń rzutowa, krzywe eliptyczne bez samoprzecięć i ich struktura grupowa. Twierdzenie Hassego
+
+
+Kryptosystem El-Gammal na krzywej eliptycznej
+
+
+Graf prosty i skierowany, izomorfizm grafów i grupa automorfizmów grafu
+
+
+Drzewa
+
+
+Problem Eulera i twierdzenie Eulera, twierdzenie Fleury'ego
+
+
+Grafy Hamiltonowskie, twierdzenie Ore

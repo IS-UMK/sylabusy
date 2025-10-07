@@ -1,183 +1,131 @@
-## Systemy Operacyjne
+## Systemy operacyjne
 
-Kurs wprowadza fundamentalne koncepcje projektowania i implementacji systemów operacyjnych. Student poznaje zarówno teoretyczne podstawy, jak i praktyczne aspekty implementacji.
+Celem wykładu jest przedstawienie podstawowych pojęć i zagadnień związanych z budową oraz działaniem współczesnych systemów komputerowych z punktu widzenia zaawansowanego  użytkownika oraz administratora system komputerowego. Dlatego zawartość wykładu i ujęcie tematu mają charakter bardziej praktyczny niż teoretyczny. Jest to próba dostarczenia i objaśnienia aparatu pojęciowego w takim zakresie, aby ułatwić administrowanie i strojenie systemu komputerowego, a także pomóc w tworzeniu wydajnych aplikacji.
 
-### Tematyka kursu:
 
-1. **Wprowadzenie do systemów operacyjnych**
-   - Rola i funkcje systemu operacyjnego
-   - Historia: od batch processing do wielozadaniowości
-   - Typy systemów operacyjnych
-   - Architektura: monolityczna vs mikrokernel vs hybrydowa
-   - Wywołania systemowe (system calls)
+W ramach wykładu zostaną poruszone następujące zagadnienia:
 
-2. **Procesy i wątki**
-   - Proces: definicja, cykl życia, PCB (Process Control Block)
-   - Tworzenie procesów: fork(), exec()
-   - Kontekst procesu i przełączanie kontekstu
-   - Wątki: różnica między procesem a wątkiem
-   - Implementacja wątków (user-level vs kernel-level)
-   - Modele wielowątkowości
-   - Przykłady: POSIX threads (pthreads)
 
-3. **Szeregowanie procesów (Scheduling)**
-   - Cele algorytmów szeregowania
-   - Metryki: czas odpowiedzi, przepustowość, fairness
-   - Algorytmy:
-     - FCFS (First-Come, First-Served)
-     - SJF (Shortest Job First)
-     - Round Robin
-     - Priority Scheduling
-     - Multilevel Queue
-     - Completely Fair Scheduler (CFS) w Linuxie
-   - Szeregowanie wieloprocesorowe
-   - Szeregowanie w czasie rzeczywistym
+1. Historia komputerów i systemów operacyjnych
 
-4. **Synchronizacja i współbieżność**
-   - Problem sekcji krytycznej
-   - Race conditions i deadlocki
-   - Mechanizmy synchronizacji:
-     - Semafory (Dijkstra)
-     - Muteksy i locki
-     - Zmienne warunkowe (condition variables)
-     - Monitory
-   - Klasyczne problemy synchronizacji:
-     - Producer-Consumer
-     - Readers-Writers
-     - Dining Philosophers
-   - Wykrywanie i unikanie deadlocków
 
-5. **Zarządzanie pamięcią**
-   - Przestrzeń adresowa procesu
-   - Partycjonowanie pamięci
-   - Paging (stronicowanie):
-     - Page tables
-     - TLB (Translation Lookaside Buffer)
-     - Page faults
-   - Segmentacja
-   - Pamięć wirtualna:
-     - Demand paging
-     - Page replacement algorithms: FIFO, LRU, Clock
-     - Thrashing i working set
-   - Alokacja pamięci:
-     - malloc/free implementation
-     - Buddy allocator
-     - Slab allocator
+2. Architektura i działanie procesora. Architektura współczesnych komputerów
 
-6. **Systemy plików**
-   - Abstrakcja pliku i katalogu
-   - Implementacja systemu plików:
-     - inode
-     - Directory structure
-     - Block allocation: contiguous, linked, indexed
-   - Przykłady: ext4, NTFS, FAT
-   - Buforowanie i cache
-   - Dziennikowanie (journaling)
-   - Virtual File System (VFS)
-   - Uprawnienia i bezpieczeństwo
 
-7. **Wejście/wyjście (I/O)**
-   - Urządzenia I/O
-   - Device drivers
-   - I/O buffering
-   - DMA (Direct Memory Access)
-   - Asynchroniczne I/O
-   - Spooling
+3. Jak system komputerowy wykonuje programy?
 
-8. **Bezpieczeństwo i ochrona**
-   - Uwierzytelnianie i autoryzacja
-   - Access Control Lists (ACL)
-   - Capability-based security
-   - Izolacja procesów
-   - Ataki: buffer overflow, race conditions
-   - Sandboxing
 
-9. **Wirtualizacja**
-   - Typy wirtualizacji
-   - Hypervisory: Type 1 vs Type 2
-   - Paravirtualization
-   - Kontenery vs VM (Docker, LXC)
-   - Przykład: KVM, VirtualBox
 
-10. **Praktyczne aspekty**
-    - Programowanie w kernel space vs user space
-    - Debugging kernel code
-    - Budowanie własnego kernela
-    - Kernel modules w Linuxie
-    - Analiza wydajności (profiling)
+- Monitor prosty, buforowanie, spooling,
 
-### Projekt praktyczny:
 
-Studenci implementują elementy systemu operacyjnego:
 
-**Opcja 1: Mini OS**
-- Prosty kernel bootujący się (bootloader)
-- Obsługa przerwań
-- Prosty scheduler
-- Zarządzanie pamięcią (podstawowe)
-- Możliwe platformy: x86, ARM, RISC-V w emulatorze (QEMU)
+- Wieloprogramowość
 
-**Opcja 2: Kernel module**
-- Moduł kernela Linuxa
-- System plików w user space (FUSE)
-- Device driver
-- Scheduler plugin
 
-**Opcja 3: Synchronizacja**
-- Implementacja semaforów/mutexów od zera
-- Rozwiązanie klasycznych problemów synchronizacji
-- Multi-threaded aplikacja z zaawansowaną synchronizacją
 
-### Zależności:
+- Podział czasu
 
-**Wymagane wcześniejsze zagadnienia:**
-- Programowanie w C (wskaźniki, pamięć dynamiczna)
-- Wstęp do systemu Unix (podstawy pracy w terminalu)
-- Architektura komputerów (opcjonalne, ale pomocne)
-- Podstawy algorytmów i struktur danych
 
-**Przygotowuje do:**
-- Programowania systemowego
-- Embedded systems
-- Kernel development
-- Cloud infrastructure (zrozumienie jak działają kontenery)
-- Cybersecurity (rozumienie ataków na poziomie OS)
+4. Struktura systemu komputerowego.
 
-### Cele edukacyjne:
 
-- Zrozumienie roli i struktury systemu operacyjnego
-- Umiejętność programowania wielowątkowego z synchronizacją
-- Znajomość algorytmów szeregowania i zarządzania zasobami
-- Zrozumienie pamięci wirtualnej i stronicowania
-- Praktyczna znajomość systemów plików
-- Umiejętność debugowania problemów związanych z OS
-- Podstawy kernel programming
 
-### Połączenie ze specjalizacjami:
+- Systemy z obsługą przerwań
 
-- **C++/Programowanie Systemowe**: Fundamentalny przedmiot
-- **Embedded Systems**: Zrozumienie RTOS
-- **Networking**: Jak OS obsługuje sieć (sockets, TCP/IP stack)
-- **Cybersecurity**: Wektory ataków na poziomie OS
-- **Cloud/DevOps**: Kontenery, wirtualizacja, resource management
 
-### Laboratorium:
 
-- Programowanie multi-threaded (pthreads)
-- Implementacja algorytmów szeregowania (symulacja)
-- Synchronizacja: rozwiązywanie producer-consumer
-- Analiza page replacement algorithms
-- Budowanie prostego systemu plików
-- Tworzenie kernel module w Linuxie
-- Debugging z GDB (procesy, wątki)
+- Struktura wejścia-wyjścia
 
-### Narzędzia:
 
-- Linux kernel source code (do analizy)
-- QEMU (emulator)
-- GDB dla kernel debugging
-- Valgrind (memory leaks, race conditions)
-- strace, ltrace (system calls tracing)
-- perf (profiling)
 
-Kurs przygotowuje do pracy na niskim poziomie abstrakcji i jest fundamentem dla każdego, kto chce rozumieć JAK NAPRAWDĘ działa komputer.
+- Dualny tryb pracy
+
+
+5. Procesy
+
+
+
+- Model procesu i jego implementacja
+
+
+
+- Proces z poziomu powłoki
+
+
+
+- Zarządzanie procesami
+
+
+
+- Komunikacja międzyprocesowa
+
+
+
+- Synchronizowanie procesów. Zakleszczenia.
+
+
+6. Zarządzanie pamięcią
+
+
+
+-  Zarządzanie pamięcią bez wymiany i stronicowania
+
+
+
+-  Wymiana
+
+
+
+-  Pamięć wirtualna
+
+
+
+-  Segmentacja
+
+
+7. Zarządzanie przestrzenią dyskową
+
+
+
+- Rodzaje plików
+
+
+
+- Partycje i systemy plików, systemy plików z kroniką
+
+
+
+- Zarządzanie logicznymi wolumenami
+
+
+
+- Macierze dyskowe
+
+
+8. Struktura systemów operacyjnych
+
+
+
+- Systemy monolityczne
+
+
+
+- Systemy warstwowe
+
+
+
+- Maszyny wirtualne
+
+
+
+- Model klient-serwer
+
+
+9. Przykłady systemów operacyjnych
+
+
+Celem ćwiczeń jest zapoznanie się z mechanizmami funkcjonowania systemu operacyjnego, jego konfiguracji i badanie aktualnego stanu systemu z użyciem  komend systemowych i narzędzi diagnostycznych. W czasie zajęć będzie wykorzystywany język Bash  do tworzenia skryptów systemowych oraz język C do  demonstracji funkcji systemowych oraz mechanizmów synchronizacji procesów w systemie GNU/Linux.
+
+
+Ćwiczenia wymagają dostępu do powłoki serwerów Unix/Linux za pomocą SSH lub VNC. Rozwiązania zadań uczestnicy umieszczają w repozytorium Git. Do edycji skryptów wykorzystywane są edytory vim/emacs.
