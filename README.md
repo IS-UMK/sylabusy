@@ -280,3 +280,140 @@ Student wybiera jedną lub więcej specjalizacji i realizuje zaawansowane przedm
 - Bayesian Methods
 - Neural Networks for Time Series
 - Interpretable ML
+
+---
+
+# Program studiów - szczegóły semestrów
+
+Poniżej przedstawiono szczegółowy program studiów oparty na oficjalnych opisach przedmiotów.
+
+## Semestr I (22 ECTS)
+
+Wszystkie przedmioty obowiązkowe.
+
+| Przedmiot | ECTS | Opis |
+|-----------|------|------|
+| [Algebra liniowa I](algebra_liniowa_1.md) | 5 | Wektory, liniowa niezależność, iloczyn skalarny, logika, zbiory, relacje, indukcja matematyczna |
+| [Analiza matematyczna I](analiza_matematyczna_1.md) | 6 | Funkcje elementarne, granice, ciągi, różniczkowanie, całkowanie |
+| [Programowanie proceduralne](programowanie_proceduralne.md) | 5 | Podstawy programowania w języku C |
+| [Wstęp do systemu UNIX](unix.md) | 3 | Podstawy pracy w systemie Unix/Linux, bash |
+| [Wprowadzenie do studiowania](wprowadzenie_do_studiowania.md) | 1 | Organizacja studiów |
+| [Język angielski I](jezyk_angielski_1.md) | 2 | Język angielski dla nauk technicznych |
+
+## Semestr II (21 ECTS)
+
+Wszystkie przedmioty obowiązkowe.
+
+| Przedmiot | ECTS | Opis |
+|-----------|------|------|
+| [Matematyka dyskretna](matematyka_dyskretna.md) | 6 | Teoria liczb, teoria grafów, kombinatoryka, rekurencja |
+| [Programowanie obiektowe I](programowanie_obiektowe_1.md) | 6 | Wprowadzenie do OOP (C++/Java) |
+| [Fizyka dla informatyków I](fizyka_1.md) | 4 | Podstawy fizyki |
+| [Technika komputerowa](technika_komputerowa.md) | 3 | Architektura komputera |
+| [Język angielski II](jezyk_angielski_2.md) | 2 | Kontynuacja języka angielskiego |
+
+## Semestr III (40 ECTS)
+
+Wszystkie przedmioty obowiązkowe.
+
+| Przedmiot | ECTS | Opis |
+|-----------|------|------|
+| [Algorytmy i struktury danych](algorytmy_i_struktury_danych.md) | 6 | Listy, drzewa, grafy, sortowanie |
+| [Bazy danych I](bazy_danych_1.md) | 5 | Model relacyjny, SQL, normalizacja |
+| [Programowanie obiektowe II](programowanie_obiektowe_2.md) | 6 | Zaawansowane OOP, wzorce projektowe |
+| [Sieci komputerowe](sieci_komputerowe.md) | 6 | TCP/IP, routing, protokoły |
+| [Systemy operacyjne](systemy_operacyjne.md) | 6 | Procesy, synchronizacja, zarządzanie pamięcią |
+| [Technika cyfrowa](technika_cyfrowa.md) | 4 | Układy logiczne, automaty |
+| [Metody numeryczne](metody_numeryczne.md) | 4 | Aproksymacja, interpolacja, całki numeryczne |
+| [Podstawy elektroniki](podstawy_elektroniki.md) | 3 | Podstawy elektroniki |
+| [Języki programowania](jezyki_programowania.md) | 4 | Paradygmaty programowania |
+
+## Semestr IV (23 ECTS)
+
+Wszystkie przedmioty obowiązkowe.
+
+| Przedmiot | ECTS | Opis |
+|-----------|------|------|
+| [Bazy danych II](bazy_danych_2.md) | 4 | NoSQL, bazy rozproszone |
+| [Inżynieria oprogramowania](inzynieria_oprogramowania.md) | 5 | Metodyki, Agile, CI/CD, testowanie |
+| [Pracownia programowania zespołowego](programowanie_zespolowe.md) | 6 | Projekty zespołowe, Git, code review |
+| [Mikroprocesory](mikroprocesory.md) | 4 | Architektura mikroprocesora, assembler |
+| [Przetwarzanie sygnałów](przetwarzanie_sygnalow.md) | 4 | Transformata Fouriera, filtracja |
+
+## Semestr V (20 ECTS)
+
+Przedmioty obowiązkowe i wybieralne.
+
+| Przedmiot | ECTS | Typ | Opis |
+|-----------|------|-----|------|
+| [Pracownia inżynierska I](pracownia_inzynierska_1.md) | 6 | Obowiązkowy | Projekt inżynierski |
+| [Ochrona praw autorskich](ochrona_praw_autorskich.md) | 2 | Obowiązkowy | Prawo autorskie |
+| [Sztuczna inteligencja](sztuczna_inteligencja.md) | 6 | Wybieralny | ML, sieci neuronowe |
+| [Wstęp do data mining](data_mining.md) | 4 | Wybieralny | Eksploracja danych, klasyfikacja |
+| [Serwisy sieciowe I](serwisy_sieciowe_1.md) | 6 | Wybieralny | Web development, HTTP, HTML/CSS |
+
+## Semestr VI (14 ECTS)
+
+Przedmioty obowiązkowe i wybieralne.
+
+| Przedmiot | ECTS | Typ | Opis |
+|-----------|------|-----|------|
+| [Pracownia inżynierska II](pracownia_inzynierska_2.md) | 6 | Obowiązkowy | Kontynuacja projektu |
+| [Podstawy przedsiębiorczości](podstawy_przedsiebiorczosci.md) | 2 | Obowiązkowy | Przedsiębiorczość |
+| [Serwisy sieciowe II](serwisy_sieciowe_2.md) | 6 | Wybieralny | Frameworki webowe, REST API |
+
+## Semestr VII (6 ECTS)
+
+| Przedmiot | ECTS | Opis |
+|-----------|------|------|
+| [Seminarium inżynierskie](seminarium_inzynierskie.md) | 2 | Seminarium dyplomowe |
+| [Praktyka inżynierska](praktyka_inzynierska.md) | 4 | Praktyka zawodowa (4 tygodnie) |
+
+**Praca inżynierska:** 15 ECTS
+
+---
+
+## Ścieżki specjalizacyjne (zaktualizowane)
+
+Program studiów oferuje 5 głównych ścieżek specjalizacyjnych:
+
+### 1. Sztuczna Inteligencja i Data Science
+**Kluczowe kursy:**
+- Sztuczna inteligencja (sem. 5)
+- Wstęp do data mining (sem. 5)
+- Matematyka dyskretna, Algorytmy i struktury danych (fundamenty)
+
+**Perspektywy:** AI engineer, Data Scientist, ML engineer
+
+### 2. Web Development i Sieci
+**Kluczowe kursy:**
+- Opracowywanie serwisów sieciowych I i II (sem. 5-6)
+- Sieci komputerowe (sem. 3)
+- Bazy danych I i II (sem. 3-4)
+
+**Perspektywy:** Full-stack developer, Backend developer, Network engineer
+
+### 3. Systemy Wbudowane i Mikroprocesory
+**Kluczowe kursy:**
+- Mikroprocesory i technika mikroprocesorowa (sem. 4)
+- Technika cyfrowa (sem. 3)
+- Podstawy elektroniki (sem. 3)
+
+**Perspektywy:** Embedded systems developer, Hardware engineer
+
+### 4. Inżynieria Oprogramowania
+**Kluczowe kursy:**
+- Inżynieria oprogramowania (sem. 4)
+- Pracownia programowania zespołowego (sem. 4)
+- Języki programowania (sem. 3)
+
+**Perspektywy:** Software engineer, DevOps engineer, Architect
+
+### 5. Przetwarzanie Sygnałów
+**Kluczowe kursy:**
+- Podstawy i algorytmy przetwarzania sygnałów (sem. 4)
+- Metody numeryczne (sem. 3)
+- Fizyka dla informatyków (sem. 2)
+
+**Perspektywy:** Signal processing engineer, Audio/Video engineer
+
