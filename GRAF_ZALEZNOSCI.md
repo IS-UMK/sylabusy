@@ -206,3 +206,56 @@ Graf jest żywym dokumentem. Każdy kurs dodany do programu powinien:
 4. Być połączony z odpowiednimi specjalizacjami
 
 Dzięki temu program studiów pozostaje spójny i logiczny w miarę rozwoju.
+
+## Wizualizacja interaktywna (HTML)
+
+Narzędzie `graf_tools.py` oferuje możliwość wygenerowania **interaktywnej wizualizacji HTML** grafu zależności:
+
+```bash
+python3 graf_tools.py visualize [nazwa_pliku.html]
+```
+
+Domyślnie generuje plik `graf_zaleznosci.html`, ale można podać własną nazwę.
+
+### Funkcje wizualizacji HTML:
+
+✅ **Interaktywny graf** - można przeciągać węzły, powiększać, pomniejszać
+✅ **Kolory według semestrów** - każdy semestr ma inny kolor dla łatwiejszej nawigacji
+✅ **Tooltips** - po najechaniu/kliknięciu na przedmiot widać szczegóły (ECTS, typ, semestr)
+✅ **Filtrowanie** - przyciski do filtrowania przedmiotów według semestru
+✅ **Automatyczny layout hierarchiczny** - przedmioty ułożone według zależności
+✅ **Bez dodatkowych zależności** - wszystko w jednym pliku HTML, używa vis.js z CDN
+
+### Przykład użycia:
+
+```bash
+# Generuj wizualizację do domyślnego pliku
+python3 graf_tools.py visualize
+
+# Generuj wizualizację do własnego pliku
+python3 graf_tools.py visualize moja_wizualizacja.html
+
+# Otwórz w przeglądarce
+firefox graf_zaleznosci.html
+# lub
+google-chrome graf_zaleznosci.html
+# lub po prostu kliknij dwukrotnie na plik
+```
+
+### Legenda kolorów:
+
+- 🔵 **Niebieski** - Semestr 1
+- 🟢 **Zielony** - Semestr 2
+- 🟠 **Pomarańczowy** - Semestr 3
+- 🟣 **Fioletowy** - Semestr 4
+- 🟡 **Żółty** - Semestr 5
+- 🔴 **Czerwony** - Semestr 6
+- 🔵 **Turkusowy** - Semestr 7
+
+### Kontrolki:
+
+- **🔍 Dopasuj widok** - automatycznie dopasowuje widok do wszystkich węzłów
+- **Semestr 1-5+** - filtruje przedmioty według semestru
+- **Pokaż wszystkie** - resetuje filtr i pokazuje wszystkie przedmioty
+- **Ścieżka krytyczna** - podświetla najdłuższą ścieżkę zależności (w przygotowaniu)
+
