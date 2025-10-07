@@ -191,7 +191,7 @@ def generate_html_visualization(graph: Dict[str, Any], output_file: str = 'graf_
 <head>
     <meta charset="utf-8">
     <title>Graf zależności - Informatyka Stosowana UMK</title>
-    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js"></script>
     <style type="text/css">
         body {{
             font-family: Arial, sans-serif;
@@ -330,6 +330,7 @@ def generate_html_visualization(graph: Dict[str, Any], output_file: str = 'graf_
                     enabled: true,
                     direction: 'UD',
                     sortMethod: 'directed',
+                    shakeTowards: 'roots',
                     levelSeparation: 150,
                     nodeSpacing: 200
                 }}
@@ -350,6 +351,13 @@ def generate_html_visualization(graph: Dict[str, Any], output_file: str = 'graf_
                             values.shadow = true;
                         }}
                     }}
+                }}
+            }},
+            edges: {{
+                smooth: {{
+                    type: 'cubicBezier',
+                    forceDirection: 'vertical',
+                    roundness: 0.4
                 }}
             }}
         }};
