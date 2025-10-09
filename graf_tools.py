@@ -518,14 +518,23 @@ def main():
         spec_name = graph['specializations'][spec_id]['name']
         print(f"\n=== ŚCIEŻKA NAUKI: {spec_name} ===\n")
         
-        current_sem = 0
+        # Grupuj koncepty według semestru i przedmiotu
+        semester_data = defaultdict(lambda: defaultdict(list))
         for concept_id in path:
             concept = graph['concepts'][concept_id]
             sem = concept.get('semester', '?')
-            if sem != current_sem:
-                current_sem = sem
-                print(f"\n--- Semestr {sem} ---")
-            print(f"  {concept['name']} ({concept['course']})")
+            course = concept.get('course', 'Nieznany przedmiot')
+            semester_data[sem][course].append(concept['name'])
+        
+        # Wyświetl w hierarchicznym formacie: Semestr > Przedmiot > Koncepty
+        for semester in sorted(semester_data.keys()):
+            print(f"# Semestr {semester}")
+            print()
+            for course in sorted(semester_data[semester].keys()):
+                print(f"## {course}")
+                for concept_name in semester_data[semester][course]:
+                    print(f"### {concept_name}")
+                print()
     
     else:
         print(f"Nieznana komenda: {command}")
