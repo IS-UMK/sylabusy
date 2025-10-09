@@ -30,7 +30,7 @@ Wykład obejmuje poniższe zagadnienia:
 9. Technologie układów cyfrowych (TTL, ECL, CMOS, GaAs)
 
 
-10. Układy cyfrowe w praktyce (aasilanie układów cyfrowych, linie transmisyjne, zakłócenia i szumy)
+10. Układy cyfrowe w praktyce (zasilanie układów cyfrowych, linie transmisyjne, zakłócenia i szumy)
 
 
 11. Zasady konstrukcji przyrządów elektronicznych.
