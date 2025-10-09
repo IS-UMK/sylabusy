@@ -566,6 +566,321 @@
       "required_for": [
         "ai_specialization"
       ]
+    },
+    "ml_podstawy": {
+      "name": "Machine Learning - podstawy",
+      "semester": 5,
+      "course": "Sztuczna inteligencja",
+      "dependencies": [
+        "uczenie_maszynowe_podstawy",
+        "macierze",
+        "gradient"
+      ],
+      "required_for": []
+    },
+    "eksploracja_danych": {
+      "name": "Eksploracja i analiza danych",
+      "semester": 5,
+      "course": "Wstęp do data mining",
+      "dependencies": [
+        "bazy_danych",
+        "statystyka_podstawy"
+      ],
+      "required_for": []
+    },
+    "sieci_neuronowe": {
+      "name": "Sieci neuronowe",
+      "semester": 5,
+      "course": "Sztuczna inteligencja",
+      "dependencies": [
+        "ml_podstawy",
+        "macierze",
+        "gradient"
+      ],
+      "required_for": []
+    },
+    "klasyfikacja": {
+      "name": "Algorytmy klasyfikacji",
+      "semester": 5,
+      "course": "Sztuczna inteligencja / Data mining",
+      "dependencies": [
+        "ml_podstawy",
+        "statystyka_podstawy"
+      ],
+      "required_for": []
+    },
+    "regresja": {
+      "name": "Modele regresji",
+      "semester": 5,
+      "course": "Sztuczna inteligencja / Data mining",
+      "dependencies": [
+        "ml_podstawy",
+        "statystyka_podstawy",
+        "macierze"
+      ],
+      "required_for": []
+    },
+    "web_development": {
+      "name": "Web development",
+      "semester": 5,
+      "course": "Opracowywanie serwisów sieciowych I",
+      "dependencies": [
+        "html_css",
+        "javascript_podstawy",
+        "bazy_danych"
+      ],
+      "required_for": []
+    },
+    "tcp_ip": {
+      "name": "Protokoły TCP/IP",
+      "semester": 3,
+      "course": "Sieci komputerowe",
+      "dependencies": [],
+      "required_for": [
+        "web_development"
+      ]
+    },
+    "routing": {
+      "name": "Routing i przekazywanie pakietów",
+      "semester": 3,
+      "course": "Sieci komputerowe",
+      "dependencies": [
+        "teoria_grafow"
+      ],
+      "required_for": []
+    },
+    "http": {
+      "name": "Protokół HTTP i REST",
+      "semester": 5,
+      "course": "Opracowywanie serwisów sieciowych I",
+      "dependencies": [
+        "tcp_ip"
+      ],
+      "required_for": [
+        "web_development"
+      ]
+    },
+    "frameworki_webowe": {
+      "name": "Frameworki webowe",
+      "semester": 6,
+      "course": "Opracowywanie serwisów sieciowych II",
+      "dependencies": [
+        "web_development",
+        "http",
+        "javascript_podstawy"
+      ],
+      "required_for": []
+    },
+    "architektura_mikroprocesora": {
+      "name": "Architektura mikroprocesora",
+      "semester": 4,
+      "course": "Mikroprocesory i technika mikroprocesorowa",
+      "dependencies": [
+        "technika_cyfrowa"
+      ],
+      "required_for": []
+    },
+    "assembler": {
+      "name": "Programowanie w asemblerze",
+      "semester": 4,
+      "course": "Mikroprocesory i technika mikroprocesorowa",
+      "dependencies": [
+        "architektura_mikroprocesora"
+      ],
+      "required_for": []
+    },
+    "uklady_logiczne": {
+      "name": "Układy logiczne",
+      "semester": 3,
+      "course": "Technika cyfrowa",
+      "dependencies": [
+        "technika_komputerowa"
+      ],
+      "required_for": [
+        "architektura_mikroprocesora"
+      ]
+    },
+    "systemy_liczbowe": {
+      "name": "Systemy liczbowe",
+      "semester": 1,
+      "course": "Programowanie proceduralne",
+      "dependencies": [],
+      "required_for": [
+        "technika_komputerowa"
+      ]
+    },
+    "metodyki_agile": {
+      "name": "Metodyki zwinne (Agile, Scrum)",
+      "semester": 4,
+      "course": "Inżynieria oprogramowania",
+      "dependencies": [
+        "git_github"
+      ],
+      "required_for": []
+    },
+    "ci_cd": {
+      "name": "CI/CD i DevOps",
+      "semester": 4,
+      "course": "Inżynieria oprogramowania",
+      "dependencies": [
+        "git_github",
+        "testowanie"
+      ],
+      "required_for": []
+    },
+    "wzorce_projektowe": {
+      "name": "Wzorce projektowe",
+      "semester": 3,
+      "course": "Programowanie obiektowe II",
+      "dependencies": [
+        "oop_polimorfizm"
+      ],
+      "required_for": []
+    },
+    "code_review": {
+      "name": "Code review i pair programming",
+      "semester": 4,
+      "course": "Pracownia programowania zespołowego",
+      "dependencies": [
+        "git_github",
+        "dobre_praktyki_kodu"
+      ],
+      "required_for": []
+    },
+    "transformata_fouriera": {
+      "name": "Transformata Fouriera",
+      "semester": 4,
+      "course": "Podstawy i algorytmy przetwarzania sygnałów",
+      "dependencies": [
+        "calki",
+        "szeregi"
+      ],
+      "required_for": []
+    },
+    "filtracja": {
+      "name": "Filtracja sygnałów",
+      "semester": 4,
+      "course": "Podstawy i algorytmy przetwarzania sygnałów",
+      "dependencies": [
+        "transformata_fouriera"
+      ],
+      "required_for": []
+    },
+    "aproksymacja": {
+      "name": "Aproksymacja funkcji",
+      "semester": 3,
+      "course": "Metody numeryczne",
+      "dependencies": [
+        "pochodne",
+        "calki"
+      ],
+      "required_for": [
+        "transformata_fouriera"
+      ]
+    },
+    "bazy_danych": {
+      "name": "Podstawy baz danych (SQL, NoSQL)",
+      "semester": 3,
+      "course": "Bazy danych I",
+      "dependencies": [
+        "zbiory",
+        "relacje"
+      ],
+      "required_for": [
+        "eksploracja_danych",
+        "web_development"
+      ]
+    },
+    "statystyka_podstawy": {
+      "name": "Statystyka podstawowa",
+      "semester": 3,
+      "course": "Prawdopodobieństwo i statystyka",
+      "dependencies": [
+        "kombinatoryka"
+      ],
+      "required_for": [
+        "eksploracja_danych",
+        "klasyfikacja",
+        "regresja"
+      ]
+    },
+    "oop_podstawy": {
+      "name": "Programowanie obiektowe - podstawy",
+      "semester": 2,
+      "course": "Programowanie obiektowe I",
+      "dependencies": [
+        "podstawy_programowania"
+      ],
+      "required_for": [
+        "oop_polimorfizm"
+      ]
+    },
+    "klasy_obiekty": {
+      "name": "Klasy i obiekty",
+      "semester": 2,
+      "course": "Programowanie obiektowe I",
+      "dependencies": [
+        "oop_podstawy"
+      ],
+      "required_for": [
+        "oop_polimorfizm"
+      ]
+    },
+    "dziedziczenie_podstawy": {
+      "name": "Dziedziczenie podstawy",
+      "semester": 2,
+      "course": "Programowanie obiektowe I",
+      "dependencies": [
+        "klasy_obiekty"
+      ],
+      "required_for": [
+        "oop_polimorfizm"
+      ]
+    },
+    "oop_polimorfizm": {
+      "name": "Polimorfizm i interfejsy",
+      "semester": 3,
+      "course": "Programowanie obiektowe II",
+      "dependencies": [
+        "dziedziczenie_podstawy"
+      ],
+      "required_for": [
+        "wzorce_projektowe"
+      ]
+    },
+    "technika_komputerowa": {
+      "name": "Technika komputerowa",
+      "semester": 2,
+      "course": "Technika komputerowa",
+      "dependencies": [
+        "systemy_liczbowe"
+      ],
+      "required_for": [
+        "uklady_logiczne"
+      ]
+    },
+    "technika_cyfrowa": {
+      "name": "Technika cyfrowa",
+      "semester": 3,
+      "course": "Technika cyfrowa",
+      "dependencies": [
+        "uklady_logiczne"
+      ],
+      "required_for": [
+        "architektura_mikroprocesora"
+      ]
+    },
+    "projekty_programistyczne": {
+      "name": "Projekty programistyczne",
+      "semester": 2,
+      "course": "Różne przedmioty projektowe",
+      "dependencies": [
+        "git_github",
+        "dobre_praktyki_kodu",
+        "debugowanie",
+        "testowanie"
+      ],
+      "required_for": []
     }
   },
   "courses": {

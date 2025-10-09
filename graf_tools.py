@@ -498,9 +498,21 @@ def main():
     
     elif command == 'path':
         if len(sys.argv) < 3:
-            print("Podaj ID specjalizacji (np. 'ai', 'gaming', 'networking')")
+            available_specs = list(graph['specializations'].keys())
+            print("Podaj ID specjalizacji. Dostępne opcje:")
+            for spec_id in available_specs:
+                spec_name = graph['specializations'][spec_id]['name']
+                print(f"  - {spec_id}: {spec_name}")
             sys.exit(1)
         spec_id = sys.argv[2]
+        if spec_id not in graph['specializations']:
+            available_specs = list(graph['specializations'].keys())
+            print(f"Nieznana specjalizacja: '{spec_id}'")
+            print("\nDostępne specjalizacje:")
+            for sid in available_specs:
+                spec_name = graph['specializations'][sid]['name']
+                print(f"  - {sid}: {spec_name}")
+            sys.exit(1)
         path = generate_specialization_path(graph, spec_id)
         
         spec_name = graph['specializations'][spec_id]['name']
