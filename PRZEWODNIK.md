@@ -4,20 +4,40 @@
 
 ### "Chcę wiedzieć, czego się uczyć aby zostać X"
 
-Gdzie X = AI engineer, game developer, network engineer, etc.
+Gdzie X = AI engineer, web developer, network engineer, etc.
 
+**Krok 1: Zobacz dostępne specjalizacje**
 ```bash
-# Zobacz dostępne specjalizacje
 python3 graf_tools.py specializations
-
-# Wygeneruj swoją ścieżkę nauki
-python3 graf_tools.py path ai              # Dla AI
-python3 graf_tools.py path gaming          # Dla Gaming
-python3 graf_tools.py path networking      # Dla Networking
-python3 graf_tools.py path cpp_systems     # Dla C++/Systems
-python3 graf_tools.py path web_development # Dla Web Dev
-python3 graf_tools.py path data_science    # Dla Data Science
 ```
+Ta komenda wyświetli listę wszystkich dostępnych specjalizacji z ich opisami i kluczowymi konceptami.
+
+**Krok 2: Wygeneruj swoją ścieżkę nauki**
+```bash
+# Dla AI i Data Science
+python3 graf_tools.py path ai_data_science
+
+# Dla Web Development i Sieci
+python3 graf_tools.py path web_networking
+
+# Dla Systemów Wbudowanych i Mikroprocesorów
+python3 graf_tools.py path embedded_systems
+
+# Dla Inżynierii Oprogramowania
+python3 graf_tools.py path software_engineering
+
+# Dla Przetwarzania Sygnałów
+python3 graf_tools.py path signal_processing
+```
+
+**Krok 3: Zrozum wynik**
+
+Komenda `path` wyświetli szczegółową ścieżkę nauki, pogrupowaną według:
+- Semestru (kiedy dany materiał jest zazwyczaj realizowany)
+- Przedmiotu (w ramach którego kursu jest nauczany)
+- Konceptu (konkretna wiedza lub umiejętność)
+
+Przykład: jeśli widzisz w semestrze 2 "Macierze i operacje na macierzach", oznacza to, że powinieneś zwrócić szczególną uwagę na ten temat w Algebrze liniowej II.
 
 ### "Dlaczego muszę się uczyć X?"
 
@@ -81,21 +101,27 @@ Otwórz `WIZUALIZACJA.md` - tam są diagramy Mermaid pokazujące:
 
 ### "Student pyta: czy mogę wziąć przedmiot X w semestrze Y?"
 
-Sprawdź `graf_zaleznosci.json`:
-1. Znajdź przedmiot X
+**Metoda 1: Sprawdź ręcznie w `graf_zaleznosci.json`:**
+1. Znajdź przedmiot X w pliku
 2. Zobacz jego `dependencies`
 3. Sprawdź czy student miał wszystkie wymagane przedmioty przed semestrem Y
 
-Automatycznie:
+**Metoda 2: Użyj narzędzia automatycznego:**
 ```bash
-python3 graf_tools.py path <specjalizacja>
-# Pokaże optymalną kolejność
+# Sprawdź optymalną ścieżkę dla specjalizacji studenta
+python3 graf_tools.py path <id_specjalizacji>
 ```
+Na przykład:
+```bash
+python3 graf_tools.py path ai_data_science
+```
+Komenda ta pokaże optymalną kolejność przedmiotów i konceptów.
 
 ### "Chcę dodać nową specjalizację"
 
-1. Otwórz `graf_zaleznosci.json`
-2. Dodaj do sekcji `"specializations"`:
+**Krok 1:** Otwórz `graf_zaleznosci.json`
+
+**Krok 2:** Dodaj nową specjalizację do sekcji `"specializations"`:
 ```json
 "nowa_specjalizacja": {
   "name": "Nazwa Specjalizacji",
@@ -105,34 +131,125 @@ python3 graf_tools.py path <specjalizacja>
   "foundation_courses": ["przedmiot1", "przedmiot2"]
 }
 ```
-3. Dodaj sekcję w README.md pod "Ścieżki specjalizacyjne"
+
+**Krok 3:** Waliduj zmiany:
+```bash
+python3 graf_tools.py validate
+```
+
+**Krok 4:** Przetestuj nową specjalizację:
+```bash
+python3 graf_tools.py path nowa_specjalizacja
+```
+
+**Krok 5:** Dodaj dokumentację specjalizacji w `README.md` pod sekcją "Ścieżki specjalizacyjne"
+
+**Krok 6:** Zaktualizuj ten przewodnik (`PRZEWODNIK.md`), dodając przykład użycia nowej specjalizacji
 
 ## Przykłady użycia
 
 ### Student: "Chcę być AI engineerem"
 
 ```bash
-$ python3 graf_tools.py path ai
+$ python3 graf_tools.py path ai_data_science
 
-=== ŚCIEŻKA NAUKI: Sztuczna Inteligencja ===
+=== ŚCIEŻKA NAUKI: Sztuczna Inteligencja i Data Science ===
 
---- Semestr 1 ---
-  Wektory w przestrzeniach euklidesowych (Algebra liniowa I)
-  Iloczyn skalarny i geometria wektorów (Algebra liniowa I)
-  Liniowa niezależność i bazy (Algebra liniowa I)
-  Pochodne funkcji jednej zmiennej (Analiza matematyczna I)
-  
---- Semestr 2 ---
-  Macierze i operacje na macierzach (Algebra liniowa II)
-  Gradient i pochodne funkcji wielu zmiennych (Analiza matematyczna II)
-  Metody optymalizacji (gradient descent) (Analiza matematyczna II)
-  Uczenie maszynowe - podstawy (Algebra liniowa II / warsztaty ML)
+# Semestr 1
+
+## Algebra liniowa I
+### Wektory w przestrzeniach euklidesowych
+### Iloczyn skalarny i geometria wektorów
+### Liniowa niezależność i bazy
+
+## Analiza matematyczna I
+### Ciągi i granice
+### Ciągłość funkcji
+### Pochodne funkcji jednej zmiennej
+### Ekstrema funkcji jednej zmiennej
+
+## Wstęp do matematyki i informatyki
+### Indukcja matematyczna
+### Zbiory i operacje na zbiorach
+### Relacje i relacje równoważności
+
+# Semestr 2
+
+## Algebra liniowa II
+### Macierze i operacje na macierzach
+
+## Algebra liniowa II / warsztaty ML
+### Uczenie maszynowe - podstawy (regresja, SVM)
+
+## Analiza matematyczna II
+### Gradient i pochodne funkcji wielu zmiennych
+### Ekstrema funkcji wielu zmiennych
+### Metody optymalizacji (gradient descent)
+
+## Matematyka dyskretna
+### Kombinatoryka (wariacje, permutacje)
+
+# Semestr 3
+
+## Bazy danych I
+### Podstawy baz danych (SQL, NoSQL)
+
+## Prawdopodobieństwo i statystyka
+### Statystyka podstawowa
+
+# Semestr 5
+
+## Sztuczna inteligencja
+### Machine Learning - podstawy
+### Sieci neuronowe
+
+## Sztuczna inteligencja / Data mining
+### Algorytmy klasyfikacji
+### Modele regresji
+
+## Wstęp do data mining
+### Eksploracja i analiza danych
 ```
 
 **Interpretacja:** 
-- W semestrze 1: Skup się szczególnie na algebrze (wektory!) i analizie (pochodne!)
-- W semestrze 2: Macierze i gradient - to jest klucz do ML!
-- W semestrze 3+: Możesz już brać Python dla AI, Machine Learning, etc.
+- W semestrze 1: Skup się szczególnie na algebrze (wektory!) i analizie (pochodne!) oraz podstawach matematyki i informatyki
+- W semestrze 2: Macierze i gradient - to jest klucz do ML! Plus kombinatoryka i pierwsze warsztaty z ML
+- W semestrze 3: Bazy danych i statystyka - fundamenty dla Data Science
+- W semestrze 5: Główne przedmioty ze sztucznej inteligencji i eksploracji danych
+
+### Student: "Interesuję się tworzeniem aplikacji webowych"
+
+```bash
+$ python3 graf_tools.py path web_networking
+
+=== ŚCIEŻKA NAUKI: Web Development i Sieci ===
+
+# Semestr 1
+## Wstęp do algorytmów I
+### Podstawy programowania (funkcje, programy)
+
+## Wstęp do matematyki i informatyki
+### Zbiory i operacje na zbiorach
+### Relacje i relacje równoważności
+
+# Semestr 2
+## Matematyka dyskretna
+### Graf i podstawowe pojęcia teorii grafów
+...
+```
+
+**Interpretacja:**
+- W semestrze 1: Podstawy programowania są fundamentem
+- W semestrze 2: Teoria grafów przyda się do zrozumienia routingu i protokołów sieciowych
+- W kolejnych semestrach: Koncentruj się na przedmiotach z sieci komputerowych, bazach danych i programowaniu webowym
+
+### Koordynator: "Sprawdzam dostępne specjalizacje dla studenta"
+
+```bash
+$ python3 graf_tools.py specializations
+```
+Komenda wyświetli wszystkie dostępne specjalizacje z ich kluczowymi konceptami i podstawowymi kursami. 
+Możesz następnie pokazać studentowi konkretną ścieżkę używając komendy `path`.
 
 ### Wykładowca: "Dodam nowe pojęcie do matematyki dyskretnej"
 
