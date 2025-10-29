@@ -1,9 +1,45 @@
 
+- [Delegowanie zadań do agentów](#delegowanie-zadań-do-agentów)
 - [Cele studiów inżynierskich](#cele-studiów-inżynierskich)
 - [Organizacja studiów inżynierskich](#organizacja-studiów-inżynierskich)
 - [Kalendarz](#kalendarz)
   - [Semestr I](#semestr-i)
   - [Semestr II](#semestr-ii)
+
+
+# Delegowanie zadań do agentów
+
+GitHub Copilot umożliwia delegowanie zadań do specjalistycznych agentów bezpośrednio z poziomu konsoli. Ta funkcjonalność pozwala na automatyzację różnych aspektów pracy z repozytorium.
+
+## Jak to działa?
+
+Zadania mogą być delegowane do agentów w następujący sposób:
+
+1. **Z interfejsu webowego GitHub**: Poprzez utworzenie issue lub pull requesta z odpowiednimi etykietami
+2. **Z poziomu konsoli**: Używając GitHub CLI (`gh`) lub bezpośrednio poprzez API GitHub
+3. **Automatycznie**: Poprzez konfigurację workflow w `.github/workflows/`
+
+## Przykładowe zastosowania
+
+- Automatyczne sprawdzanie i formatowanie dokumentów
+- Walidacja struktury sylabusów
+- Generowanie raportów o zmianach
+- Automatyczne aktualizacje dokumentacji
+- Code review i sugestie ulepszeń
+
+## Korzyści
+
+- **Oszczędność czasu**: Automatyzacja powtarzalnych zadań
+- **Spójność**: Jednolite standardy w całym repozytorium
+- **Jakość**: Automatyczne sprawdzanie poprawności przed merge
+- **Wsparcie**: Pomoc w utrzymaniu wysokiej jakości dokumentacji sylabusów
+
+## Więcej informacji
+
+Więcej informacji o możliwościach GitHub Copilot i agentów można znaleźć w:
+- [Szczegółowy przewodnik delegowania zadań](DELEGACJA_AGENTOW.md) - dokumentacja dla tego repozytorium
+- [Dokumentacja GitHub Copilot](https://docs.github.com/en/copilot) - oficjalna dokumentacja
+- [GitHub CLI](https://cli.github.com/) - narzędzie konsolowe do zarządzania repozytorium
 
 
 # Cele studiów inżynierskich
