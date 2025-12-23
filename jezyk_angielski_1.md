@@ -1,0 +1,7 @@
+## Język angielski I
+
+Przedmiot obejmuje 120 godzin zajęć z języka angielskiego dla studentów kierunków ścisłych, z czego 8 przeprowadzanych jest metodą e-learningu. Celem kursu jest przygotowanie studentów do posługiwania się specjalistycznym językiem angielskim, umożliwiającym funkcjonowanie w środowisku naukowym, akademickim i zawodowym.
+
+
+
+W toku zajęć studenci poznają specjalistyczne angielskie słownictwo związane z fizyką, astronomią, nowoczesnymi technologiami, informatyką oraz zagadnieniami popularnonaukowymi, jak również formalny język angielski stosowany w środowisku akademickim i nie tylko, z uwzględnieniem zarówno poprawności gramatycznej jak i językowej. Podczas kursu stosowany jest specjalistyczny podręcznik przeznaczony do nauczania słownictwa akademickiego, jak również autentyczne materiały, takie jak artykuły z naukowych portali anglojęzycznych, fragmenty publikacji naukowych, wywiady, filmy czy programy popularnonaukowe, które przygotowują studenta do samodzielnego korzystania ze źródeł anglojęzycznych w pracy naukowej i zawodowej. Studenci zdobywają również praktyczną wiedzę i umiejętności, które mają pomóc im funkcjonować w środowisku zawodowym i akademickim, takie jak uczestniczenie w rozmowie o pracę, przedstawienie swojej opinii w dyskusji czy przeprowadzenie prezentacji. Kurs kończy się egzaminem pisemnym, obejmującym takie komponenty językowe jak słuchanie ze zrozumieniem, czytanie ze zrozumieniem, czytanie w poszukiwaniu informacji, leksyka oraz gramatyka.

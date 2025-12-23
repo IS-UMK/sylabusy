@@ -1,0 +1,2529 @@
+Algebra 1
+=========
+W ramach przedmiotu omawiane są podstawowe pojęcia z zakresu algebry mające zastosowanie w fizyce i astronomii, naukach technicznych i informatyce. Pojęcia te omawiane są w sposób poglądowy z położeniem nacisku na ich intuicyjne zrozumienie. Dużą wagę przywiązuje się do umiejętności zastosowania zdobywanej wiedzy w praktyce do rozwiązywania konkretnych problemów.
+
+
+1. Wektory w przestrzeni 3R : działania, liniowa niezależność, bazy, układ współrzędnych, iloczyn skalarny i wektorowy
+
+
+2. Elementy logiki : zdania, formy zdaniowe, kwantyfikatory
+
+
+3. Zbiory, rachunek zbiorów, iloczyn kartezjański
+
+
+4. Relacje : równoważności i porządku, zbiór ilorazowy
+
+
+5. Zbiory liczbowe : liczby naturalne, całkowite, wymierne i rzeczywiste, podzbiory zbiorów liczbowych : kresy górne i dolne
+
+
+6. Indukcja matematyczna
+
+
+7. Funkcja i własności funkcji
+
+
+8. Liczby zespolone : działania, różne postacie liczb zespolonych, pierwiastki zespolone
+
+
+9. Macierz : działania na macierzach, wyznacznik macierzy, jej rząd, macierz odwrotna
+
+
+10. Układy równań liniowych : twierdzenie Kroneckera- Cappeliego, wzory Cramera, metoda eliminacji Gaussa
+
+Algorytmy i struktury danych
+============================
+1. Algorytmy a struktury danych - uwagi ogólne.
+
+
+2. Dynamiczne struktury danych: Listy, stosy, kolejki, kolejki priorytetowe, listy cykliczne, listy dwukierunkowe, wartownik. Budowa struktur i algorytmów operujące na różnych typach list.
+
+
+3. Drzewa, drzewa binarne, drzewa przeszukiwań (z porządkiem), dwukierunkowe. Sposoby wykorzystywania struktur drzewiastych.
+
+
+4. Grafy, sposoby reprezentacji, terminologia. Podstawowe sposoby manipulacji na grafach.
+
+
+5. Definicje złożoności i sposoby jej wyznaczania.
+
+
+6. Uwagi o typach algorytmów.
+
+
+7. Algorytmy sortowania:
+
+
+ 
+- Analiza algorytmów sortowania O(n^2)
+
+
+ 
+- Analiza algorytmów sortowania O(n log n)
+
+
+ 
+- Analiza algorytmów sortowania O(n)
+
+
+8. Statystyki pozycyjne
+
+
+9. Metody mnożenia macierzy
+
+
+10. Programowanie dynamiczne
+
+
+11. Problem mnożenia ciągu macierzy
+
+
+12. Algorytm wyznaczania najdłuższego wspólnego podciągu
+
+
+13. Algorytm triangulacji wielokąta
+
+
+14. Algorytmy przeszukiwania grafów
+
+
+15. Sortowanie topologiczne
+
+
+16. Algorytmy wyznaczania minimalnych drzew rozpinających
+
+
+17. Algorytmy wyznaczania najkrótszych ścieżek w grafach:
+
+
+ 
+- Elementy wspólne algorytmów
+
+
+ 
+- Algorytm Dijkstry
+
+
+ 
+- Algorytm Bellmana-Forda
+
+
+ 
+- Algorytm Floyda-Warshalla
+
+
+18. Analiza i algorytmy drzew zbalansowanych na przykładzie drzew czerwono-czarnych.
+
+Analiza matematyczna 1
+======================
+Omawiane są podstawowe pojęcia, operacje i metody z zakresu analizy matematycznej stosowane w naukach fizycznych i technice. Główny nacisk położony jest na intuicyjne zrozumienie sensu poszczególnych pojęć oraz istoty realizacji omawianych operacji matematycznych, a zwłaszcza na zdobycie biegłości rachunkowej.
+
+
+1. Liczby: zbiory liczb, sposoby zapisu, podstawowe działania.
+
+
+2. Funkcje: liczby i zmienne, relacje i funkcje, podstawowe własności funkcji, sposoby przedstawiania funkcji.
+
+
+3. Funkcje elementarne.
+
+
+4. Granice: ciąg, granica ciągu i funkcji, podstawowe własności granic, ciągłość funkcji.
+
+
+4. Różniczkowanie: pochodna i różniczka funkcji jednej zmiennej, pochodne wyższych rzędów, szereg Taylora, reguły de l'Hospitala, badanie przebiegu funkcji.
+
+
+5. Całkowanie: całka nieoznaczona i oznaczona funkcji jednej zmiennej, podstawowe metody całkowania.
+
+
+6. Równania różniczkowe zwyczajne: równania I rzędu o rozdzielonych zmiennych, równania liniowe I i II rzędu.
+
+
+7. Funkcje wielu zmiennych: podstawowe pojęcia, granica i granica iterowana, ciągłość, pochodna cząstkowa, różniczka zupełna.
+
+
+8. Metody przybliżone: zaokrąglanie, szacowanie rzędu wielkości, rozwinięcie w szereg.
+
+
+Ćwiczenia: 
+
+
+Przykłady obliczeń i wykorzystania omawianych na wykładzie pojęć i metod z analizy matematycznej.
+
+Bazy danych I
+=============
+Program zajęć:
+
+
+1. Modelowanie związków encji:
+
+
+ 
+Pojęcie encji, związku, atrybutu.
+
+
+ 
+Liczebność, opcjonalność, stopień związku.
+
+
+ 
+Przekształcanie diagramu związków encji na model relacyjny.
+
+
+ 
+Generowanie skryptu SQL na podstawie diagramu ER.
+
+
+2. Relacyjny model danych.
+
+
+ 
+Podstawowe założenia modelu.
+
+
+ 
+Zależności funkcyjne, postaci normalne.
+
+
+3. SQL:
+
+
+ 
+Podstawowe zapytania (selekcja i projekcja)
+
+
+ 
+Zapytania złączające, grupujące oraz teoriomnogościowe
+
+
+ 
+Podzapytania skorelowane i nieskorelowane       
+
+
+4. MS SQL Server i język manipulowania danymi T-SQL:
+
+
+ 
+Pobieranie informacji z tabel (DQL).
+
+
+ 
+Wprowadzanie i edycja danych (DML).
+
+
+ 
+Tworzenie i modyfikowanie struktury baz danych (DDL).
+
+
+ 
+Definiowanie uprawnień (DCL).
+
+
+ 
+Tworzenie widoków, procedur przechowywanych i funkcji. 
+
+
+ 
+Więzy i wyzwalacze. 
+
+
+ 
+Transakcje. 
+
+
+5. Obiektowo relacyjne mapowanie
+
+
+ 
+Przygotowanie projektu opartego o wykorzystanie jednego z dostępnych środowisk ORM.
+
+Bazy danych II
+==============
+Program wykładu obejmuje następujące zagadnienia, mające na celu wprowadzenie studentów w świat nierelacyjnych baz danych i ich zastosowań w nowoczesnych systemach przetwarzania danych:
+
+
+ 
+1. Modele danych NoSQL – Przegląd modeli wykorzystywanych w bazach NoSQL, takich jak klucz-wartość, dokumentowe, grafowe oraz rodziny kolumn.                                                                                                 Porównanie z tradycyjnymi relacyjnymi modelami danych.
+
+
+ 
+2. Rozproszone bazy danych – Omówienie architektury rozproszonych baz danych NoSQL, w tym mechanizmy skalowania poziomego, replikacji i partycjonowania danych.
+
+
+ 
+3. Języki zapytań w bazach NoSQL – Wprowadzenie do zapytań w różnych systemach NoSQL, takich jak MongoDB Query Language (MQL), Cassandra Query Language (CQL) oraz Elasticsearch Query DSL.
+
+
+ 
+4.  Projektowanie baz danych NoSQL – Zasady modelowania danych w bazach nierelacyjnych, w tym techniki optymalizacji zapytań oraz projektowanie struktury dokumentów, kluczy i grafów w celu zapewnienia wysokiej wydajności.
+
+
+ 
+5.  Spójność, dostępność i tolerancja na podziały (CAP) – Omówienie twierdzenia CAP oraz porównanie modeli spójności (ACID vs BASE). Zrozumienie kompromisów związanych z zapewnieniem dostępności, spójności i skalowalności.
+
+
+ 
+6. Indeksy i optymalizacja w NoSQL – Strategie tworzenia indeksów i optymalizacji zapytań w popularnych systemach NoSQL. Zrozumienie technik poprawy wydajności przy pracy z dużymi zbiorami danych.
+
+
+ 
+7.  Eksploracja danych (Data mining) w bazach NoSQL – Techniki analizy i eksploracji danych w rozproszonych systemach NoSQL, takich jak Hadoop, Spark oraz bazy danych grafowych.
+
+
+ 
+8. Kierunki rozwoju baz NoSQL – Przyszłość nierelacyjnych baz danych, w tym ich zastosowania w IoT, Big Data, mobilnych bazach danych, bioinformatyce oraz złożonych analizach grafowych.
+
+Fizyka dla informatyków cz. 1
+=============================
+1. Świat wokół nas: skale wielkości fizycznych we Wszechświecie (elementy kosmologii, STW) i mikroświecie (przykłady zjawisk kwantowych). Nanoświat - rozmiary i budowa atomu. Cząstki elementarne. Kwarki.
+
+
+2. Obszary fizyki: fizyka klasyczna a kwantowa. Fizyka relatywistyczna a nierelatywistyczna.
+
+
+3. Przypomnienie praw mechaniki klasycznej. Wektory a skalary. Prawa dynamiki Newtona. Pęd. Praca. Moc. Równoważność pracy i energii. Pojęcie pola skalarnego i wektorowego.
+
+
+4. Podstawowe zjawiska kwantowe, omówienie postulatów mechaniki kwantowej, efekt fotoelektryczny. Funkcja falowa. Efekt tunelowy.
+
+
+5. Oscylator harmoniczny jako podstawowy model w fizyce.
+
+
+6. Pojęcie fali, fale poprzeczne i podłużne. Polaryzacja fal. Zjawisko interferencji. 
+
+
+7. Dźwięki, elementy akustyki. Transformata Fouriera.
+
+
+8. Prąd elektryczny. Prawo Ohma. Prawo Ampera. Pojęcie indukcji magnetycznej. Strumień indukcji magnetycznej. Siła Lorentza. Silnik elektruczny
+
+
+9. Prawo indukcji Faraday'a. Pojęcie SEM. 
+
+
+10. Równania Maxwella - omówienie jakościowe postaci całkowej. Układ LC. 
+
+
+Fala elektromagnetyczna. Widmo promieniowania fal EM.  Komunikacja radiowa.
+
+
+11. Przewodniki, izolatory, półprzewodniki, teoria pasmowa ciała stałego. Nośniki ładunku w półprzewodnikach. Dioda, tranzystor.
+
+
+12. Zjawisko elektroluminescencji. Dioda LED, laser półprzewodnikowy. Tranzystor polowy. Pamięci FLASH.
+
+
+13. Ferromagnetyzm. Zjawisko GMR. Zapis informacji na dyskach.
+
+
+14. Elementy optyki: całkowite wewnętrzne odbicie, budowa i zasada działania światłowodów.
+
+
+15. Zasada działania monitorów LCD i LED.     
+
+
+16. Pojęcie Qbitu, czy przyszłość należy do informatyki kwantowej?
+
+
+Na ćwiczeniach realizowane są zagadnienia będące ilustracją treści omawianych na wykładzie.
+
+Inżynieria oprogramowania
+=========================
+1. Podstawy
+
+
+ 
+a. Przypomnienie podstaw programowania obiektowego
+
+
+ 
+b. Testy jednostkowe
+
+
+ 
+c. Założenia SOLID
+
+
+ 
+d. Odwrócenie kontroli (IoC) i wstrzykiwanie zależności (DI)
+
+
+2. Zwinne metodologie wytwarzania oprogramowania
+
+
+ 
+a. SCRUM
+
+
+ 
+b. Zespół. Role w zespole (teoria Belbina)
+
+
+ 
+3. Wprowadzenie do UML
+
+
+ 
+4. Katalog wzorców projektowych Gangu Czworga
+
+
+ 
+a. Singleton -> modyfikacje (klasa statyczna, ograniczenie liczby instancji do N)
+
+
+ 
+b. Adapter (klasowy, obiektowy)
+
+
+ 
+c. Dekorator -> Fasada
+
+
+ 
+d. Most (+ modyfikacje) -> Pełnomocnik
+
+
+ 
+e. Pyłek i fabryka abstrakcyjna
+
+
+ 
+f. Interpreter
+
+
+ 
+g. Kompozyt -> formatowanie wydruku -> cykle -> Odwiedzający -> uogólnienie -> Iterator
+
+
+ 
+h. Metoda szablonowa (implementacja w oparciu o polimorfizm i w oparciu o delegacje)
+
+
+ 
+i. Obserwator (klasyczny) -> zdarzenia -> użycie IObserver i IObservable
+
+
+ 
+j. Polecenie -> Uogólnienie: RelayCommand
+
+
+ 
+k. Mediator -> szyna/kolejka komunikatów (szyna poleceń, szyna zdarzeń) 
+
+
+5. Wybrane wzorce architektoniczne:
+
+
+ 
+a. Architektura MVC na przykładzie aplikacji konsolowej
+
+
+ 
+b. ASP.NET MVC
+
+
+ 
+c. Wzorzec MVVM
+
+
+Zagadnienia dodatkowe
+
+
+- Domain Driven Design (DDD)
+
+
+- CQRS
+
+
+- Udostępnianie kodu za pomocą pakietów NuGet
+
+
+- Git
+
+Język angielski dla nauk technicznych
+=====================================
+Przedmiot obejmuje 120 godzin zajęć z języka angielskiego dla studentów kierunków ścisłych, z czego 8 przeprowadzanych jest metodą e-learningu. Celem kursu jest przygotowanie studentów do posługiwania się specjalistycznym językiem angielskim, umożliwiającym funkcjonowanie w środowisku naukowym, akademickim i zawodowym.  
+
+
+ 
+W toku zajęć studenci poznają specjalistyczne angielskie słownictwo związane z fizyką, astronomią, nowoczesnymi technologiami, informatyką oraz zagadnieniami popularnonaukowymi, jak również formalny język angielski stosowany w środowisku akademickim i nie tylko, z uwzględnieniem zarówno poprawności gramatycznej jak i językowej. Podczas kursu stosowany jest specjalistyczny podręcznik przeznaczony do nauczania słownictwa akademickiego, jak również autentyczne materiały, takie jak artykuły z naukowych portali anglojęzycznych, fragmenty publikacji naukowych, wywiady, filmy czy programy popularnonaukowe, które przygotowują studenta do samodzielnego korzystania ze źródeł anglojęzycznych w pracy naukowej i zawodowej. Studenci zdobywają również praktyczną wiedzę i umiejętności, które mają pomóc im funkcjonować w środowisku zawodowym i akademickim, takie jak uczestniczenie w rozmowie o pracę, przedstawienie swojej opinii w dyskusji czy przeprowadzenie prezentacji. Kurs kończy się egzaminem pisemnym, obejmującym takie komponenty językowe jak słuchanie ze zrozumieniem, czytanie ze zrozumieniem, czytanie w poszukiwaniu informacji, leksyka oraz gramatyka.
+
+Język angielski dla nauk technicznych 2
+=======================================
+W toku zajęć studenci poznają specjalistyczne angielskie słownictwo związane z fizyką, astronomią, nowoczesnymi technologiami, informatyką oraz zagadnieniami popularnonaukowymi, jak również formalny język angielski stosowany w środowisku akademickim i nie tylko, z uwzględnieniem zarówno poprawności gramatycznej jak i językowej. Podczas kursu stosowany jest specjalistyczny podręcznik przeznaczony do nauczania słownictwa akademickiego, jak również autentyczne materiały, takie jak artykuły z naukowych portali anglojęzycznych, fragmenty publikacji naukowych, wywiady, filmy czy programy popularnonaukowe, które przygotowują studenta do samodzielnego korzystania ze źródeł anglojęzycznych w pracy naukowej i zawodowej. Studenci zdobywają również praktyczną wiedzę i umiejętności, które mają pomóc im funkcjonować w środowisku zawodowym i akademickim, takie jak uczestniczenie w rozmowie o pracę, przedstawienie swojej opinii w dyskusji czy przeprowadzenie prezentacji. Kurs kończy się egzaminem pisemnym, obejmującym takie komponenty językowe jak słuchanie ze zrozumieniem, czytanie ze zrozumieniem, czytanie w poszukiwaniu informacji, leksyka oraz gramatyka.
+
+Języki programowania
+====================
+1) Model kompilacji.
+
+
+2) Operatory i ich pierwszeństwo.
+
+
+3)Instrukcje preprocesora, makra
+
+
+4) Tablice.
+
+
+5) Wskaźniki i ich powiązanie z tablicami.
+
+
+6) Przekazywanie wartości do funkcji.
+
+
+7) Dynamiczna alokacja pamięci (użycie funkcji malloc)
+
+
+8) Wskaźniki na funkcje.
+
+
+9) Struktury.
+
+
+10) Tworzenie dynamiczne struktury danych za pomocą wskaźników
+
+
+11) Operacje na plikach.
+
+
+12) Omówienie standardowej biblioteki języka C (funkcje związane z podstawowymi operacjami na łańcuchach, funkcje matematyczne, konwersje)
+
+
+13) Omówienie funkcji bezpiecznych i niebezpiecznych (problemy z przepełnieniem bufora)
+
+
+14) Pisanie dużych programów i zastosowanie gnu make, autoconf i configure.
+
+
+15) Strategie poszukiwania błędów i zastosowanie narzędzi typu debuger, valgrind.
+
+
+16) Standardy języka C
+
+
+Na laboratorium omawiane są praktyczne zastosowania zagadnień omawianych na wykładzie.
+
+
+11) Dynamiczna alokacja pamięci (użycie funkcji malloc)
+
+
+12) Wskaźniki na funkcje.
+
+
+13) Struktury.
+
+
+14) Dynamiczne struktury danych, i ich zastosowania.
+
+
+15) Operacje na plikach.
+
+
+16) Omówienie standardowej biblioteki języka C (funkcje związane z podstawowymi operacjami na łańcuchach, funkcje matematyczne, konwersje)
+
+
+17) Omówienie funkcji bezpiecznych i niebezpiecznych (problemy z przepełnieniem bufora)
+
+
+18) Pisanie dużych programów i zastosowanie gnu make, autoconf i configure.
+
+
+19) Strategie poszukiwania błędów i zastosowanie narzędzi typu debuger, valgrind.
+
+Matematyka dla nauk technicznych
+================================
+0. (2h) Całkowanie funkcji wielu zmiennych
+
+
+(a) obszary regularne i normalne
+
+
+(b) całka Riemanna w 2D i 3D
+
+
+(c) całki iterowane
+
+
+(d) całkowanie w zmiennych biegunowych, walcowych i sferycznych
+
+
+1. (4 h) Szeregi i funkcje zespolone
+
+
+(a) zbieżność ciągu i szeregu geometrycznego
+
+
+(b) elementarne funkcje zmiennej zespolonej (wielomiany, funkcja wykładnicza, ilorazy wielomianów)
+
+
+(c) szeregi potęgowe
+
+
+2. (6 h) Szeregi trygonometryczne i Fouriera oraz ich własności
+
+
+3. (12 h) Transformaty funkcji ciągłych
+
+
+(a) splot funkcji ciągłych
+
+
+(b) transformata Fouriera i jej własności
+
+
+(c) transformata Laplace’a i jej własności
+
+
+(d) zastosowanie transformaty Laplace’a do rozwiązywania równań różniczkowych
+
+
+(dla Automatyki i robotyki i Informatyki stosowanej)
+
+
+4. (6 h) Transformaty funkcji dyskretnych
+
+
+(a) splot funkcji dyskretnych
+
+
+(b) dyskretna transformata Fouriera (DFT) i jej własności
+
+
+(c) transformata Z i jej własności
+
+
+Ćwiczenia obejmują przykłady, które stanowią ilustrację treści wykładanych na ćwiczeniach
+
+Matematyka dyskretna
+====================
+Dzielenie całkowitoliczbowe, relacja podzielności
+
+
+Algorytm Euklidesa i poszukiwania wspólnego dzielnika liczb całkowitych, dowód jego poprawności i oszacowanie złożoności czasowej
+
+
+Rozszerzony algorytm Euklidesa
+
+
+Liczby pierwsze, złożone i wzglednie pierwsze
+
+
+Rozkład na czynniki pierwsze i zasadnicze twierdzenie arytmetyki
+
+
+Gęstość liczb pierwszych
+
+
+Sito Eratostenesa
+
+
+Relacja przystawania, pierścienie reszt liczb całkowitych
+
+
+Funkcja Eulera, małe twierdzenie Fermata
+
+
+Pierścienie wielomianów i pierścienie reszt wielomianów, konstrukcja ciał skończonych
+
+
+Kongruencje liniowe, chińskie twierdzenie o resztach
+
+
+Kody korygujące błędy, kodowanie nadmiarowe, odległość Hamminga
+
+
+Ograniczenie Hamminga i Singletona
+
+
+Kody cykliczne
+
+
+Kody Reeda-Solomona
+
+
+Grupy, podgrupy, homomorfizmy grup, jądro i obraz
+
+
+Działanie grupy na zbiorze, orbity i stabilizatory
+
+
+Warstwy, dzielnik normalny, grupa ilorazowa, twierdzenie Lagrange'a
+
+
+Klasyfikacja grup skończonych, twierdzenie Sylowa
+
+
+Twierdzenie Cayleya
+
+
+Grupa multiplikatywna pierścienia, logarytm dyskretny
+
+
+Algorytm Fermata, metoda p-1 Pollarda, metoda szybkiego potęgowania, metoda $rho$ Pollarda
+
+
+Test Leibnitza, test Millera-Rabina, liczby pseudopierwsze i silnie pseudopierwsze, Test Lucasa
+
+
+Metoda Gaussa znajdowania rzędu elementu
+
+
+Metody wyznaczania logarytmu dyskretnego - Shanksa, $rho$ Pollarda, Pohlinga-Hellmana
+
+
+Kryptosystem El-Gammal - szyfrowanie i podpis
+
+
+Kryptosystem RSA - szyfrowanie i podpis
+
+
+Przestrzeń rzutowa, krzywe eliptyczne bez samoprzecięć i ich struktura grupowa. Twierdzenie Hassego
+
+
+Kryptosystem El-Gammal na krzywej eliptycznej
+
+
+Graf prosty i skierowany, izomorfizm grafów i grupa automorfizmów grafu
+
+
+Drzewa
+
+
+Problem Eulera i twierdzenie Eulera, twierdzenie Fleury'ego
+
+
+Grafy Hamiltonowskie, twierdzenie Ore
+
+Metody numeryczne
+=================
+Program zajęć
+
+
+Szczegółowo omawiane są tylko wybrane, podstawowe metody numeryczne.
+
+
+1. Wprowadzenie: systemy liczenia i reprezentacja informacji w komputerze.
+
+
+2. Podstawowe zasady programowania strukturalnego 
+
+
+3. Błędy obliczeń numerycznych.
+
+
+4. Metody numeryczne.
+
+
+4.1. Interpolacja.
+
+
+ 
+a. Wielomiany Lagrange'a i Newtona.
+
+
+ 
+b. Funkcje sklejane.
+
+
+ 
+c. Ekstrapolacja Richardsona.
+
+
+4.2. Całkowanie numeryczne.
+
+
+ 
+a. metody podstawowe (prostokątów, trapezów, Simpsona)
+
+
+ 
+a. Kwadratury Newtona-Cotesa.
+
+
+ 
+b. Kwadratura Gaussa.
+
+
+ 
+c. Całki wielowymiarowe.
+
+
+4.3. Różniczkowanie numeryczne.
+
+
+4.4. Rozwiązywanie równań nieliniowych (znajdowanie miejsc zerowych funkcji).
+
+
+ 
+a. Przykłady zagadnień fizycznych.
+
+
+ 
+b. Metoda bisekcji.
+
+
+ 
+c. Metoda Newtona-Ralphsona.
+
+
+ 
+d. Metoda siecznych.
+
+
+ 
+e. Metoda: reguła flasi.
+
+
+ 
+f. Metody iteracyjne punktu stałego.
+
+
+ 
+g. Układy równań nieliniowych.
+
+
+4.5. Szukanie ekstremów.
+
+
+ 
+a. Metoda Brenta.
+
+
+ 
+b. Metody gradientowe.
+
+
+4.6. Układy liniowych równań algebraicznych.
+
+
+ 
+a. Metoda eliminacji Gaussa.
+
+
+ 
+b. Metoda dekompozycji LU.
+
+
+ 
+c. Wybór elementu głównego.
+
+
+ 
+d. Metody iteracyjne: Jacobiego, Gaussa-Seidla, SOR
+
+
+ 
+e. Singular Value Decomposition (SVD)
+
+
+4.7. Równania różniczkowe.
+
+
+ 
+a. Jednopunktowe i dwupunktowe warunki brzegowe.
+
+
+ 
+b. Metody Eulera.
+
+
+ 
+c. Metody wyższych rzędów.
+
+
+ 
+d. Metody wielokrokowe.
+
+
+ 
+e. Metoda strzału.
+
+
+ 
+f. Metoda różnic skończonych.
+
+
+ 
+g. Równania różniczkowe cząstkowe (metoda siatek).
+
+
+4.8. Diagonalizacja macierzy (rozwiązywanie zagadnienia własnego macierzy)
+
+
+ 
+a. Metoda Jacobiego.
+
+
+ 
+b. Metoda Householdera.
+
+
+ 
+c. Metody potęgowe.
+
+
+4.9. Przegląd pozostałych zagadnień numerycznych.
+
+Mikroprocesory i technika mikroprocesorowa
+==========================================
+wykład:
+
+
+-kody liczbowe oraz działania na liczbach binarnych w odniesieniu do mikroprocesorów
+
+
+-zapis stałoprzecinkowy (kod binarny naturalny, uzupełnienie do 2, uzupełnienie do 1, znak moduł, kod BCD)
+
+
+-zapis zmiennoprzecinkowy (pojedyncza, podwójna oraz rozszerzona precyzja)
+
+
+-działania na liczbach stałoprzecinkowych (dodawanie, odejmowanie, mnożenie oraz dzielenie)
+
+
+-działania na liczbach zmiennoprzecinkowych (dodawanie, odejmowanie, mnożenie oraz dzielenie)
+
+
+-zasady ustawiania znaczników przy operacjach na liczbach stałoprzecinkowych (znaczniki przeniesienia, zera, nadmiaru U2, znaku U2, wartości ujemnej)
+
+
+-wartości specjalne w reprezentacji liczb zmiennopozycyjnych (nie-liczby, zero, nieskończoność, niedomiar, nadmiar)
+
+
+-zasada działanie mikroprocesora
+
+
+-schemat blokowy typowego systemu mikroprocesorowego
+
+
+-budowa układu sterowania (pobieranie kodu instrukcji, blok generowania adresów, rejestry indeksowe)
+
+
+-budowa układu wykonawczego (jednostka arytmetyczno logiczna, rejestry ogólnego przeznaczenia, rejestry akumulatorowe)
+
+
+-pojęcie i zastosowanie magistrali w systemie mikroprocesorowym
+
+
+-typowe instrukcje wykonywane przez mikroprocesor
+
+
+-podział mikroprocesorów pod względem mapy pamięci oraz listy instrukcji
+
+
+-stos
+
+
+-system przerwań
+
+
+-bezpośredni dostęp do pamięci
+
+
+-porównanie mikroprocesora i mikrokontrolera
+
+
+-mikrokontrolery rodziny AVR
+
+
+-rdzeń
+
+
+-zasoby pamięciowe
+
+
+-instrukcje
+
+
+-przetwornik A/C
+
+
+-port wejścia wyjścia
+
+
+-pamięć EEPROM
+
+
+-port szeregowy
+
+
+-magistrala I2C
+
+
+-interfejs SPI
+
+
+-środowisko programistyczne AVR-Studio
+
+
+-mikroprocesory rodziny x86
+
+
+-praca w trybie rzeczywistym
+
+
+-praca w trybie chronionym
+
+
+-koprocesor arytmetyczny x87
+
+
+-technologia MMX
+
+
+-technologia SSE
+
+
+-emulator systemu QEMU, asembler FLATASM, MS Debug
+
+
+-mikrokontrolery rodziny ARM
+
+
+-mapa pamięci
+
+
+-instrukcje
+
+
+-porty wejścia wyjścia
+
+
+-system przerwań
+
+
+-licznik czasomierz
+
+
+-wybrane peryferia
+
+
+-budowa komputera osobistego
+
+
+-kontroler przerwań 8259
+
+
+-kontroler DMA 8237
+
+
+-układ czasowy 8254
+
+
+-port równoległy 8255
+
+
+Zajęcia laboratoryjne:
+
+
+1. Mikrokontrolery AVR (praca na zestawach laboratoryjnych ZL10 z mikrokontrolerem AVR)
+
+
+- mapa pamięci
+
+
+- podstawowe instrukcje
+
+
+- instrukcje rozgałęziające
+
+
+- podprogramy
+
+
+- system przerwań
+
+
+- realizacja opóźnień w systemie mikroprocesorowym
+
+
+- port wejścia wyjścia
+
+
+2. Programowanie mikrokontrolerów ARMw języku C (praca na zestawach NUCLEO-F091RC podłączonych do płytek interfejsów użytkownika)
+
+
+- środowisko programistyczne TrueSTUDIO - Atollic - ST lub Eclipse z wtyczką GNU ARM Eclipse
+
+
+- porty ogólnego przeznaczenia (diody, przyciski, wyświetlacze siedmiosegmentowe, impulsator)
+
+
+- liczniki czasomierze (przetwornik elektroakustyczny, rezystor grzejny, żarówka)
+
+
+- przetwornik analogowo-cyfrowy (potencjometr, fotorezystor, analogowy czujnik temperatury)
+
+
+- system przerwań (przetwornik analogowo-cyfrowy, obsługa klawiatury macierzowej, obsługa wyświetlaczy siedmiosegmentowych pracujących w trybie multipleksowym, odmierzanie czasu, wykonywanie opóźnień)
+
+
+- implementacja prostego regulatora PID (sterowanie żarówką - pomiar fotorezystorem, sterowanie rezystorem grzejnym pomiar analogowym czujnikiem temperatury)
+
+Ochrona praw autorskich
+=======================
+1.Wprowadzenie (2):
+
+
+ 
+- pojęcie i rodzaje dóbr niematerialnych,
+
+
+ 
+- charakter praw na dobrach niematerialnych,
+
+
+ 
+- system źródeł prawa własności intelektualnej
+
+
+II. Prawa autorskie i prawa pokrewne (11 h):
+
+
+ 
+- przedmioty prawa autorskiego,
+
+
+- podmioty prawa autorskiego,
+
+
+ 
+- autorskie prawa osobiste,
+
+
+- autorskie prawa majątkowe,
+
+
+ 
+- dozwolony użytek chronionych utworów,
+
+
+ 
+- rodzaje i treść praw pokrewnych,
+
+
+ 
+- obrót prawami autorskimi i prawami pokrewnymi,
+
+
+ 
+- naruszenie i środki ochrony praw autorskich i praw pokrewnych
+
+Opracowywanie serwisów sieciowych cz.1
+======================================
+Niniejsze zajęcia stanowić będą podstawowy kurs HTML5 i CSS3, skupiając się na budowie poprawnej struktury serwisów WWW, zgodności z obowiązującymi standardami oraz wytycznymi związanymi z dostępnością (WCAG). Szczególny nacisk położony zostanie na budowanie serwisów zgodnie z semantyką wykorzystywanych narzędzi oraz obowiązującymi zasadami konstruowania struktury stron WWW.
+
+
+W ramach kursu Studenci nauczą się budować poprawne semantycznie serwisy WWW korzystając z języka HTML oraz nauczą się tworzenia poprawnej stylistycznie warstwy wizualnej wykorzystującej CSS3 oraz współczesne układy pozwalające na proste dostosowanie strony do różnych urządzeń, w tym urządzeń mobilnych.
+
+
+Wykład skupiać się będzie na aktualnych standardach i narzędziach. Dodatkowo, w ramach wykładu przedstawione zostaną popularne biblioteki umożliwiające dostosowanie warstwy wizualnej projektu do obowiązujących standardów i trendów. 
+
+
+Na wykładzie nie zabraknie obszernego wprowadzenia do technologii webowych, pozwalającego Studentom na zrozumienie mechanizmów rządzących działaniem współczesnych stron WWW.
+
+
+Program zajęć:
+
+
+
+
+Krótki wstęp do technologii internetowych - jak wyglądał ich rozwój?
+
+
+Architektura klient-serwer, protokół HTTP(s) oraz model OSI
+
+
+Narzędzia wykorzystywane przy tworzeniu nowoczesnych serwisów WWW
+
+
+Hipertekstowy język znaczników - HTML5 – podstawowe znaczniki
+
+
+Znaczniki semantyczne w HTML5
+
+
+Kaskadowe arkusze stylów – CSS3
+
+
+Model pudełkowy w CSS3
+
+
+Layouty stron WWW
+
+
+Dostosowanie stron WWW do potrzeb różnych urządzeń – media-queries
+
+
+Współczesne frameworki CSS
+
+
+Ogólne zasady budowania interfejsu użytkownika aplikacji webowych
+
+
+Proste systemy zarządzania treścią
+
+Opracowywanie serwisów sieciowych cz.2
+======================================
+Podczas zajęć omówione zostaną składniki rozszerzonej architektury WWW, takie jak przeglądarka WWW, serwer HTTP, serwer aplikacji, warstwa aplikacji, warstwa bazy danych, czy protokół HTTP(S). Uczestnicy poznają między innymi podstawy języka HTML 5.0 wraz z CSS. Przedstawione zostaną również podstawowe zagrożenia dotyczące bezpieczeństwa aplikacji WWW. Uczestnicy wykorzystując różne technologie będą samodzielnie tworzyć oraz publikować interaktywne witryny internetowe. 
+
+
+Ponadto omówione zostaną Systemy Zarządzania Treścią (ang. Content Management System - CMS), będące zestawem różnych aplikacji internetowych posiadających wspólny interfejs użytkownika. Uczestnicy zajęć będą wykorzystywać ten system jako narzędzie wspomagające budowę i zarządzanie stroną WWW. Ponadto wprowadzone zostaną bardziej zaawansowane elementy poznanych już w części pierwszej języków skryptowych. 
+
+
+Omówione zostaną również technologie związane z usługami realizowanymi w tzw. chmurze obliczeniowej. 
+
+
+Ostatnim elementem zajęć jest wprowadzenie do systemów e-learningowych, wspomagających nauczanie na odległość. Uczestnicy zapoznają się z systemem Moodle, jego obsługą od strony studenta, nauczyciela oraz administratora. 
+
+
+Program zajęć:
+
+
+1. Prezentacja technik informatycznych,
+
+
+2. Protokoły sieciowe (IPv6, HTTP, HTTPS, SSL, TLS)
+
+
+3. Podstawy języka HTML 5.0,
+
+
+4. Konstruowanie formularzy i przekazywanie danych do bazy, 
+
+
+5. Tworzenie witryny internetowej z zastosowaniem różnych poznanych technik,
+
+
+6. Usługi sieciowe w chmurach obliczeniowych.
+
+
+7. Systemy Zarządzania Treścią (ang. Content Management System - CMS), 
+
+
+8. Systemy e-learningowe 
+
+
+9. Dobre praktyki i zalecenia dotyczące tworzenia serwisów WWW.
+
+
+Wymagania wstępne:
+
+
+- podstawowa znajomość obsługi komputera i systemów operacyjnych Windows, Linux
+
+
+- zalecana umiejętność czytania materiałów i specyfikacji w języku angielskim
+
+
+- zaliczenie przedmiotu Opracowywanie serwisów sieciowych cz.1
+
+Podstawy elektroniki
+====================
+Celem wykładu jest przekazanie podstawowej wiedzy dotyczącej wykorzystania podstawowych praw elektryczności i magnetyzmu do
+
+
+analizy i modelowania prostych obwodów elektrycznych prądu stałego i zmiennego.
+
+
+Zagadnienia dotyczące układów analogowych: wiadomości z zakresu zasad działania wzmacniaczy elektronicznych, generatorów,
+
+
+budowy i działania scalonych układów analogowych oraz ich zastosowania, stabilizatory i zasilacze, przetworniki A/C i C/A.
+
+
+Przedstawiane są również podstawowe wiadomości dotyczące budowy, działania i zastosowania elementów i układów cyfrowych.
+
+
+Omawiane są następujące zagadnienia:
+
+
+1) Podstawowe pojęcia elektroniki.
+
+
+2) Prawa opisujące obwody elektryczne – prawo Ohma, prawa Kirchhoffa.
+
+
+3) Podstawy analizy fourierowskiej sygnałów elektrycznych.
+
+
+4) Podstawowe urządzenia pomiarowe i diagnostyczne (w tym oscyloskopy analogowe i cyfrowe).
+
+
+5) Układy wykorzystujące elementy bierne: R L oraz C, w obwodach prądu stałego i sinusoidalnego.
+
+
+ 
+6) Elementy teorii  istotne dla zrozumienia działania elementów półprzewodnikowych.
+
+
+ 
+7) Elementy półprzewodnikowe: złącze p-n, diody półprzewodnikowe i tranzystory. Charakterystyki prądowo-napięciowe, rodziny
+
+
+charakterystyk, prosta pracy  i punkt pracy tranzystora.
+
+
+8) Wzmacniacze tranzystorowe: wzmacniacz w układzie ze wspólnym emiterem (WE), kolektorem (WK) i bazą (WB), klasy wzmacniaczy
+
+
+tranzystorowych, wzmacniacze mocy, wzmacniacze rezonansowe z filtrami LC, wzmacniacz różnicowy (tranzystorowy).
+
+
+9) Obwody nieliniowe - powielanie i mieszanie częstotliwości, modulacja i detekcja.
+
+
+10) Wzmacniacze operacyjne i ich zastosowania - model idealny, wzmacniacz odwracający, nieodwracający, wtórnik napięciowy,
+
+
+przetwornik prąd-napięcie, wzmacniacz sumujący i odejmujący, różniczkujący i całkujący, logarytmujący i wykładniczy, filtry aktywne.
+
+
+Komparatory.
+
+
+11) Generatory drgań sinusoidalnych – warunek generacji. Generatory LC, kwarcowe, generatory RC.
+
+
+12) Generatory przebiegów niesinusoidalnych – generator samodławny, bootstrap, generator funkcyjny.
+
+
+13) Układy przerzutnikowe – przerzutniki bistabilne, monostabilne i astabilne, z tranzystorami nasyconymi i ze sprzężeniem emiterowym.
+
+
+14) Układy zasilające (liniowe i impulsowe) - transformatory, układy prostujące, stabilizatory napięcia , zasilacze regulowane.
+
+
+15) Układy cyfrowe – elementy opisu teoretycznego, funkcje i bramki logiczne, 
+
+
+przerzutniki, liczniki, zasady przetwarzania analogowo-cyfrowego,
+
+
+przetworniki cyfrowo-analogowe (DAC) i analogowo-cyfrowe (ADC).  
+
+
+16) Szumy i zakłócenia w układach elektronicznych, kompatybilność elektromagnetyczna – źródła i rodzaje szumów, zakłócenia i
+
+
+sposoby ich eliminacji, kompatybilność elektromagnetyczna.
+
+
+Wpływ pól elektromagnetycznych. 
+
+
+17) Wybrane czujniki wielkości fizycznych – budowa i działanie, przykładowe 
+
+
+układy pomiarowe.
+
+
+Zajęcia laboratoryjne polegają na wykonaniu określonej liczby ćwiczeń praktycznych na specjalnie przygotowanych stanowiskach doświadczalnych wyposażonych w układy elektroniczne i sprzęt diagnostyczno-pomiarowy. Przygotowanie do zajęć polega na
+
+
+samodzielnym zapoznaniu się z instrukcją do ćwiczenia i ewentualnym uzupełnieniu wiedzy w oparciu o materiał z wykładu i literaturę.
+
+
+Badaniu i pomiarom według zaleceń instrukcji poddawane są (gotowe lub montowane przez uczestniczących w zajęciach) obwody i układy
+
+
+ilustrujące najbardziej podstawowe zagadnienia elektroniki (m. in. filtrowanie, wzmacnianie i generacja sygnałów, stabilizacja i zasilanie,
+
+
+proste układy nieliniowe, analiza harmoniczna sygnałów). Praca w pracowni jest samodzielna - każde ćwiczenie wykonywane jest przez
+
+
+jedną osobę - pod opieką prowadzących zajęcia. Następnie, w domu, uczestnicy przygotowują sprawozdania obejmujące opis
+
+
+obserwacji, opracowane dane pomiarowe z uwzględnieniem niepewności oraz wnioski na temat ich zgodności z oczekiwaniami.
+
+Podstawy i algorytmy przetwarzania sygnałów
+===========================================
+Zajęcia z  przedmiotu składają się z wykładu oraz ćwiczeń laboratoryjnych. 
+
+
+Zakres tematów wykładów:
+
+
+1.Klasyfikacja sygnałów. Sygnał deterministyczny i losowy, proces losowy, ergodyczność, stacjonarność, losowa niezależność. Algorytmy stosowane do generacji sygnałów.
+
+
+2.Główne i łączne charakterystyki sygnałów: parametry sygnałów, funkcje rozkładu wartości, funkcje korelacyjne i widmowe. Definicje i algorytmy stosowane do ich realizacji.
+
+
+3.Podstawy estymacji i detekcji: pojęcie estymatora, błędy estymacji i ich praktyczna ocena. Wybrane metody detekcji sygnału ukrytego w szumie i odpowiadające im algorytmy. 
+
+
+4.Podstawowe procedury przetwarzania sygnałów: próbkowanie, kwantowanie, kwantowanie z sygnałem diherowym i uśrednianiem, kodowanie. Twierdzenie o próbkowaniu oraz twierdzenie o kwantowaniu wg Widrowa. Algorytm kwantowania zaokrąglającego stosowany w przetworniku bipolarnym.
+
+
+5.Podstawowe algorytmy przetwarzania sygnałów cyfrowych: dyskretne przekształcenie Fouriera i jego modyfikacje, koherentne i niekoherentne uśrednianie sygnałów i ograniczenia w jego stosowaniu, określanie wartości średniej, średniokwadratowej, rozkładu wartości (histogram), funkcji korelacyjnych i widmowych.
+
+
+Wykaz ćwiczeń laboratoryjnych:
+
+
+1.Sygnały deterministyczne i losowe – opis i algorytmy stosowane do ich generacji.
+
+
+2.Główne charakterystyki sygnałów – definicje, estymatory i algorytmy komputerowe stosowane do ich realizacji.
+
+
+3.Łączne charakterystyki sygnałów – definicje, estymatory i algorytmy komputerowe stosowane do ich realizacji.
+
+
+4.Ilustracja twierdzenia o próbkowaniu – praktyczne ograniczenia algorytmów DFT/FFT.
+
+
+5.Ilustracja kwantowania sygnałów oraz kwantowania z sygnałem ditherowym – porównanie dwóch podstawowych algorytmów kwantowania.
+
+
+6.Detekcja sygnału okresowego metodą uśredniania koherentnego – analiza algorytmu i jego ograniczenia, podstawowe zastosowania. 
+
+
+7.Detekcja sygnałów w szumie metodą autokorelacji i korelacji wzajemnej – przykłady zastosowań: pomiar parametrów sygnałów deterministycznych/ losowych w obecności losowych zakłóceń, pomiar opóźnień czasowych.
+
+
+8.Błędy estymacji – kryteria oceny estymatorów i odpowiadających im algorytmów.
+
+Podstawy przedsiębiorczości
+===========================
+WYKŁAD (15 godzin):
+
+
+1.	PRZEDSIĘBIORCZOŚĆ I DZIAŁALNOŚĆ GOSPODARCZA – wprowadzenie i podstawowe pojęcia (przedsiębiorczość jako: cecha; jako określony rodzaj działania (zachowania), działalność czy aktywność jednostki lub grupy ludzi; jako zjawisko społeczno-gospodarcze; swoboda działalności gospodarczej w Polsce i UE, działalność gospodarcza, przedsiębiorca, przedsiębiorstwo, firma jako pojęcia kodeksu cywilnego); KONSTYTUCJA BIZNESU (co zawiera nowy pakiet ustaw i jakie najważniejsze zmiany wnosi) 
+
+
+2.	FORMY działalności gospodarczej w Polsce i podstawy prawa spółek (cechy charakterystyczne, wady i zalety, czym się kierować przy wyborze poszczególnych form)
+
+
+3. WARUNKI PODJĘCIA I PROWADZENIA działalności gospodarczej w Polsce (procedura podjęcia działalności indywidualnej – ewidencja w CEiDG i rejestracja spółek handlowych w KRS, wybór formy opodatkowania, składki na ubezpieczenia społeczne i inne obowiązki przedsiębiorcy) 
+
+
+4. PODSTAWY PRAWA PRACY (warunki zatrudnienia pracowników na podstawie UMOWY O PRACĘ, różnice pomiędzy umową o pracę a UMOWAMI CYWILNOPRAWNYMI) 
+
+
+ĆWICZENIA (15 godzin):
+
+
+1.	Poszukiwanie pomysłu na biznes: źródła pomysłów na biznes, ocena pomysłu na biznes 2 godziny
+
+
+2.	Zakładanie własnego przedsiębiorstwa w praktyce: źródła finansowania, formy działalności gospodarczej, wybór nazwy firmy, formy opodatkowania, rejestracja firmy 2 godziny
+
+
+3.	Biznesplan – podstawy teoretyczne: istota biznesplanu, cel i funkcje biznesplanu, formy i rodzaje biznesplanu, odbiorcy biznesplanu 2 godziny
+
+
+4.	Konstrukcja i struktura biznesplanu: Streszczenie, Charakterystyka przedsiębiorstwa, Charakterystyka produktu/usługi, Analiza rynku, Analiza SWOT i TOWS, Cele przedsiębiorstwa, Plan marketingowy / strategia marketingowa, Plan działalności operacyjnej, Plan organizacji i zarządzania, Plan zatrudnienia, Harmonogram głównych zamierzeń, Plan finansowy / analiza finansowa, Załączniki 3 godziny
+
+
+5. Prezentacje biznesplanów  6 godzin
+
+Pracownia inżynierska 1
+=======================
+Realizacja pracy inżynierskiej powinna bazować na wiedzy i umiejętnościach zdobytych na wcześniejszych latach studiów oraz umożliwiać zapoznanie się z wybranym tematem i/lub technologią powiązanych z kierunkiem studiów. Tematem pracy jest rozwiązanie problemu technicznego. Student powinien, w uzgodnieniu ze swoim opiekunem pracy dyplomowej, zidentyfikować problem a także dokonać analizy znanych rozwiązań, dostępnych narzędzi i innych aspektów niezbędnych do realizacji pracy. 
+
+
+Prowadzący pracownię pomaga studentowi w zrozumieniu tematu pracy, zdefiniowaniu sposobu i planu jej realizacji a następnie nadzoruje postępy.
+
+Pracownia inżynierska 2
+=======================
+Realizacja pracy inżynierskiej powinna bazować na wiedzy i umiejętnościach zdobytych na wcześniejszych latach studiów oraz umożliwiać zapoznanie się z wybranym tematem i/lub technologią powiązanych z kierunkiem studiów. Tematem pracy jest rozwiązanie problemu technicznego. Student powinien, w uzgodnieniu ze swoim opiekunem pracy dyplomowej, kontynuować realizację projektu zdefiniowanego w ramach pracowni inżynierskiej 1.
+
+
+Prowadzący pracownię pomaga studentowi w realizacji pracy dyplomowej. Ocenia uzyskane efekty pracy oraz doradza w jej redagowaniu.
+
+Pracownia programowania zespołowego
+===================================
+W ramach pracowni studenci wykonują projekt pracując w kilkuosobowych (od 3 do 5 osób) zespołach.
+
+
+Podział na zespoły oraz tematyka projektów jest uzgodniona z prowadzącym zajęcia.
+
+
+Każdy zespół wybiera ze swego grona kierownika, odpowiedzialnego za organizację i przebieg pracy zespołu.
+
+
+Główne zadania przed jakimi stają zespoły:
+
+
+- podział zespołu ze względu na pełnione funkcje (w zależności od specyfiki projektu członkowie mogą pełnić równe role w projekcie, np: kierownik, programista, webmaster, grafik, sekretarz, itp.)
+
+
+- podział projektu na etapy i zadania, przydział poszczególnych zadań członkom zespołu
+
+
+- wybór narzędzi programistycznych i technologii potrzebnych do wykonania zadania
+
+
+- przygotowanie harmonogramu wykonania zadań
+
+
+- opracowanie architektury i specyfikacji systemu
+
+
+- przygotowanie strony WWW zawierającej informacje o projekcie, zespole i postępach w pracy
+
+
+- implementacja programu zgodnie z ustaloną wcześniej specyfikacją
+
+
+- przygotowanie dokumentacji użytkowej i technicznej aplikacji
+
+
+- przygotowanie raportu podsumowującego wykonanie zadań przez poszczególnych członków zespołu
+
+
+- prezentacja wytworzonego produktu
+
+
+Do dyspozycji studentów na czas realizacji projektów udostępniona jest usługa Trac oraz system kontroli wersji SVN.
+
+
+W czasie zajęć studenci relacjonują postępy w pracy nad projektem, przedstawiają problemy napotykane na kolejnych etapach projektowania i tworzenia aplikacji oraz
+
+
+prezentują narzędzia i technologie używane podczas realizacji poszczególnych zadań.
+
+
+ Wymagania:
+
+
+- znajomość projektowania obiektowego, umiejętność programowania w przynajmniej jednym języku obiektowym
+
+
+- podstawowo znajomość obsługi systemów kontroli wersji (SVN)
+
+
+- bierna znajomość j. angielskiego w stopniu umożliwiającym korzystanie z dokumentacji
+
+Praktyka inżynierska (4 tygodnie, 120 h)
+========================================
+Zadaniem studenta jest przepracowanie w wybranym zakładzie pracy 120 godzin. W tym czasie student, pod kierunkiem opiekuna praktyk, zobowiązany do zapoznania się ze strukturą zakładu pracy, oraz zasadami jego funkcjonowania. Ponadto powinien odbyć szkolenie stanowiskowe w zakresie BHP, wykonać zadania powierzone mu przez opiekuna. Powinien ocenić zakres swoich wiadomości i umiejętności. Po odbyciu praktyki student powinien przedstawić raport końcowy.
+
+Programowanie obiektowe cz. 1
+=============================
+Program zajęć:
+
+
+1. Projektowanie obiektowe - kapsułkowanie, ochrona danych
+
+
+2. Klasy i obiekty, ochrona danych przez modyfikatory dostępu
+
+
+3. Tworzenie i destrukcja obiektów i tablic obiektów
+
+
+4. Polimorfizm – przeciążanie operatorów
+
+
+5. Dziedziczenie, 
+
+
+ 
+a. Klasy bazowe i pochodne, hierarchie klas
+
+
+ 
+b. Dziedziczenie wielokrotne, dziedziczenie wirtualne
+
+
+6. Abstrakcyjne typy danych 
+
+
+ 
+a. Metody wirtualne, klasy abstrakcyjne, wirtualne destruktory
+
+
+ 
+b. Interfejsy a klasy abstrakcyjne
+
+
+7. Wzorce (ang. templates) funkcji i klas
+
+
+8. Obsługa wyjątków
+
+
+9. Specyfika C++
+
+
+ 
+a. l-wartości i r-wartości, efektywne przekazywanie argumentów itp.
+
+
+ 
+b. Przestrzenie nazw
+
+
+ 
+c. RTTI - runtime type identification
+
+
+ 
+d. Standard Template Library (STL)
+
+
+10. Rozszerzenia języka C++ w standardach C++11, C++14, C++17 i C++20
+
+Programowanie obiektowe cz. 2
+=============================
+Program zajęć:
+
+
+1. Projektowanie obiektowe - kapsułkowanie, ochrona danych
+
+
+2. Typy wartościowe i referencyjne
+
+
+3. Klasy i obiekty, ochrona danych przez modyfikatory dostępu
+
+
+4. Polimorfizm – przeciążanie operatorów
+
+
+5. Dziedziczenie, 
+
+
+6. Abstrakcyjne typy danych 
+
+
+ 
+a. Metody wirtualne, klasy abstrakcyjne,
+
+
+ 
+b. Interfejsy a klasy abstrakcyjne
+
+
+7. Typy i metody ogólne (ang. generics)
+
+
+8. Obsługa wyjątków
+
+
+9. Biblioteki .NET
+
+
+10. Wyrażenia regularne, system LINQ
+
+
+11. Strumienie i serializacja
+
+
+12. Mechanizm refleksji
+
+
+13. Nowsze wersje języka C#
+
+Programowanie proceduralne
+==========================
+Wykład stanowi wprowadzenie do sztuki programowania komputerów. Zasadnicza konstrukcja wykładu oparta jest na koncepcji "case study": problem -> algorytm jego rozwiązania -> program, rozumiany jako zapis algorytmu przy wykorzystaniu środków oferowanych przez konkretny język programowania.   
+
+
+
+
+ Wprowadzenie 
+
+
+
+ elementy historii: od liczenia do przetwarzania informacji
+
+ języki programowania - historia, klasyfikacja
+
+ warsztat programisty: środowiska programistyczne. 
+
+ podstawowe pojęcia: kompilator, interpretator, programowanie proceduralne i strukturalne
+
+
+
+
+
+ Podstawy formułowania algorytmów
+
+
+
+ algorytmy w życiu codziennym;
+ 
+ algorytmy i ich cechy.
+ 
+ zadanie algorytmiczne, specyfikacja, cechy algorytmów (skończoność, określoność)
+ 
+ formy zapisu algorytmów: schematy blokowe, pseudo-języki.
+ 
+ podejście zstępujące i wstępujące, hierarchiczne a modularne podejście do tworzenia algorytmu
+ 
+ uwagi o złożoności algorytmów.
+
+
+
+ Narzędzie programistyczne
+
+
+
+ środowiska programistyczne IDE, kompilatory
+   
+ systemy kontroli wersji, git, GitHub 
+   
+ statyczna analiza kodu, "lintery"
+
+
+
+  Nie za krótkie wprowadzenie do języka C
+
+
+
+ ogólna struktura kodu: część deklaracyjna i operacyjna
+    
+ zmienne - deklaracja i inicjalizacja.
+    
+ operatory arytmetyczne i logiczne.
+    
+ funkcje: printf(), scanf().
+    
+ instrukcje sterujące: warunki i pętle (if, else, do, while)
+   
+ instrukcja skoku, czyli o istocie programowania strukturalnego
+
+
+
+ Funkcje, czyli programowanie proceduralne
+
+
+
+ anatomia funkcji.
+    
+ deklaracja a definicja funkcji.
+    
+ parametry formalne i aktualne.
+    
+ zmienne na stosie.
+    
+ zmienne globalne i lokalne.
+    
+ funkcje a procedury.
+    
+ biblioteki standardowe
+    
+ biblioteka math.h
+   
+ rekurencja vs. iteracja
+
+
+
+ Tablice i struktury, czyli złożone typy danych
+
+
+
+ tablice - deklaracja, indeksowanie, operator [].
+    
+ tablice jako argumenty funkcji.
+    
+ struktury - deklaracja, operator dostępu .
+    
+ typ struct jako argument funkcji
+    
+ struktura jako wartość zwracana z funkcji
+
+
+
+ Wskaźniki.
+
+
+
+ adresy, wskaźniki, zmienne wskaźnikowe, typ wskaźnikowy.
+    
+ deklaracje zmiennych wskaźnikowych.
+    
+ operator referencji & i dereferencji *
+    
+ wskaźniki jako argumenty funkcji.
+    
+ wskaźniki jako wartość zwracana z funkcji.
+    
+ co wspólnego mają wskaźniki i tablice?
+
+
+
+  Reprezentacja symboli w komputerze
+
+
+
+ bit, bajt i kody bitowe, pojemność informacyjna ciągu bitów
+    
+ pozycyjne systemy liczbowe
+    
+ reprezentacja liczby całkowitej i rzeczywistej w komputerze
+    
+ niedomiar, nadmiar NaN, Inf
+    
+ niedokładności przy obliczeniach zmiennopozycyjnych
+    
+  reprezentacja znaków, kod ASCII
+   
+ strony kodowe cp1250, latin2, UTF-8 
+   
+ łańcuchy znakowe
+
+
+
+ Pliki i strumienie.
+
+
+
+ Plik i format pliku
+    
+ Systemy plików
+    
+ Strumienie
+    
+ Podstawowe operacje na strumieniach w C
+
+
+
+ Elementy inżynierii oprogramowania.
+
+
+
+ o stylu i standardach kodowania, statyczna analiza kodu
+    
+ obsługa błędów w C
+    
+ testowanie programów
+    
+ cykl życia programu
+    
+ zasady dokumentowania programów
+
+
+
+
+
+ĆWICZENIA (laboratorium - pracownia komputerowa) realizują praktyczną naukę programowania w języku C. Laboratoria rozpoczynają się z miesięcznym opóźnieniem w stosunku do wykładu, w momencie, w którym wiedza przekazana na wykładzie będzie wystarczająca do realizacji zadań na laboratoriach. Zajęcia odbywają się w cyklu 10 bloków po 3 godziny. 
+
+
+Na laboratorium studenci poznają narzędzia programistyczne niezbędne w pracy programisty: środowisko programistyczne IDE, kompilator, debbuger
+
+Seminarium inżynierskie
+=======================
+Seminarium obejmuje swoim zakresem tematy wykonywanych przez studentów prac inżynierskich. Każdy student wygłasza co najmniej dwa trzydziestominutowe referaty, prezentujące ogólne tło wykonywanej przez siebie pracy, jej zamierzenia i stosowane metody oraz otrzymane rezultaty.
+
+
+Po każdym referacie następuje merytoryczna dyskusja wszystkich uczestników seminarium nad jego treścią, a następnie - dyskusja nad technicznymi i formalnymi aspektami dotyczącymi jakości prezentacji i wypowiedzi.
+
+Sieci komputerowe
+=================
+Celem zajęć jest dostarczenie podstawowej wiedzy pozwalającej na zrozumienie działania współczesnych sieci komputerowych (lokalnych i rozległych), a tym samym na poznanie zagadnień warunkujących prawidłowe działanie Internetu. Z uwagi na znaczenie Internetu dla funkcjonowania i rozwoju rozmaitych firm, przedsiębiorstw, instytucji oraz całych społeczeństw i państw w czasie wykładu omówione zostaną nie tylko przyczyny powstania Internetu i zasadnicze etapy jego rozwoju, ale przede wszystkim najważniejsze protokoły i urządzenia sieciowe, które warunkują działanie usług sieciowych. W ramach wykładu zostaną poruszone między innymi następujące zagadnienia:
+
+
+1. Komunikacja w sieci 
+
+
+ 
+- modele odniesienia OSI i TCP/IP,
+
+
+ 
+- charakterystyka poszczególnych warstw oraz protokołów, 
+
+
+ 
+- rola warstw w komunikacji sieciowej,
+
+
+ 
+- działanie urządzeń sieciowych na tle poszczególnych warstw,
+
+
+2. Protokoły modelu TCP/IP
+
+
+ 
+- IPv4, ARP, ICMP, 
+
+
+ 
+- IPv6, ICMPv6,
+
+
+ 
+- TCP, UDP, 
+
+
+ 
+-  DHCP(v6), DNS,  HTTP(s), 
+
+
+3. Lokalne sieci komputerowe
+
+
+ 
+- media transmisyjne,
+
+
+ 
+- technologie Ethernet i Wi-Fi (802.11),
+
+
+ 
+- okablowanie strukturalne (standardy EIA/TIA-568A/B)   
+
+
+ 
+- urządzenia końcowe i pośredniczące,
+
+
+ 
+- koncentratory, przełączniki, routery, 
+
+
+ 
+- konfiguracja sieci LAN,
+
+
+4. Monitorowanie połączeń i usług, analiza ruchu sieciowego
+
+
+5. Technologie rozległej sieci komputerowej
+
+
+6. Routing 
+
+
+ 
+- tablice routingu, 
+
+
+ 
+- routing statyczny i dynamiczny ,
+
+
+ 
+- protokoły routingu dynamicznego (wektora odległości, stanu łącza) 
+
+
+7. Elementy bezpieczeństwa sieciowego
+
+
+Praktyczne umiejętności będą zdobywane w czasie zajęć laboratoryjnych (60 godz.) w oparciu o materiały kursu Cisco Certyfied Network Associate (CCNA), w szczególności pierwszego semestru kursu Cisco CCNA Routing and Switching; Introduction to Networks, który dotyczy podstaw działania sieci komputerowych i jest pierwszym z trzech kursów prowadzących do uzyskania certyfikatu CCNA. 
+
+
+Kurs wprowadza uczestników Programu Akademii Sieciowej Cisco w zagadnienia sieci komputerowych. W trakcie kursu omawiane są zagadnienia związane z terminologią i protokołami, sieciami lokalnymi (LAN) i rozległymi (WAN), modelem OSI (Open System Interconnection), okablowaniem, narzędziami służącymi do tworzenia okablowania, routerami, technologią Ethernet, adresowaniem w sieciach IP (Internet Protocol v4, v6), standardami obowiązującymi w sieciach komputerowych oraz podstawami dotyczącymi konfigurowania routerów i przełączników sieciowych.
+
+
+Szczegółowy program:
+
+
+1. Poznawanie sieci
+
+
+2. Konfigurowanie sieciowego systemu operacyjnego (IOS)
+
+
+3. Protokoły i komunikacja w sieci
+
+
+4. Dostęp do sieci
+
+
+5. Ethernet
+
+
+6. Warstwa sieciowa
+
+
+7. Warstwa transportowa
+
+
+8. Adresacja IP (wersja 4 i 6)
+
+
+9. Podsieci
+
+
+10. Warstwa aplikacji
+
+
+11. Działanie i administrowanie siecią komputerową
+
+
+Uczestnicy zajęć stają się pełnoprawnymi członkami Akademii Sieciowej Cisco, tym samym mają dostęp do materiałów dydaktycznych.
+
+
+Wymagania:
+
+
+ 
+- znajomość podstaw działania sieciowych systemów operacyjnych takich jak Unix/Linux oraz Windows (zalecane zaliczenie przedmiotu ,,Systemy operacyjne")
+
+
+ 
+- bierna znajomość j.angielskiego w stopniu umożliwiającym korzystanie z dokumentacji
+
+Systemy operacyjne
+==================
+Celem wykładu jest przedstawienie podstawowych pojęć i zagadnień związanych z budową oraz działaniem współczesnych systemów komputerowych z punktu widzenia zaawansowanego  użytkownika oraz administratora system komputerowego. Dlatego zawartość wykładu i ujęcie tematu mają charakter bardziej praktyczny niż teoretyczny. Jest to próba dostarczenia i objaśnienia aparatu pojęciowego w takim zakresie, aby ułatwić administrowanie i strojenie systemu komputerowego, a także pomóc w tworzeniu wydajnych aplikacji.
+
+
+W ramach wykładu zostaną poruszone następujące zagadnienia:
+
+
+1. Historia komputerów i systemów operacyjnych
+
+
+2. Architektura i działanie procesora. Architektura współczesnych komputerów
+
+
+3. Jak system komputerowy wykonuje programy?
+
+
+ 
+- Monitor prosty, buforowanie, spooling,
+
+
+ 
+- Wieloprogramowość
+
+
+ 
+- Podział czasu
+
+
+4. Struktura systemu komputerowego.
+
+
+ 
+- Systemy z obsługą przerwań
+
+
+ 
+- Struktura wejścia-wyjścia
+
+
+ 
+- Dualny tryb pracy
+
+
+5. Procesy
+
+
+ 
+- Model procesu i jego implementacja
+
+
+ 
+- Proces z poziomu powłoki
+
+
+ 
+- Zarządzanie procesami
+
+
+ 
+- Komunikacja międzyprocesowa
+
+
+ 
+- Synchronizowanie procesów. Zakleszczenia.
+
+
+6. Zarządzanie pamięcią
+
+
+ 
+-  Zarządzanie pamięcią bez wymiany i stronicowania
+
+
+ 
+-  Wymiana
+
+
+ 
+-  Pamięć wirtualna
+
+
+ 
+-  Segmentacja
+
+
+7. Zarządzanie przestrzenią dyskową
+
+
+ 
+- Rodzaje plików
+
+
+ 
+- Partycje i systemy plików, systemy plików z kroniką
+
+
+ 
+- Zarządzanie logicznymi wolumenami
+
+
+ 
+- Macierze dyskowe
+
+
+8. Struktura systemów operacyjnych
+
+
+ 
+- Systemy monolityczne
+
+
+ 
+- Systemy warstwowe
+
+
+ 
+- Maszyny wirtualne
+
+
+ 
+- Model klient-serwer
+
+
+9. Przykłady systemów operacyjnych
+
+
+Celem ćwiczeń jest zapoznanie się z mechanizmami funkcjonowania systemu operacyjnego, jego konfiguracji i badanie aktualnego stanu systemu z użyciem  komend systemowych i narzędzi diagnostycznych. W czasie zajęć będzie wykorzystywany język Bash  do tworzenia skryptów systemowych oraz język C do  demonstracji funkcji systemowych oraz mechanizmów synchronizacji procesów w systemie GNU/Linux. 
+
+
+Ćwiczenia wymagają dostępu do powłoki serwerów Unix/Linux za pomocą SSH lub VNC. Rozwiązania zadań uczestnicy umieszczają w repozytorium Git. Do edycji skryptów wykorzystywane są edytory vim/emacs.
+
+Sztuczna inteligencja
+=====================
+1. Wstęp do metod AI: kluczowe zagadnienia AI; definicje, status AI; sprzęt do obliczeń, kontekst historyczny, najważniejsze odkrycia, wielkie projekty, obecna sytuacja. 
+
+
+2. Rozwiązywanie problemów: algorytmy przeszukiwania i optymalizacji. Reprezentacja problemu w przestrzeni stanów; reprezentacja redukcyjna; metody szukania; szukanie heurystyczne, przykłady programów opartych na szukaniu; szukanie a ludzkie myślenie.
+
+
+3. Reprezentacja wiedzy i wnioskowanie: rodzaje wiedzy; reprezentacja symboliczna, logika predykatów, logika rozmyta i przybliżona; systemy regułowe; reprezentacja proceduralna. 
+
+
+4. Sieci semantyczne i grafy wiedzy; ramki i skrypty, agenci programowi, programy oparte na szukani i ich ograniczenia, zastosowania w grach, od szachów po StarCraft. 
+
+
+5. Systemy wspomagające podejmowanie decyzji: akwizycja wiedzy; od zrobotyzowanej automatyzacji procesów po systemy kognitywne, konstrukcja systemów doradczych; przykłady zastosowań, wielkie systemy symboliczne, CYC, SOAR i Watson.
+
+
+6. Rozumienie języka naturalnego, podejście symboliczne i reprezentacje subsymboliczne, brak jednoznaczności, semantyka i rola kontekstu, klasyfikacja wypowiedzi, tłumaczenie maszynowe, koneksjonizm. 
+
+
+7. Dane w systemach AI: akwizycja, oczyszczanie, niepewność, rozkłady probabilistyczne, tw. Bayesa, rozpoznawanie wzorców i miary poprawności, reprezentacje wektorowe – Word2Vec, Glove, mechanizm uwagi.  
+
+
+8. Uczenie maszynowe: rodzaje, uczenie nadzorowane, drzewa decyzji, regresja, SVM, oceny podobieństwa, klasyfikacja i regresja z użyciem sieci neuronowych, pamięci skojarzeniowe, model Hopfielda i maszyny Boltzmanna. 
+
+
+9. Uczenie nienadzorowane: klasteryzacja, --średnich, hierarchiczna, eksploracja danych i wizualizacja, PCA, ICA, MDS, UMAP, t-SNE, manifolds.  
+
+
+10.  Uczenie ze wzmocnieniem, procesy Markova, HMM, strategie i zastosowania w grach, robotyce, rozumowaniu.  
+
+
+11. Uczenie głębokie, architektura sieci konwolucyjnych, zastosowania do analizy obrazu.
+
+
+12. Transformery, duże modele językowe i mulitmodalne, modele działania (Large Behavioral Models), generatywna sztuczna inteligencja, GANy i inne modele. 
+
+
+13. Narzędzia: HugginFace i inne repozytoria, projekty na GitHub, małe lokalne modele SLM.  
+
+
+14. Interakcja człowiek-maszyna, modele umysłu, zunifikowane teorie poznania i autonomiczne LMMy, interpretowalność. 
+
+
+15. Globalne wyzwania, najważniejsze systemy, odkrycia dzięki AI, automatyzacja kreatywności, wpływ na społeczeństwo i gospodarkę.
+
+Technika cyfrowa
+================
+Wykład obejmuje poniższe zagadnienia:
+
+
+1. Technika cyfrowa i analogowa - sygnały dyskretne a analogowe, stany logiczne, kody liczbowe
+
+
+2. Algebra Boola, arytmetyka dwójkowa
+
+
+3. Synteza układów kombinacyjnych, minimalizacja funkcji logicznych (przegląd metod)
+
+
+4. Praktyczne wykorzystanie minimalizacji w układach kombinacyjnych (synteza układów komutacyjnych, konwerterów, układów arytmetycznych)
+
+
+5. Wprowadzenie do teorii układów sekwencyjnych (przerzutniki cyfrowe, hazard w układach cyfrowych
+
+
+6. Synteza układów sekwencyjnych - synteza liczników cyfrowych i dzielników częstotliwości, synteza bloków funkcjonalnych.
+
+
+7. Układy pamięci cyfrowych
+
+
+8. Technika impulsowa - przerzutniki, układy generatorów cyfrowych
+
+
+9. Technologie układów cyfrowych (TTL, ECL, CMOS, GaAs)
+
+
+10. Układy cyfrowe w praktyce (zasilanie układów cyfrowych, linie transmisyjne, zakłócenia i szumy)
+
+
+11. Zasady konstrukcji przyrządów elektronicznych.
+
+
+Zajęcia laboratoryjne składają się z dwóch części: wprowadzającej (4h) i zasadniczej z wykorzystaniem symulatora układów cyfrowych CEDAR logic.
+
+
+Zakres:
+
+
+Zajęcia wprowadzające: kody liczbowe, arytmetyka dwójkowa, funkcje logiczne, minimalizacja.
+
+
+Zajęcia z wykorzystaniem symulatora:
+
+
+- układy kombinacyjne logiczne i arytmetyczne (minimalizacja, hazard, synteza i analiza)
+
+
+- multipleksery (grupowe, kaskadowe - przykłady zastosowań)
+
+
+- komparatory cyfrowe kaskadowe
+
+
+- projekt i wizualizacja prostego sterującego układu kombinacyjnego (np. mieszalnika)
+
+
+- układy kombinacyjne CMOS (budowa i analiza w oparciu o uproszczone modele tranzystorów n-mos i p-mos)
+
+
+- układy z opóźnieniami (analiza czasowa - moduł o-scope)
+
+
+- synteza i analiza układów sekwencyjnych (przerzutniki proste, złożone, liczniki szeregowe, równoległe)
+
+
+- rejestry liczące (synteza i analiza)
+
+Technika komputerowa
+====================
+Plan wykładu:
+
+
+1. Wybrane fakty z historii techniki komputerowej
+
+
+	-) pierwsze maszyny liczące
+
+
+	-) ludzie, którzy przyczynili się do rozwoju techniki komputerowej
+
+
+	-) przełomowe wynalazki i urządzenia
+
+
+2. Budowa najprostszego komputera
+
+
+	-) operacje arytmetyczne i logiczne
+
+
+	-) użycie bramek logicznych w praktyce
+
+
+	-) systemy liczbowe 
+
+
+	-) magazynowanie w pamięci (pamięć przerzutnikowa, rejestr, wprowadzanie i wyprowadzanie danych)
+
+
+	-) rozkazy w komputerze, jak komputer liczy, programy komputerowe
+
+
+3. Podstawy architektury komputera
+
+
+	-) cyfrowy zapis informacji, kodowanie
+
+
+	-) budowa systemu mikrokomputerowego
+
+
+	-) najważniejsze elementy komputera klasy PC
+
+
+	-) magistrale i interfejsy w komputerach PC
+
+
+	-) wybrane peryferia
+
+
+4. Mikroprocesor - budowa i działanie
+
+
+	-) bloki procesora, zadania i działanie
+
+
+	-) rejestry i ich funkcje
+
+
+	-) rozszerzenia architektury
+
+
+	-) nowe rozwiązania w dziedzinie procesorów
+
+
+5. Pamięci półprzewodnikowe stosowane w systemach mikroprocesorowych
+
+
+	-) pamięci ulotne i nieulotne
+
+
+	-) rodzaje pamięci ulotnych
+
+
+	-) zasada działania współczesnych pamięci
+
+
+	-) pamięci nieulotne
+
+
+6. Pamięci masowe: nośniki i interfejsy
+
+
+	-) sposoby zapisu informacji w pamięciach magnetycznych i optycznych
+
+
+	-) działania dysku twardego i napędów CD, DVD, Blue Ray
+
+
+	-) nowe trendy rozwoju pamięci masowych
+
+
+7. Multimedia w komputerach PC
+
+
+	-) działanie karty graficznej
+
+
+	-) akceleratory grafiki dwu- i trójwymiarowej
+
+
+	-) wyświetlacze i monitory
+
+
+	-) dźwięk cyfrowy
+
+
+8. Sieci komputerowe
+
+
+	-) urządzenia sieciowe
+
+
+	-) LAN i WAN
+
+
+	-) struktura sieci, modele, protokoły
+
+
+	-) IPv4 i IPv6
+
+
+Główne cele do osiągnięcia to: czytanie ze zrozumieniem dokumentacji technicznej i instrukcji obsługi systemów komputerowych (mikroprocesorowych, urządzeń peryferyjnych, systemów sterowanych komputerowo), znajomość budowy i umiejętność konfiguracji systemu mikrokomputerowego, umiejętność doboru sprzętu komputerowego do konkretnego zadania (np. tworzenia grafiki inżynierskiej, sterowania aparaturą pomiarową, automatyzacji procesów technologicznych), umiejętność podłączenia i konfiguracji urządzeń peryferyjnych, zdolność do szybkiego zaznajomienia się z obsługą nowego sprzętu mikrokomputerowego lub aparatury sterowanej komputerowo, rozumienie ograniczeń związanych z budową i parametrami elementów systemu mikrokomputerowego.
+
+Wprowadzenie do studiowania
+===========================
+Wykład:
+
+
+1. Podstawowe akty prawne regulujące działalność UMK. 
+
+
+2. Podstawowe informacje o Wydziale Fizyki, Astronomii i Informatyki Stosowanej - struktura, władze, ogólna charakterystyka prowadzonych kierunków studiów, organizacja kształcenia.
+
+
+3. Sprawy studenckie - Samorząd, przedstawiciele studentów, stypendia, organizacje studenckie
+
+
+4. Rola prorektora i prodziekana ds. studenckich oraz pełnomocników JM Rektora
+
+
+5. Podstawowe prawa i obowiązki studentów UMK - regulamin, etyka i dobre obyczaje
+
+
+6. Informacje praktyczne:
+
+
+ 
+a) jak dobrze studiować - sposób uczenia się, zajęcia obowiązkowe i nieobowiązkowe, konsultacje 
+
+
+ 
+b) informatyzacja studiowania - konta studenckie, korespondencja elektroniczna, USOS i rejestracja na zajęcia
+
+
+ 
+c) wyszukiwanie potrzebnych informacji
+
+
+ 
+d) zachowanie - pisanie podań, elementy savoir vivre'u
+
+
+Ćwiczenia laboratoryjne:
+
+
+1. zakładanie konta, wprowadzenie sygnatury
+
+
+2. wyszukiwanie podstawowych informacji przydatnych do studiowania,
+
+
+3. pisanie podań oraz oficjalnych listów elektronicznych
+
+
+4. rejestracja na zajęcia w systemie USOS
+
+Wstęp do data mining
+====================
+Eksploracja danych, czyli Data Mining, to proces odkrywania
+
+
+wiedzy i ogólnych reguł w danych, które zgromadzone są w
+
+
+bazach danych, również tych bardzo rozbudowanych.
+
+
+Wykorzystuje on w tym celu techniki sztucznej inteligencji,
+
+
+uczenia maszynowego i metody statystyczne. Eksplorację danych
+
+
+wykorzystuje się tam, gdzie danych jest dużo i niepożądana jest
+
+
+ingerencja człowieka w proces pozyskania zależności. Jest to więc
+
+
+narzędzie do analizy danych, generowania raportów i znajdowania
+
+
+pewnych prawidłowości, które wykorzystane mogą zostać do
+
+
+podjęcia dalszych działań.
+
+
+Zajęcia stanowią dwudziestogodzinny kurs wprowadzający do
+
+
+zagadnień eksploracji danych. W trakcie zajęć studenci poznają
+
+
+najważniejsze metody stosowane do rozwiązywania problemów
+
+
+regresji, klasyfikacji i analizy skupień, poznają techniki wstępnej
+
+
+obróbki danych, redukcji wymiarowości i wykrywania amonali w
+
+
+danych. Kurs skupia się na praktycznych aspektach wykorzystania
+
+
+narzędzi analizy danych. Laboratoria realizowane są w języku
+
+
+Python z wykorzystaniem pakietu z narzędziami uczenia
+
+
+maszynowego scikit-learn.
+
+
+Treść kursu:
+
+
+1. Wstęp do języka Python i notatnika Jupyter
+
+
+2. Biblioteki NumPy, pandas i Matplotlib, scikit-learn
+
+
+3. Wstępna obróbka danych
+
+
+4. Wizualizacja i eksploracja danych
+
+
+5. Regresja i klasyfikacja
+
+
+6. Ocena jakości modeli regresji i klasyfikacji
+
+
+7. Analiza skupień
+
+
+8. Redukcja wymiarowości danych
+
+
+9. Analiza obrazów
+
+
+10. Eksploracja tekstu
+
+Wstęp do systemu UNIX
+=====================
+1.Struktura systemu Unix (jądro, biblioteki, etc)
+
+
+2.Unix a sieci komputerowe, Internet
+
+
+3.Unix a inne systemy operacyjne, odmiany systemu Unix, odmiany systemu Linux - dystrybucje.
+
+
+4.Użytkownicy, procesy, powłoki, interfejsy graficzny.
+
+
+5.Struktura urządzeń i systemy plików. Montowanie urządzeń dyskowych. Nazwy plików  i katalogów, nazwy uogólniające, prawa dostępu i ich zmiana, etc.
+
+
+6.Podstawowe operacje na strukturach plików
+
+
+7.Przegląd przydatnych narzędzi i programów systemu Unix, jak i dodatków systemu Linux
+
+
+8. Edytory tekstowe
+
+
+9.Wielozadaniowość, strumienie, kontrola procesów. Kontrola konstrukcji wywołania polecenia
+
+
+10.Metody archiwizacji systemu Unix, metody instalacji pakietów w systemie Linux
+
+
+11.Nauka pisania skryptów
+
+
+12 Narzędzia Unix związane z sieciami komputerowymi.
+
