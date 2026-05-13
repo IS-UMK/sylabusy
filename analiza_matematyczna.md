@@ -49,9 +49,7 @@ Proponuje się rozłożenie poniższego programu na dwa semestry, aby lepiej zor
   - Interpretacja geometryczna; funkcje całkowalne w sensie Riemanna
   - Podstawowe twierdzenie rachunku różniczkowego i całkowego (Newtona-Leibniza)
   - Twierdzenie o zmianie zmiennych w całce Riemanna
-  - Długość krzywej
-  - Obliczanie pól powierzchni i objętości brył obrotowych
-  - Interpretacje fizyczne*
+  
 
 ## Analiza Matematyczna 2
 
