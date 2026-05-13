@@ -40,7 +40,6 @@ Proponuje się rozłożenie poniższego programu na dwa semestry, aby lepiej zor
   - Wzór Taylora
   - Wypukłość
   - Badanie przebiegu zmienności funkcji
-  - Interpretacje fizyczne*
 
 - **Pierwotna (całka nieoznaczona)**
   - Metody całkowania
