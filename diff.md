@@ -402,7 +402,7 @@ Nowa Statystyka oddziela etap wnioskowania z danych:
 ---
 
 
-## 8. Podsumowanie
+## 7. Podsumowanie
 
 ### Tabela porównawcza — najważniejsze zmiany
 
