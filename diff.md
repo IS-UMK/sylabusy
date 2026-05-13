@@ -15,8 +15,7 @@
 4. [Analiza matematyczna](#4-analiza-matematyczna)
 5. [Matematyka dyskretna](#5-matematyka-dyskretna)
 6. [Statystyka → Rachunek prawdopodobieństwa + Statystyka](#6-statystyka--rachunek-prawdopodobieństwa--statystyka)
-7. [Nowe przedmioty bez odpowiednika w starym planie](#7-nowe-przedmioty-bez-odpowiednika-w-starym-planie)
-8. [Podsumowanie](#8-podsumowanie)
+7. [Podsumowanie](#8-podsumowanie)
 
 ---
 
@@ -402,51 +401,6 @@ Nowa Statystyka oddziela etap wnioskowania z danych:
 
 ---
 
-## 7. Nowe przedmioty bez odpowiednika w starym planie
-
-### Wstęp do matematyki i informatyki (semestr I)
-
-Nowy kurs porządkuje i przejmuje treści wcześniej rozproszone głównie po starej **Algebrze 1**:
-- indukcja matematyczna,
-- logika,
-- funkcje i ich własności,
-- teoria zbiorów,
-- relacje równoważności,
-- porządki.
-
-**Motywacja:** student od początku dostaje spójny język formalny potrzebny w matematyce, algorytmice i programowaniu.
-
-### Wstęp do algorytmów I i II (semestry I i II)
-
-Nowa ścieżka algorytmiczna uszczelnia związek między matematyką dyskretną a praktyką programowania:
-- funkcje i programy,
-- niezmienniki pętli,
-- reprezentacja danych,
-- tablice, listy, drzewa, grafy,
-- rekurencja,
-- pamięć dynamiczna i pliki.
-
-### Wstęp do programowania (semestr I)
-
-Nacisk na *jak pisać kod*, a nie tylko na składnię języka:
-- git i GitHub,
-- dobre praktyki programowania,
-- debugowanie,
-- testowanie,
-- narzędzia typu CMake, formatery, analiza statyczna,
-- AI-assisted development.
-
-### Wstęp do systemu Unix (semestr I)
-
-Kurs systematycznie wprowadzający do środowiska pracy:
-- podstawowe komendy,
-- system plików,
-- operacje w powłoce,
-- procesy,
-- proste skrypty bashowe,
-- codzienna praktyka pracy developerskiej.
-
----
 
 ## 8. Podsumowanie
 
