@@ -62,13 +62,10 @@ Proponuje się rozłożenie poniższego programu na dwa semestry, aby lepiej zor
    - funkcje wypukłe
    - macierz Jacobiego (zależne od Algebra II: omówienie macierzy jako funkcji liniowych)
    - ekstrema warunkowe, metoda współczynników nieoznaczonych
-   - zastosowania: oszacowania błędów rachunkowych, metoda najmniejszych kwadratów, metoda najszybszego spadku
-   - Interpretacje fizyczne*
+   - zastosowania: oszacowania błędów rachunkowych, metoda najmniejszych kwadratów, metoda najszybszego spadku, autograd, itd.
+  
 
 - **Rachunek całkowy funcji wielu zmiennych**
-   - całki podwójne, potrójne i wielokrotne - Tw. Fubiniego i całki iterowane
-   - całki krzywoliniowe i powierzchniowe
-   - wzory Greena, Gaussa-Ostrogradskiego i Stokes'a 
-   - Interpretacje fizyczne*
+   - całki podwójne, potrójne i wielokrotne - Tw. Fubiniego i całki iterowane (niezbędne dla rachunku prawdopodobieństwa i statystyki)
      
 Ten program ma na celu zapewnienie solidnych podstaw w analizie matematycznej, niezbędnych dla dalszej nauki w dziedzinie matematyki i informatyki.
