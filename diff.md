@@ -2,7 +2,6 @@
 
 > **Dokument porównuje** stare sylabusy kierunku Informatyka Stosowana (obowiązujące przed reformą)
 > z nowymi propozycjami zawartymi w tym repozytorium.
-> Analiza została skorygowana na podstawie starych opisów z USOS dla WFAiIS UMK oraz nowych opisów programowych z tego repozytorium.
 > Omówione przedmioty: Algebra 1 i 2, Analiza matematyczna 1 i 2, Matematyka dyskretna,
 > Statystyka i rachunek prawdopodobieństwa.
 
@@ -23,7 +22,7 @@
 
 ## 1. Cele reformy
 
-Repozytorium explicite formułuje następujące motywacje zmian (patrz `README.md`):
+Reforma programu jest motywowana kilkoma wyraźnymi celami:
 
 | Cel | Wyjaśnienie |
 |-----|-------------|
@@ -45,8 +44,8 @@ Najważniejsza zmiana nie polega tylko na „dodaniu tematów”, ale na **innym
 
 | Stary plan | Nowy plan |
 |-----------|-----------|
-| **Algebra 1** + **Algebra 2** istniały już formalnie jako dwa kursy, ale ich układ był podporządkowany klasycznemu porządkowi matematycznemu | **Algebra liniowa 1** i **2** zostają przedefiniowane zgodnie z logiką: geometria i wektory → macierze i zastosowania |
-| **Analiza matematyczna 1** obejmowała głównie funkcje jednej zmiennej, ale zawierała też elementy funkcji wielu zmiennych i równań różniczkowych | **Analiza matematyczna 1** zostaje wyraźnie skupiona na jednej zmiennej, a **Analiza matematyczna 2** przejmuje rachunek wielu zmiennych i zastosowania optymalizacyjne |
+| **Algebra 1** + **Algebra 2** istniały już formalnie jako dwa kursy, ale ich układ był podporządkowany klasycznemu porządkowi matematycznemu | **Algebra liniowa 1** i **2** zostają przeprojektowane tak, aby mocniej akcentować intuicję geometryczną, obliczeniowość i zastosowania informatyczne |
+| **Analiza matematyczna 1** obejmowała głównie funkcje jednej zmiennej, ale zawierała też elementy funkcji wielu zmiennych i równań różniczkowych | **Analiza matematyczna 1** zostaje wyraźnie uporządkowana wokół analizy jednej zmiennej, a **Analiza matematyczna 2** przejmuje rachunek wielu zmiennych |
 | **Statystyka i rachunek prawdopodobieństwa** był jednym kursem | **Rachunek prawdopodobieństwa** (sem. III) + **Statystyka** (sem. IV) |
 | Elementy logiki, zbiorów i relacji były rozproszone po Algebrze 1 i Matematyce dyskretnej | Zostają przeniesione do **Wstępu do matematyki i informatyki** |
 | Algorytmika była częściowo rozproszona między programowaniem i matematyką dyskretną | Otrzymuje własną ścieżkę: **Wstęp do algorytmów I i II** |
@@ -75,9 +74,9 @@ Każdy nowy syllabus matematyczny zawiera lub zapowiada:
 
 ## 3. Algebra liniowa
 
-### Stary syllabus (na podstawie `algebra1_syllabus.txt` i `algebra2_syllabus.txt`)
+### Stary syllabus
 
-Wbrew uproszczeniu z wcześniejszej wersji dokumentu, **stary plan nie miał jednego kursu algebry liniowej**, tylko dwa osobne przedmioty: **Algebra 1** i **Algebra 2**.
+Stary plan nie miał jednego kursu algebry liniowej, lecz dwa osobne przedmioty: **Algebra 1** i **Algebra 2**.
 
 #### Stara Algebra 1
 
@@ -157,9 +156,9 @@ Nowa Algebra liniowa 2 skupia się na **macierzach jako narzędziu obliczeniowym
 
 ## 4. Analiza matematyczna
 
-### Stary syllabus (na podstawie `analiza_mat1_syllabus.txt`)
+### Stary syllabus
 
-Stary syllabus **Analizy matematycznej 1** był szerszy niż wstępny opis w poprzedniej wersji `diff.md`. Obejmował:
+Stary syllabus **Analizy matematycznej 1** był wyraźnie szerszy i mniej rozdzielony niż nowy układ. Obejmował:
 - liczby i sposoby ich prezentacji,
 - funkcje i funkcje elementarne,
 - granice ciągów i funkcji,
@@ -172,10 +171,10 @@ Stary syllabus **Analizy matematycznej 1** był szerszy niż wstępny opis w pop
 - pochodne cząstkowe i różniczkę zupełną,
 - metody przybliżone w obliczeniach.
 
-W samym opisie przedmiotu zaznaczono też, że od kilku lat z kursu usunięto całki wielokrotne, krzywoliniowe, powierzchniowe i analizę wektorową, przenosząc je do **Analizy matematycznej 2**. To znaczy, że już w starym układzie istniał podział na dwie części, ale:
-- nie był on w pełni podporządkowany nowej filozofii programowej,
-- Analiza 1 nadal zawierała materiał wykraczający poza „czystą analizę jednej zmiennej”,
-- nacisk był położony przede wszystkim na biegłość rachunkową i zastosowania typowe dla fizyki oraz techniki.
+W efekcie był to kurs, który:
+- nie był w pełni podporządkowany nowej filozofii programowej,
+- nadal wykraczał poza analizę jednej zmiennej,
+- mocno akcentował biegłość rachunkową oraz zastosowania typowe dla fizyki i techniki.
 
 **Charakterystyczne cechy starego podejścia:**
 - dominacja klasycznego rachunku różniczkowego i całkowego,
@@ -188,30 +187,49 @@ W samym opisie przedmiotu zaznaczono też, że od kilku lat z kursu usunięto ca
 
 #### Analiza matematyczna 1 (semestr I)
 
-Nowa Analiza 1 jest bardziej świadomie uporządkowana wokół analizy jednej zmiennej i narzędzi przydatnych także informatycznie:
+Nowa Analiza 1 jest bardziej świadomie uporządkowana wokół analizy jednej zmiennej i narzędzi przydatnych także informatycznie. Obejmuje przede wszystkim:
 - systemy liczbowe,
-- ciągi i szeregi,
-- granice dolne i górne,
-- notacja asymptotyczna Bachmana-Landaua,
-- granica i ciągłość funkcji,
+- ciągi liczbowe i wektorowe,
+- granice, punkty skupienia oraz granice dolne i górne,
+- granice niewłaściwe,
+- ciągi zadane rekurencyjnie,
+- asymptotykę i notację Bachmana-Landaua,
+- szeregi liczbowe i kryteria zbieżności,
+- granicę i ciągłość funkcji,
+- definicje Cauchy'ego i Heinego,
+- własność Darboux,
+- twierdzenie Weierstrassa o osiąganiu kresów,
 - ciągi i szeregi funkcyjne,
-- pochodna i jej interpretacje,
+- szeregi potęgowe,
+- pochodną i jej interpretacje,
+- twierdzenia Rolle'a i Lagrange'a,
+- regułę de l'Hospitala,
+- monotoniczność, ekstrema, pochodne wyższych rzędów,
 - wzór Taylora,
-- całka nieoznaczona,
-- całka Riemanna i jej zastosowania,
-- w grupie gwiazdkowej: całka Lebesgue'a.
+- wypukłość i badanie przebiegu zmienności funkcji,
+- całkę nieoznaczoną,
+- całkę Riemanna funkcji jednej zmiennej,
+- podstawowe twierdzenie rachunku różniczkowego i całkowego oraz zmianę zmiennych w całce Riemanna.
+
+W porównaniu z wcześniejszą wersją opisu mocniej widać, że kurs jest skoncentrowany na **solidnym fundamencie analizy jednej zmiennej**, bez rozbudowywania części geometryczno-zastosowaniowej o długość krzywej, pola powierzchni czy objętości brył obrotowych.
 
 #### Analiza matematyczna 2 (semestr II)
 
-Nowa Analiza 2 przejmuje i rozwija rachunek wielu zmiennych:
+Nowa Analiza 2 przejmuje rachunek wielu zmiennych, ale w obecnej wersji jest zarazem **bardziej zwięzła i wyraźniej sfokusowana na podstawach potrzebnych dalej**. Obejmuje:
 - granice i ciągłość funkcji wielu zmiennych,
-- pochodna Frécheta, pochodne kierunkowe i cząstkowe,
-- gradient, hesjan, rozwinięcie Taylora,
+- różniczkowanie funkcji wielu zmiennych: pochodną Frécheta, pochodną kierunkową i pochodne cząstkowe,
+- gradient oraz ekstrema funkcji wielu zmiennych,
 - funkcje wypukłe,
-- ekstrema warunkowe,
-- macierz Jakobiego,
-- zastosowania: metoda najmniejszych kwadratów, gradient descent, oszacowania błędów,
-- w grupie gwiazdkowej: całki wielokrotne, krzywoliniowe, powierzchniowe, twierdzenia Greena, Gaussa-Ostrogradskiego i Stokesa.
+- macierz Jacobiego,
+- ekstrema warunkowe i metodę współczynników nieoznaczonych,
+- zastosowania: oszacowania błędów rachunkowych, metodę najmniejszych kwadratów, metodę najszybszego spadku, autograd,
+- rachunek całkowy funkcji wielu zmiennych ograniczony do całek podwójnych, potrójnych i wielokrotnych wraz z twierdzeniem Fubiniego i całkami iterowanymi.
+
+W porównaniu z wcześniejszym opisem nowego programu widać tu kilka istotnych przesunięć:
+- znikają z podstawowego opisu całki krzywoliniowe i powierzchniowe,
+- znikają wzory Greena, Gaussa-Ostrogradskiego i Stokesa,
+- nacisk przesuwa się z szerokiego przeglądu klasycznej analizy wielowymiarowej na materiał najbardziej potrzebny dla optymalizacji, probabilistyki, statystyki i zastosowań obliczeniowych,
+- pojawia się bardziej współczesny akcent zastosowaniowy w postaci **autogradu**.
 
 ### Kluczowe zmiany w analizie matematycznej
 
@@ -221,17 +239,18 @@ Nowa Analiza 2 przejmuje i rozwija rachunek wielu zmiennych:
 | Równania różniczkowe | Obecne już w Analizie 1 | Nie są osią nowego opisu Analizy 1; nacisk przesunięty na fundamenty potrzebne dalej |
 | Funkcje wielu zmiennych | Obecne częściowo już w Analizie 1 | Stają się centralnym tematem Analizy 2 |
 | Asymptotyka | Nieeksponowana | Wprowadzona explicite jako narzędzie ważne dla informatyki |
-| Zastosowania w ML | Nieobecne | Jawne: gradient descent, least squares, optymalizacja |
-| Całka Lebesgue'a | Nieobecna w opisie podstawowym | Temat rozszerzony dla grupy gwiazdkowej |
+| Zastosowania obliczeniowe | Słabo wyodrębnione | Jawne: least squares, metoda najszybszego spadku, autograd, oszacowania błędów |
+| Zakres całek wielu zmiennych | W starym układzie materiał był rozproszony i mniej przejrzyście osadzony | W nowym opisie ograniczony do całek wielokrotnych, Fubiniego i całek iterowanych |
+| Klasyczna analiza wektorowa | Obecna lub historycznie wiązana z dalszą częścią analizy | Nie pojawia się już w podstawowym opisie nowego kursu |
 | Profil kursu | Fizyka/technika + biegłość rachunkowa | Informatyka stosowana + optymalizacja + dobrze uporządkowane fundamenty |
 
 ---
 
 ## 5. Matematyka dyskretna
 
-### Stary syllabus (na podstawie `matematyka_dyskretna.txt`)
+### Stary syllabus
 
-Wcześniejsza wersja `diff.md` zaniżała stopień specjalizacji starego kursu. Stara **Matematyka dyskretna** dla tej katedry nie była po prostu standardowym kursem „logika + kombinatoryka + grafy”, lecz kursem mocno nastawionym na:
+Stara **Matematyka dyskretna** nie była po prostu standardowym kursem „logika + kombinatoryka + grafy”, lecz przedmiotem o mocno wyspecjalizowanym profilu. Obejmowała m.in.:
 - teorię liczb i obliczeniową teorię liczb,
 - ciała, pierścienie i grupy,
 - kody liniowe i kody korekcyjne,
@@ -252,7 +271,7 @@ Był to więc kurs o profilu **teoria liczb + algebra dyskretna + kryptografia +
 - kurs był bardziej matematyczno-kryptograficzny niż algorytmiczno-informatyczny,
 - logika i relacje były wymagane wstępnie, ale nie stanowiły już centralnej treści kursu.
 
-### Nowy syllabus (`matematyka_dyskretna.md` + `usos.md`)
+### Nowy syllabus
 
 Nowa Matematyka dyskretna ma profil znacznie bliższy potrzebom pierwszych kursów algorytmiki:
 - rekurencja i równania rekurencyjne,
@@ -284,7 +303,7 @@ Kurs jest przy tym pomyślany jako **kontynuacja Wstępu do matematyki i informa
 
 ## 6. Statystyka → Rachunek prawdopodobieństwa + Statystyka
 
-### Stary syllabus (na podstawie `statystyka_syllabus.txt`)
+### Stary syllabus
 
 Stary przedmiot nosił nazwę **Statystyka i rachunek prawdopodobieństwa** i był jednym kursem obejmującym zarówno probabilistykę, jak i statystykę matematyczną. Zakres obejmował m.in.:
 - podstawy prawdopodobieństwa,
@@ -340,7 +359,7 @@ Nowa Statystyka oddziela etap wnioskowania z danych:
 | Aspekt | Stary plan | Nowy plan |
 |--------|-----------|-----------|
 | Struktura | Jeden kurs łączący rachunek prawdopodobieństwa i statystykę | Dwa osobne kursy |
-| Fundament formalny | Przestrzeń probabilistyczna i miara probabilistyczna pojawiały się, ale bez pełnego nacisku na teorię miary jako podstawę | σ-ciała i miara stają się jawnie podstawą kursu probabilistyki |
+| Fundament formalny | Przestrzeń probabilistyczna i miara probabilistyczna pojawiały się, ale bez pełnego nacisku na teorię miary jako podstawę | σ-ciała i miara stają się jawnie podstawą kursu prawdopodobieństwa |
 | Statystyka opisowa i inferencja | W jednym kursie obok probabilistyki | Otrzymują osobny kurs i większą klarowność |
 | CTG i twierdzenia graniczne | Obecne | Nadal obecne, ale przeniesione do probabilistyki, zwłaszcza w rozszerzeniach |
 | Regresja liniowa | Obecna pod koniec kursu | Zachowana jako temat rozszerzony kursu statystyki |
@@ -402,7 +421,7 @@ Kurs systematycznie wprowadzający do środowiska pracy:
 | Kategoria | Stary plan | Nowy plan |
 |-----------|-----------|-----------|
 | **Algebra** | Dwa kursy, ale Algebra 1 była bardzo mieszana, a Algebra 2 klasyczno-abstrakcyjna | Dwa kursy zaprojektowane pod logikę: geometria/wektory → macierze/zastosowania |
-| **Analiza** | Dwa kursy istniejące formalnie, ale z mniej wyraźnym profilem informatycznym | Wyraźny podział: jedna zmienna / wiele zmiennych + optymalizacja |
+| **Analiza** | Dwa kursy istniejące formalnie, ale z mniej wyraźnym profilem informatycznym | Wyraźny podział: jedna zmienna / wiele zmiennych + optymalizacja i zastosowania obliczeniowe |
 | **Matematyka dyskretna** | Teoria liczb, kryptografia, kody, grafy | Fundament dla algorytmiki: rekurencja, asymptotyka, drzewa, grafy |
 | **Statystyka i prawdopodobieństwo** | Jeden wspólny kurs | Dwa osobne kursy |
 | **Język formalny** | Rozproszony po Algebrze 1 i wymaganiach wstępnych | Osobny kurs: Wstęp do matematyki i informatyki |
