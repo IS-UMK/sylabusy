@@ -44,8 +44,8 @@ Najważniejsza zmiana nie polega tylko na „dodaniu tematów”, ale na **innym
 
 | Stary plan | Nowy plan |
 |-----------|-----------|
-| **Algebra 1** + **Algebra 2** istniały już formalnie jako dwa kursy, ale ich układ był podporządkowany klasycznemu porządkowi matematycznemu | **Algebra liniowa 1** i **2** zostają przeprojektowane tak, aby mocniej akcentować intuicję geometryczną, obliczeniowość i zastosowania informatyczne |
-| **Analiza matematyczna 1** obejmowała głównie funkcje jednej zmiennej, ale zawierała też elementy funkcji wielu zmiennych i równań różniczkowych | **Analiza matematyczna 1** zostaje wyraźnie uporządkowana wokół analizy jednej zmiennej, a **Analiza matematyczna 2** przejmuje rachunek wielu zmiennych |
+| **Algebra 1** + **Algebra 2** istniały już formalnie jako dwa kursy, ale ich układ był podporządkowany klasycznemu porządkowi matematycznemu | **Algebra liniowa 1** i **2** zostają przeprojektowane pod potrzeby Informatyki Stosowanej |
+| **Analiza matematyczna 1** obejmowała głównie funkcje jednej zmiennej, ale zawierała też elementy funkcji wielu zmiennych i równań różniczkowych | **Analiza matematyczna 1** zostaje wyraźnie uporządkowana wokół jednej zmiennej, a **Analiza matematyczna 2** przejmuje rachunek wielu zmiennych |
 | **Statystyka i rachunek prawdopodobieństwa** był jednym kursem | **Rachunek prawdopodobieństwa** (sem. III) + **Statystyka** (sem. IV) |
 | Elementy logiki, zbiorów i relacji były rozproszone po Algebrze 1 i Matematyce dyskretnej | Zostają przeniesione do **Wstępu do matematyki i informatyki** |
 | Algorytmika była częściowo rozproszona między programowaniem i matematyką dyskretną | Otrzymuje własną ścieżkę: **Wstęp do algorytmów I i II** |
@@ -158,7 +158,11 @@ Nowa Algebra liniowa 2 skupia się na **macierzach jako narzędziu obliczeniowym
 
 ### Stary syllabus
 
-Stary syllabus **Analizy matematycznej 1** był wyraźnie szerszy i mniej rozdzielony niż nowy układ. Obejmował:
+Stary plan obejmował **dwa osobne kursy: Analizę matematyczną 1 i Analizę matematyczną 2**, ale ich profil był wyraźnie bardziej klasyczny i silniej związany z potrzebami fizyki oraz kierunków technicznych niż z informatyką stosowaną.
+
+#### Stara Analiza matematyczna 1
+
+Stary syllabus **Analizy matematycznej 1** obejmował przede wszystkim:
 - liczby i sposoby ich prezentacji,
 - funkcje i funkcje elementarne,
 - granice ciągów i funkcji,
@@ -171,17 +175,43 @@ Stary syllabus **Analizy matematycznej 1** był wyraźnie szerszy i mniej rozdzi
 - pochodne cząstkowe i różniczkę zupełną,
 - metody przybliżone w obliczeniach.
 
-W efekcie był to kurs, który:
-- nie był w pełni podporządkowany nowej filozofii programowej,
-- nadal wykraczał poza analizę jednej zmiennej,
-- mocno akcentował biegłość rachunkową oraz zastosowania typowe dla fizyki i techniki.
+Był to więc kurs, który:
+- nie był ograniczony do analizy jednej zmiennej,
+- już na pierwszym etapie wprowadzał elementy funkcji wielu zmiennych,
+- zawierał równania różniczkowe zwyczajne,
+- kładł silny nacisk na techniki rachunkowe i klasyczny aparat analizy.
+
+#### Stara Analiza matematyczna 2
+
+Stary syllabus **Analizy matematycznej 2** istniał realnie i miał profil jeszcze mocniej osadzony w klasycznej analizie stosowanej do fizyki, astronomii i kierunków technicznych. Obejmował m.in.:
+- całki wielokrotne,
+- twierdzenie Fubiniego,
+- całkowanie w układach biegunowych, walcowych i sferycznych,
+- ogólną zmianę zmiennych i jakobian,
+- całki krzywoliniowe,
+- całki powierzchniowe,
+- twierdzenia Greena, Gaussa i Stokesa,
+- szeregi trygonometryczne i szeregi Fouriera,
+- splot,
+- transformatę Fouriera i jej własności,
+- transformatę Laplace’a i jej własności,
+- zastosowania transformat do rozwiązywania równań różniczkowych,
+- elementy funkcji zmiennej zespolonej,
+- w wariancie dla kierunków technicznych także DFT i transformatę Z.
+
+To oznacza, że stara Analiza 2 **nie była po prostu kursem rachunku wielu zmiennych**. Była raczej połączeniem:
+- klasycznej analizy wielowymiarowej,
+- analizy wektorowej,
+- analizy harmonicznej w wersji podstawowej,
+- metod transformat,
+- oraz elementów analizy zespolonej.
 
 **Charakterystyczne cechy starego podejścia:**
-- dominacja klasycznego rachunku różniczkowego i całkowego,
-- silny nacisk na techniki obliczeniowe,
-- obecność równań różniczkowych już na wczesnym etapie,
-- tylko podstawowe wejście w funkcje wielu zmiennych,
-- brak jawnego powiązania z analizą algorytmów i ML.
+- materiał był szeroki i częściowo heterogeniczny,
+- nacisk szedł w stronę narzędzi przydatnych w fizyce, sygnałach i równaniach różniczkowych,
+- klasyczna analiza wektorowa (Green, Gauss, Stokes) była ważną częścią kursu,
+- obecne były treści transformacyjne (Fourier, Laplace, czasem DFT/Z), które nie należą do podstawowego rdzenia nowej analizy matematycznej dla Informatyki Stosowanej,
+- kurs miał bardziej profil matematyczno-techniczny niż optymalizacyjno-informatyczny.
 
 ### Nowy syllabus
 
@@ -211,11 +241,11 @@ Nowa Analiza 1 jest bardziej świadomie uporządkowana wokół analizy jednej zm
 - całkę Riemanna funkcji jednej zmiennej,
 - podstawowe twierdzenie rachunku różniczkowego i całkowego oraz zmianę zmiennych w całce Riemanna.
 
-W porównaniu z wcześniejszą wersją opisu mocniej widać, że kurs jest skoncentrowany na **solidnym fundamencie analizy jednej zmiennej**, bez rozbudowywania części geometryczno-zastosowaniowej o długość krzywej, pola powierzchni czy objętości brył obrotowych.
+W porównaniu ze starym układem kurs jest wyraźniej skoncentrowany na **solidnym fundamencie analizy jednej zmiennej**, bez mieszania go z większym blokiem treści wielowymiarowych i bez rozbudowanego komponentu równań różniczkowych.
 
 #### Analiza matematyczna 2 (semestr II)
 
-Nowa Analiza 2 przejmuje rachunek wielu zmiennych, ale w obecnej wersji jest zarazem **bardziej zwięzła i wyraźniej sfokusowana na podstawach potrzebnych dalej**. Obejmuje:
+Nowa Analiza 2 przejmuje rachunek wielu zmiennych, ale jest zarazem **węższa i lepiej sprofilowana** niż stara Analiza 2. Obejmuje:
 - granice i ciągłość funkcji wielu zmiennych,
 - różniczkowanie funkcji wielu zmiennych: pochodną Frécheta, pochodną kierunkową i pochodne cząstkowe,
 - gradient oraz ekstrema funkcji wielu zmiennych,
@@ -225,24 +255,28 @@ Nowa Analiza 2 przejmuje rachunek wielu zmiennych, ale w obecnej wersji jest zar
 - zastosowania: oszacowania błędów rachunkowych, metodę najmniejszych kwadratów, metodę najszybszego spadku, autograd,
 - rachunek całkowy funkcji wielu zmiennych ograniczony do całek podwójnych, potrójnych i wielokrotnych wraz z twierdzeniem Fubiniego i całkami iterowanymi.
 
-W porównaniu z wcześniejszym opisem nowego programu widać tu kilka istotnych przesunięć:
-- znikają z podstawowego opisu całki krzywoliniowe i powierzchniowe,
-- znikają wzory Greena, Gaussa-Ostrogradskiego i Stokesa,
-- nacisk przesuwa się z szerokiego przeglądu klasycznej analizy wielowymiarowej na materiał najbardziej potrzebny dla optymalizacji, probabilistyki, statystyki i zastosowań obliczeniowych,
-- pojawia się bardziej współczesny akcent zastosowaniowy w postaci **autogradu**.
+W porównaniu ze starym syllabussem Analizy 2 nowy kurs:
+- **rezygnuje z dużej części klasycznej analizy wektorowej**,
+- nie obejmuje już w podstawowym opisie całek krzywoliniowych i powierzchniowych,
+- nie obejmuje twierdzeń Greena, Gaussa-Ostrogradskiego i Stokesa,
+- nie zawiera bloków poświęconych transformatom Fouriera i Laplace’a,
+- nie zawiera elementów funkcji zespolonych ani wariantu dyskretnego typu DFT/Z,
+- przesuwa środek ciężkości z metod fizyczno-sygnałowych na podstawy potrzebne dla optymalizacji, probabilistyki, statystyki i zastosowań obliczeniowych.
 
 ### Kluczowe zmiany w analizie matematycznej
 
 | Aspekt | Stary plan | Nowy plan |
 |--------|-----------|-----------|
-| Podział na kursy | Analiza 1 i 2 istniały, ale Analiza 1 była nadal dość szeroka i mieszana | Wyraźny podział: jedna zmienna → wiele zmiennych |
-| Równania różniczkowe | Obecne już w Analizie 1 | Nie są osią nowego opisu Analizy 1; nacisk przesunięty na fundamenty potrzebne dalej |
-| Funkcje wielu zmiennych | Obecne częściowo już w Analizie 1 | Stają się centralnym tematem Analizy 2 |
+| Podział na kursy | Analiza 1 i 2 istniały już wcześniej, ale oba miały bardziej klasyczny i techniczny profil | Wyraźny podział: jedna zmienna → wiele zmiennych |
+| Analiza 1 | Oprócz rachunku jednej zmiennej zawierała też ODE oraz wstęp do funkcji wielu zmiennych | Zostaje uporządkowana wokół fundamentów analizy jednej zmiennej |
+| Analiza 2 | Całki wielokrotne + analiza wektorowa + Fourier/Laplace + elementy zespolone | Skupienie na funkcjach wielu zmiennych, różniczkowaniu, ekstremach, wypukłości i całkach wielokrotnych |
+| Równania różniczkowe | Obecne już w Analizie 1, a pośrednio wracały przez Laplace’a w Analizie 2 | Nie są osią nowego opisu analizy |
+| Funkcje wielu zmiennych | Obecne częściowo już w Analizie 1, a dalej rozwijane klasycznie w Analizie 2 | Stają się centralnym tematem Analizy 2 |
+| Analiza wektorowa | Green, Gauss, Stokes oraz całki krzywoliniowe i powierzchniowe były częścią Analizy 2 | Znika z podstawowego opisu nowego kursu |
+| Transformaty | Fourier i Laplace były centralną częścią starej Analizy 2 | Nie należą do podstawowego rdzenia nowego kursu |
 | Asymptotyka | Nieeksponowana | Wprowadzona explicite jako narzędzie ważne dla informatyki |
-| Zastosowania obliczeniowe | Słabo wyodrębnione | Jawne: least squares, metoda najszybszego spadku, autograd, oszacowania błędów |
-| Zakres całek wielu zmiennych | W starym układzie materiał był rozproszony i mniej przejrzyście osadzony | W nowym opisie ograniczony do całek wielokrotnych, Fubiniego i całek iterowanych |
-| Klasyczna analiza wektorowa | Obecna lub historycznie wiązana z dalszą częścią analizy | Nie pojawia się już w podstawowym opisie nowego kursu |
-| Profil kursu | Fizyka/technika + biegłość rachunkowa | Informatyka stosowana + optymalizacja + dobrze uporządkowane fundamenty |
+| Zastosowania obliczeniowe | Słabo wyodrębnione lub związane raczej z fizyką i sygnałami | Jawne: least squares, metoda najszybszego spadku, autograd, oszacowania błędów |
+| Profil kursu | Fizyka/technika + biegłość rachunkowa + transformaty | Informatyka stosowana + optymalizacja + dobrze uporządkowane fundamenty |
 
 ---
 
@@ -359,7 +393,7 @@ Nowa Statystyka oddziela etap wnioskowania z danych:
 | Aspekt | Stary plan | Nowy plan |
 |--------|-----------|-----------|
 | Struktura | Jeden kurs łączący rachunek prawdopodobieństwa i statystykę | Dwa osobne kursy |
-| Fundament formalny | Przestrzeń probabilistyczna i miara probabilistyczna pojawiały się, ale bez pełnego nacisku na teorię miary jako podstawę | σ-ciała i miara stają się jawnie podstawą kursu prawdopodobieństwa |
+| Fundament formalny | Przestrzeń probabilistyczna i miara probabilistyczna pojawiały się, ale bez pełnego nacisku na teorię miary jako podstawę | σ-ciała i miara stają się jawnie podstawą |
 | Statystyka opisowa i inferencja | W jednym kursie obok probabilistyki | Otrzymują osobny kurs i większą klarowność |
 | CTG i twierdzenia graniczne | Obecne | Nadal obecne, ale przeniesione do probabilistyki, zwłaszcza w rozszerzeniach |
 | Regresja liniowa | Obecna pod koniec kursu | Zachowana jako temat rozszerzony kursu statystyki |
