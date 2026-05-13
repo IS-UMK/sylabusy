@@ -183,7 +183,7 @@ Był to więc kurs, który:
 
 #### Stara Analiza matematyczna 2
 
-Stary syllabus **Analizy matematycznej 2** istniał realnie i miał profil jeszcze mocniej osadzony w klasycznej analizie stosowanej do fizyki, astronomii i kierunków technicznych. Obejmował m.in.:
+Stary syllabus **Analizy matematycznej 2** miał profil jeszcze mocniej osadzony w klasycznej analizie stosowanej do fizyki, astronomii i kierunków technicznych. Obejmował m.in.:
 - całki wielokrotne,
 - twierdzenie Fubiniego,
 - całkowanie w układach biegunowych, walcowych i sferycznych,
