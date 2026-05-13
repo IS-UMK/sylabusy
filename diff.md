@@ -48,7 +48,7 @@ Najważniejsza zmiana nie polega tylko na „dodaniu tematów”, ale na **innym
 | **Analiza matematyczna 1** obejmowała głównie funkcje jednej zmiennej, ale zawierała też elementy funkcji wielu zmiennych i równań różniczkowych | **Analiza matematyczna 1** zostaje wyraźnie uporządkowana wokół jednej zmiennej, a **Analiza matematyczna 2** przejmuje rachunek wielu zmiennych |
 | **Statystyka i rachunek prawdopodobieństwa** był jednym kursem | **Rachunek prawdopodobieństwa** (sem. III) + **Statystyka** (sem. IV) |
 | Elementy logiki, zbiorów i relacji były rozproszone po Algebrze 1 i Matematyce dyskretnej | Zostają przeniesione do **Wstępu do matematyki i informatyki** |
-| Algorytmika była częściowo rozproszona między programowaniem i matematyką dyskretną | Otrzymuje własną ścieżkę: **Wstęp do algorytmów I i II** |
+
 
 **Dlaczego?**  
 Taki podział pozwala:
