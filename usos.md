@@ -71,7 +71,7 @@ Program obejmuje następujące zagadnienia:
 
 2. **Logika** — rachunek zdań: koniunkcja, alternatywa, negacja, implikacja, równoważność; tautologie i prawa logiczne; kwantyfikatory ogólny i szczegółowy; opcjonalnie elementy rachunku predykatów. Zastosowania logiki w specyfikacji i weryfikacji programów.
 
-3. **Funkcje** — pojęcie funkcji i jej własności: injektywność, surjektywność, bijektywność; złożenie funkcji; funkcja odwrotna.
+3. **Funkcje** — pojęcie funkcji i jej własności: injektywność, surjektywność, bijektywność; złożenie funkcji; funkcja odwrotna; przeciwobraz funkcji.
 
 4. **Zbiory** — operacje na zbiorach (suma, iloczyn, różnica, dopełnienie); zbiory potęgowe; liczebność zbioru — zbiory skończone, przeliczalne i nieprzeliczalne; twierdzenie Cantora.
 
