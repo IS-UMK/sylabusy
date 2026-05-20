@@ -1,0 +1,940 @@
+@prefix rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:     <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix foaf:     <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:      <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex:       <https://github.com/IS-UMK/sylabusy/ontology#> .
+@prefix course:   <https://github.com/IS-UMK/sylabusy/course/> .
+@prefix topic:    <https://github.com/IS-UMK/sylabusy/topic/> .
+@prefix lo:       <https://github.com/IS-UMK/sylabusy/outcome/> .
+@prefix sem:      <https://github.com/IS-UMK/sylabusy/semester/> .
+@prefix prog:     <https://github.com/IS-UMK/sylabusy/program/> .
+@prefix doc:      <https://github.com/IS-UMK/sylabusy/doc/> .
+
+# ─────────────────────────────────────────────────────────────
+#  ONTOLOGY DEFINITION
+# ─────────────────────────────────────────────────────────────
+
+ex:Course a rdfs:Class ;
+    rdfs:label "Course"@en , "Przedmiot"@pl .
+
+ex:Topic a rdfs:Class ;
+    rdfs:label "Topic"@en , "Temat"@pl .
+
+ex:LearningOutcome a rdfs:Class ;
+    rdfs:label "LearningOutcome"@en , "Efekt kształcenia"@pl .
+
+ex:Semester a rdfs:Class ;
+    rdfs:label "Semester"@en , "Semestr"@pl .
+
+ex:Program a rdfs:Class ;
+    rdfs:label "Study Program"@en , "Program studiów"@pl .
+
+# ── Course-level properties ──────────────────────────────────
+
+ex:covers a rdf:Property ;
+    rdfs:label "covers"@en ;
+    rdfs:comment "A course covers a topic."@en ;
+    rdfs:domain ex:Course ;
+    rdfs:range ex:Topic .
+
+ex:requires a rdf:Property ;
+    rdfs:label "requires"@en ;
+    rdfs:comment "Strong prerequisite: one course requires another."@en ;
+    rdfs:domain ex:Course ;
+    rdfs:range ex:Course .
+
+ex:preparesFor a rdf:Property ;
+    rdfs:label "preparesFor"@en ;
+    rdfs:comment "One course provides useful foundation for another without being mandatory."@en ;
+    rdfs:domain ex:Course ;
+    rdfs:range ex:Course .
+
+ex:supports a rdf:Property ;
+    rdfs:label "supports"@en ;
+    rdfs:comment "Partial or auxiliary background relation between courses."@en ;
+    rdfs:domain ex:Course ;
+    rdfs:range ex:Course .
+
+ex:relatedTo a rdf:Property ;
+    rdfs:label "relatedTo"@en ;
+    rdfs:comment "Thematic overlap between courses or topics."@en .
+
+ex:offeredInSemester a rdf:Property ;
+    rdfs:label "offeredInSemester"@en ;
+    rdfs:domain ex:Course ;
+    rdfs:range ex:Semester .
+
+# ── Topic-level properties ───────────────────────────────────
+
+ex:dependsOn a rdf:Property ;
+    rdfs:label "dependsOn"@en ;
+    rdfs:comment "Understanding one topic plausibly requires understanding another."@en ;
+    rdfs:domain ex:Topic ;
+    rdfs:range ex:Topic .
+
+# ── Document relations ───────────────────────────────────────
+
+ex:describes a rdf:Property ;
+    rdfs:label "describes"@en ;
+    rdfs:domain foaf:Document ;
+    rdfs:range ex:Course .
+
+ex:mentions a rdf:Property ;
+    rdfs:label "mentions"@en ;
+    rdfs:domain foaf:Document .
+
+# ── Learning outcome relations ───────────────────────────────
+
+ex:hasLearningOutcome a rdf:Property ;
+    rdfs:label "hasLearningOutcome"@en ;
+    rdfs:domain ex:Course ;
+    rdfs:range ex:LearningOutcome .
+
+ex:mapsTo a rdf:Property ;
+    rdfs:label "mapsTo"@en ;
+    rdfs:comment "A learning outcome maps to a topic."@en ;
+    rdfs:domain ex:LearningOutcome ;
+    rdfs:range ex:Topic .
+
+# ── Evidence properties ──────────────────────────────────────
+
+ex:confidence a rdf:Property ;
+    rdfs:label "confidence"@en ;
+    rdfs:comment "Confidence score [0.0, 1.0] for an inferred relation."@en ;
+    rdfs:range xsd:decimal .
+
+ex:evidenceNote a rdf:Property ;
+    rdfs:label "evidenceNote"@en ;
+    rdfs:range xsd:string .
+
+ex:sourcePath a rdf:Property ;
+    rdfs:label "sourcePath"@en ;
+    rdfs:range xsd:string .
+
+# ─────────────────────────────────────────────────────────────
+#  STUDY PROGRAM
+# ─────────────────────────────────────────────────────────────
+
+prog:inzynieria_informatyczna a ex:Program ;
+    skos:prefLabel "Studia inżynierskie – Informatyka"@pl ,
+                   "Computer Science Engineering Program"@en ;
+    dcterms:description "Two-year foundational program followed by 1.5-year specialisation and thesis."@en ;
+    ex:sourcePath "README.md" .
+
+# ─────────────────────────────────────────────────────────────
+#  SEMESTERS
+# ─────────────────────────────────────────────────────────────
+
+sem:semestr_I a ex:Semester ;
+    skos:prefLabel "Semestr I"@pl , "Semester I"@en ;
+    rdfs:comment "First semester – all courses obligatory."@pl .
+
+sem:semestr_II a ex:Semester ;
+    skos:prefLabel "Semestr II"@pl , "Semester II"@en ;
+    rdfs:comment "Second semester – all courses obligatory."@pl .
+
+# ─────────────────────────────────────────────────────────────
+#  DOCUMENTS
+# ─────────────────────────────────────────────────────────────
+
+doc:README a foaf:Document ;
+    skos:prefLabel "README.md"@en ;
+    ex:sourcePath "README.md" ;
+    dcterms:description "Main curriculum overview: study goals, calendar, semester structure."@en .
+
+doc:algebra_liniowa a foaf:Document ;
+    skos:prefLabel "algebra_liniowa.md"@en ;
+    ex:sourcePath "algebra_liniowa.md" .
+
+doc:analiza_matematyczna a foaf:Document ;
+    skos:prefLabel "analiza_matematyczna.md"@en ;
+    ex:sourcePath "analiza_matematyczna.md" .
+
+doc:matematyka_dyskretna a foaf:Document ;
+    skos:prefLabel "matematyka_dyskretna.md"@en ;
+    ex:sourcePath "matematyka_dyskretna.md" .
+
+doc:wstep_do_algorytmow a foaf:Document ;
+    skos:prefLabel "wstęp_do_algorytmów.md"@en ;
+    ex:sourcePath "wstęp_do_algorytmów.md" .
+
+doc:wstep_do_matematyki_i_informatyki a foaf:Document ;
+    skos:prefLabel "wstęp_do_matematyki_i_informatyki.md"@en ;
+    ex:sourcePath "wstęp_do_matematyki_i_informatyki.md" .
+
+doc:wstep_do_programowania a foaf:Document ;
+    skos:prefLabel "wstęp_do_programowania.md"@en ;
+    ex:sourcePath "wstęp_do_programowania.md" .
+
+doc:wstep_do_systemu_unix a foaf:Document ;
+    skos:prefLabel "wstęp_do_systemu_unix.md"@en ;
+    ex:sourcePath "wstęp_do_systemu_unix.md" .
+
+doc:programowanie_wspolbiezne a foaf:Document ;
+    skos:prefLabel "programowanie_współbieżne.md"@en ;
+    ex:sourcePath "programowanie_współbieżne.md" .
+
+# ─────────────────────────────────────────────────────────────
+#  COURSES  –  SEMESTER I
+# ─────────────────────────────────────────────────────────────
+
+course:wstep_do_matematyki_i_informatyki a ex:Course ;
+    skos:prefLabel "Wstęp do matematyki i informatyki"@pl ,
+                   "Introduction to Mathematics and Computer Science"@en ;
+    skos:altLabel "WMI"@pl ;
+    ex:offeredInSemester sem:semestr_I ;
+    dcterms:references doc:wstep_do_matematyki_i_informatyki ;
+    ex:covers
+        topic:indukcja_matematyczna ,
+        topic:logika_i_rachunek_zdan ,
+        topic:kwantyfikatory ,
+        topic:funkcje_i_ich_wlasnosci ,
+        topic:zbior_i_operacje_na_zbiorach ,
+        topic:relacje_i_relacje_rownowaznosci ,
+        topic:porzadki .
+
+course:wstep_do_systemu_unix a ex:Course ;
+    skos:prefLabel "Wstęp do systemu Unix"@pl ,
+                   "Introduction to Unix System"@en ;
+    skos:altLabel "Unix"@pl ;
+    ex:offeredInSemester sem:semestr_I ;
+    dcterms:references doc:wstep_do_systemu_unix ;
+    ex:covers
+        topic:bash_i_komendy_systemowe ,
+        topic:system_plikow_unix ,
+        topic:zarzadzanie_procesami_unix ,
+        topic:skrypty_bashowe .
+
+course:wstep_do_programowania a ex:Course ;
+    skos:prefLabel "Wstęp do programowania"@pl ,
+                   "Introduction to Programming"@en ;
+    skos:altLabel "WdP"@pl ;
+    ex:offeredInSemester sem:semestr_I ;
+    dcterms:references doc:wstep_do_programowania ;
+    ex:covers
+        topic:git_i_github ,
+        topic:zasady_dobrego_programowania ,
+        topic:narzedzia_wspomagajace_programowanie ,
+        topic:debugowanie ,
+        topic:testowanie .
+
+course:wstep_do_algorytmow_I a ex:Course ;
+    skos:prefLabel "Wstęp do algorytmów I"@pl ,
+                   "Introduction to Algorithms I"@en ;
+    skos:altLabel "WdA I"@pl ;
+    ex:offeredInSemester sem:semestr_I ;
+    dcterms:references doc:wstep_do_algorytmow ;
+    ex:covers
+        topic:podstawy_programowania ,
+        topic:dowodzenie_poprawnosci_programow ,
+        topic:tablice ,
+        topic:rekurencja ,
+        topic:pamiec_dynamiczna .
+
+course:analiza_matematyczna_I a ex:Course ;
+    skos:prefLabel "Analiza matematyczna I"@pl ,
+                   "Mathematical Analysis I"@en ;
+    skos:altLabel "AM I"@pl ;
+    ex:offeredInSemester sem:semestr_I ;
+    dcterms:references doc:analiza_matematyczna ;
+    ex:covers
+        topic:ciagi_i_szeregi ,
+        topic:granica_i_ciaglosc ,
+        topic:pochodna_jednej_zmiennej ,
+        topic:calka_riemanna ,
+        topic:asymptotyka_o_bachmann_landau ,
+        topic:wzor_taylora ,
+        topic:szeregi_potegowe .
+
+course:algebra_liniowa_I a ex:Course ;
+    skos:prefLabel "Algebra liniowa I"@pl ,
+                   "Linear Algebra I"@en ;
+    skos:altLabel "AL I"@pl ;
+    ex:offeredInSemester sem:semestr_I ;
+    dcterms:references doc:algebra_liniowa ;
+    ex:covers
+        topic:wektory_w_przestrzeniach_euklidesowych ,
+        topic:iloczyn_skalarny ,
+        topic:liniowa_niezaleznosc_i_bazy ,
+        topic:wypukloc_wektory ,
+        topic:geometria_prosta_i_plaszczyzna .
+
+# ─────────────────────────────────────────────────────────────
+#  COURSES  –  SEMESTER II
+# ─────────────────────────────────────────────────────────────
+
+course:projektowy_c a ex:Course ;
+    skos:prefLabel "Projektowy c"@pl ,
+                   "C Project Course"@en ;
+    ex:offeredInSemester sem:semestr_II ;
+    ex:covers
+        topic:programowanie_w_c ,
+        topic:projektowanie_oprogramowania .
+
+course:wstep_do_html_css_js a ex:Course ;
+    skos:prefLabel "Wstęp do html, css, javascript"@pl ,
+                   "Introduction to HTML, CSS, JavaScript"@en ;
+    skos:altLabel "Web intro"@pl ;
+    ex:offeredInSemester sem:semestr_II ;
+    ex:covers
+        topic:html_i_css ,
+        topic:javascript ,
+        topic:event_loop ,
+        topic:dom .
+
+course:matematyka_dyskretna a ex:Course ;
+    skos:prefLabel "Matematyka dyskretna"@pl ,
+                   "Discrete Mathematics"@en ;
+    skos:altLabel "MD"@pl ;
+    ex:offeredInSemester sem:semestr_II ;
+    dcterms:references doc:matematyka_dyskretna ;
+    ex:covers
+        topic:rekurencja ,
+        topic:kombinatoryka ,
+        topic:zlozonosc_algorytmow ,
+        topic:drzewa_binarne ,
+        topic:teoria_grafow .
+
+course:wstep_do_algorytmow_II a ex:Course ;
+    skos:prefLabel "Wstęp do algorytmów II"@pl ,
+                   "Introduction to Algorithms II"@en ;
+    skos:altLabel "WdA II"@pl ;
+    ex:offeredInSemester sem:semestr_II ;
+    dcterms:references doc:wstep_do_algorytmow ;
+    ex:covers
+        topic:listy_powiazane ,
+        topic:drzewa_binarne ,
+        topic:grafy_algorytmy ,
+        topic:rekurencja ,
+        topic:struktury_danych_zaawansowane .
+
+course:analiza_matematyczna_II a ex:Course ;
+    skos:prefLabel "Analiza matematyczna II"@pl ,
+                   "Mathematical Analysis II"@en ;
+    skos:altLabel "AM II"@pl ;
+    ex:offeredInSemester sem:semestr_II ;
+    dcterms:references doc:analiza_matematyczna ;
+    ex:covers
+        topic:funkcje_wielu_zmiennych ,
+        topic:pochodna_frecheta ,
+        topic:pochodne_czastkowe ,
+        topic:gradient_i_ekstrema ,
+        topic:macierz_jakobiego ,
+        topic:metoda_najszybszego_spadku ,
+        topic:calki_wielokrotne .
+
+course:algebra_liniowa_II a ex:Course ;
+    skos:prefLabel "Algebra liniowa II"@pl ,
+                   "Linear Algebra II"@en ;
+    skos:altLabel "AL II"@pl ;
+    ex:offeredInSemester sem:semestr_II ;
+    dcterms:references doc:algebra_liniowa ;
+    ex:covers
+        topic:macierze ,
+        topic:eliminacja_gaussa ,
+        topic:wyznacznik_macierzy ,
+        topic:macierz_odwrotna ,
+        topic:uklady_rownan_liniowych ,
+        topic:tensory .
+
+# ─────────────────────────────────────────────────────────────
+#  COURSES  –  LATER / UNASSIGNED SEMESTER
+# ─────────────────────────────────────────────────────────────
+
+course:programowanie_wspolbiezne a ex:Course ;
+    skos:prefLabel "Programowanie współbieżne"@pl ,
+                   "Concurrent Programming"@en ;
+    skos:altLabel "PW"@pl ;
+    dcterms:references doc:programowanie_wspolbiezne ;
+    ex:covers
+        topic:watki_i_procesy ,
+        topic:prawo_amdahla ,
+        topic:data_race ,
+        topic:zakleszczenia ,
+        topic:mutex_i_synchronizacja ,
+        topic:model_pamieci_wspoldzielonej ,
+        topic:memory_barriers ,
+        topic:atomiki_i_cas ,
+        topic:lock_free_struktury_danych ,
+        topic:hazard_pointers .
+
+# ─────────────────────────────────────────────────────────────
+#  DOCUMENT → COURSE LINKS
+# ─────────────────────────────────────────────────────────────
+
+doc:wstep_do_matematyki_i_informatyki ex:describes course:wstep_do_matematyki_i_informatyki .
+doc:wstep_do_systemu_unix ex:describes course:wstep_do_systemu_unix .
+doc:wstep_do_programowania ex:describes course:wstep_do_programowania .
+doc:wstep_do_algorytmow
+    ex:describes course:wstep_do_algorytmow_I ;
+    ex:describes course:wstep_do_algorytmow_II .
+doc:analiza_matematyczna
+    ex:describes course:analiza_matematyczna_I ;
+    ex:describes course:analiza_matematyczna_II .
+doc:algebra_liniowa
+    ex:describes course:algebra_liniowa_I ;
+    ex:describes course:algebra_liniowa_II .
+doc:matematyka_dyskretna ex:describes course:matematyka_dyskretna .
+doc:programowanie_wspolbiezne ex:describes course:programowanie_wspolbiezne .
+
+doc:README
+    ex:mentions course:wstep_do_matematyki_i_informatyki ,
+    course:wstep_do_systemu_unix ,
+    course:wstep_do_programowania ,
+    course:wstep_do_algorytmow_I ,
+    course:analiza_matematyczna_I ,
+    course:algebra_liniowa_I ,
+    course:projektowy_c ,
+    course:wstep_do_html_css_js ,
+    course:matematyka_dyskretna ,
+    course:wstep_do_algorytmow_II ,
+    course:analiza_matematyczna_II ,
+    course:algebra_liniowa_II .
+
+# ─────────────────────────────────────────────────────────────
+#  COURSE-LEVEL PREREQUISITE / SUPPORT RELATIONS
+#  (reified with confidence and evidence)
+# ─────────────────────────────────────────────────────────────
+
+# --- WMI → Matematyka dyskretna (preparesFor, confidence 0.92) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_matematyki_i_informatyki ;
+    rdf:predicate ex:preparesFor ;
+    rdf:object    course:matematyka_dyskretna ;
+    ex:confidence    "0.92"^^xsd:decimal ;
+    ex:evidenceNote  "README.md explicitly states that Matematyka dyskretna is a 'kontynuacja wstępu do matematyki i informatyki'."@en ;
+    ex:sourcePath    "README.md" .
+
+course:wstep_do_matematyki_i_informatyki ex:preparesFor course:matematyka_dyskretna .
+
+# --- AM I → AM II (requires, confidence 0.97) ---
+[] a rdf:Statement ;
+    rdf:subject   course:analiza_matematyczna_I ;
+    rdf:predicate ex:requires ;
+    rdf:object    course:analiza_matematyczna_II ;
+    ex:confidence    "0.97"^^xsd:decimal ;
+    ex:evidenceNote  "Single syllabus document split across part I (single-variable) and part II (multi-variable); sequential numbering implies strict prerequisite."@en ;
+    ex:sourcePath    "analiza_matematyczna.md" .
+
+course:analiza_matematyczna_I ex:requires course:analiza_matematyczna_II .
+
+# --- AL I → AL II (requires, confidence 0.97) ---
+[] a rdf:Statement ;
+    rdf:subject   course:algebra_liniowa_I ;
+    rdf:predicate ex:requires ;
+    rdf:object    course:algebra_liniowa_II ;
+    ex:confidence    "0.97"^^xsd:decimal ;
+    ex:evidenceNote  "Single syllabus document; AL II builds on vectors (AL I) by introducing matrices, determinants, and linear transformations."@en ;
+    ex:sourcePath    "algebra_liniowa.md" .
+
+course:algebra_liniowa_I ex:requires course:algebra_liniowa_II .
+
+# --- WdA I → WdA II (requires, confidence 0.95) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_algorytmow_I ;
+    rdf:predicate ex:requires ;
+    rdf:object    course:wstep_do_algorytmow_II ;
+    ex:confidence    "0.95"^^xsd:decimal ;
+    ex:evidenceNote  "Both described in a single document titled 'Wstęp do Algorytmów I i II'; WdA II introduces advanced data structures building on WdA I."@en ;
+    ex:sourcePath    "wstęp_do_algorytmów.md" .
+
+course:wstep_do_algorytmow_I ex:requires course:wstep_do_algorytmow_II .
+
+# --- WMI → AM I (supports, confidence 0.80) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_matematyki_i_informatyki ;
+    rdf:predicate ex:supports ;
+    rdf:object    course:analiza_matematyczna_I ;
+    ex:confidence    "0.80"^^xsd:decimal ;
+    ex:evidenceNote  "WMI covers sets, functions, sequences, and induction – foundational concepts used throughout Mathematical Analysis I."@en ;
+    ex:sourcePath    "wstęp_do_matematyki_i_informatyki.md, analiza_matematyczna.md" .
+
+course:wstep_do_matematyki_i_informatyki ex:supports course:analiza_matematyczna_I .
+
+# --- WMI → AL I (supports, confidence 0.75) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_matematyki_i_informatyki ;
+    rdf:predicate ex:supports ;
+    rdf:object    course:algebra_liniowa_I ;
+    ex:confidence    "0.75"^^xsd:decimal ;
+    ex:evidenceNote  "WMI introduces sets and functions which underlie vector space concepts. Weaker link because AL I focuses on geometric intuition."@en ;
+    ex:sourcePath    "wstęp_do_matematyki_i_informatyki.md, algebra_liniowa.md" .
+
+course:wstep_do_matematyki_i_informatyki ex:supports course:algebra_liniowa_I .
+
+# --- WMI → WdA I (supports, confidence 0.78) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_matematyki_i_informatyki ;
+    rdf:predicate ex:supports ;
+    rdf:object    course:wstep_do_algorytmow_I ;
+    ex:confidence    "0.78"^^xsd:decimal ;
+    ex:evidenceNote  "WMI covers induction and basic logic needed for correctness proofs in WdA I (loop invariants, recursion correctness)."@en ;
+    ex:sourcePath    "wstęp_do_matematyki_i_informatyki.md, wstęp_do_algorytmów.md" .
+
+course:wstep_do_matematyki_i_informatyki ex:supports course:wstep_do_algorytmow_I .
+
+# --- Unix → WdP (supports, confidence 0.78) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_systemu_unix ;
+    rdf:predicate ex:supports ;
+    rdf:object    course:wstep_do_programowania ;
+    ex:confidence    "0.78"^^xsd:decimal ;
+    ex:evidenceNote  "README states Unix teaches the development environment; WdP focuses on tools and workflow (git, CMake, linters) that operate on Unix."@en ;
+    ex:sourcePath    "README.md" .
+
+course:wstep_do_systemu_unix ex:supports course:wstep_do_programowania .
+
+# --- WdP → WdA I (supports, confidence 0.82) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_programowania ;
+    rdf:predicate ex:supports ;
+    rdf:object    course:wstep_do_algorytmow_I ;
+    ex:confidence    "0.82"^^xsd:decimal ;
+    ex:evidenceNote  "WdP covers good programming practices, testing, and tooling; WdA I requires students to implement algorithms in C."@en ;
+    ex:sourcePath    "wstęp_do_programowania.md, wstęp_do_algorytmów.md" .
+
+course:wstep_do_programowania ex:supports course:wstep_do_algorytmow_I .
+
+# --- MD → WdA II (supports, confidence 0.88) ---
+[] a rdf:Statement ;
+    rdf:subject   course:matematyka_dyskretna ;
+    rdf:predicate ex:supports ;
+    rdf:object    course:wstep_do_algorytmow_II ;
+    ex:confidence    "0.88"^^xsd:decimal ;
+    ex:evidenceNote  "README notes that Discrete Mathematics enables treatment of recursive data structures (lists, binary trees) introduced in WdA II."@en ;
+    ex:sourcePath    "README.md" .
+
+course:matematyka_dyskretna ex:supports course:wstep_do_algorytmow_II .
+
+# --- AM I → AM II cross-dependency with AL II (relatedTo, confidence 0.75) ---
+[] a rdf:Statement ;
+    rdf:subject   course:algebra_liniowa_II ;
+    rdf:predicate ex:relatedTo ;
+    rdf:object    course:analiza_matematyczna_II ;
+    ex:confidence    "0.75"^^xsd:decimal ;
+    ex:evidenceNote  "analiza_matematyczna.md explicitly cross-references Jakobimatrix dependency on AL II. Relation is bidirectional thematic overlap."@en ;
+    ex:sourcePath    "analiza_matematyczna.md, algebra_liniowa.md" .
+
+course:algebra_liniowa_II ex:relatedTo course:analiza_matematyczna_II .
+
+# --- WdA II → Programowanie współbieżne (preparesFor, confidence 0.70) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_algorytmow_II ;
+    rdf:predicate ex:preparesFor ;
+    rdf:object    course:programowanie_wspolbiezne ;
+    ex:confidence    "0.70"^^xsd:decimal ;
+    ex:evidenceNote  "PW covers lock-free data structures (Treiber stack, Michael-Scott queue) which require deep understanding of advanced data structures."@en ;
+    ex:sourcePath    "programowanie_współbieżne.md, wstęp_do_algorytmów.md" .
+
+course:wstep_do_algorytmow_II ex:preparesFor course:programowanie_wspolbiezne .
+
+# --- WdP → Projektowy c (preparesFor, confidence 0.85) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_programowania ;
+    rdf:predicate ex:preparesFor ;
+    rdf:object    course:projektowy_c ;
+    ex:confidence    "0.85"^^xsd:decimal ;
+    ex:evidenceNote  "Projektowy c requires ~1000 line projects; WdP teaches project workflow (git, CMake, testing, code review)."@en ;
+    ex:sourcePath    "README.md, wstęp_do_programowania.md" .
+
+course:wstep_do_programowania ex:preparesFor course:projektowy_c .
+
+# --- WdA I → Projektowy c (supports, confidence 0.72) ---
+[] a rdf:Statement ;
+    rdf:subject   course:wstep_do_algorytmow_I ;
+    rdf:predicate ex:supports ;
+    rdf:object    course:projektowy_c ;
+    ex:confidence    "0.72"^^xsd:decimal ;
+    ex:evidenceNote  "Projektowy c is a C programming project; WdA I introduces C programming fundamentals."@en ;
+    ex:sourcePath    "README.md" .
+
+course:wstep_do_algorytmow_I ex:supports course:projektowy_c .
+
+# ─────────────────────────────────────────────────────────────
+#  TOPICS
+# ─────────────────────────────────────────────────────────────
+
+# ── Mathematics: Foundations ─────────────────────────────────
+
+topic:indukcja_matematyczna a ex:Topic ;
+    skos:prefLabel "Indukcja matematyczna"@pl , "Mathematical Induction"@en .
+
+topic:logika_i_rachunek_zdan a ex:Topic ;
+    skos:prefLabel "Logika i rachunek zdań"@pl , "Propositional Logic"@en ;
+    skos:narrower topic:kwantyfikatory .
+
+topic:kwantyfikatory a ex:Topic ;
+    skos:prefLabel "Kwantyfikatory"@pl , "Quantifiers"@en ;
+    skos:broader topic:logika_i_rachunek_zdan .
+
+topic:funkcje_i_ich_wlasnosci a ex:Topic ;
+    skos:prefLabel "Funkcje i ich własności"@pl , "Functions and Their Properties"@en .
+
+topic:zbior_i_operacje_na_zbiorach a ex:Topic ;
+    skos:prefLabel "Zbiory i operacje na zbiorach"@pl , "Sets and Set Operations"@en .
+
+topic:relacje_i_relacje_rownowaznosci a ex:Topic ;
+    skos:prefLabel "Relacje i relacje równoważności"@pl , "Relations and Equivalence Relations"@en .
+
+topic:porzadki a ex:Topic ;
+    skos:prefLabel "Porządki (częściowe, liniowe)"@pl , "Partial and Linear Orders"@en .
+
+# ── Mathematical Analysis ────────────────────────────────────
+
+topic:ciagi_i_szeregi a ex:Topic ;
+    skos:prefLabel "Ciągi i szeregi"@pl , "Sequences and Series"@en ;
+    ex:dependsOn topic:granica_i_ciaglosc .
+
+topic:granica_i_ciaglosc a ex:Topic ;
+    skos:prefLabel "Granica i ciągłość funkcji"@pl , "Limits and Continuity"@en ;
+    ex:dependsOn topic:funkcje_i_ich_wlasnosci .
+
+topic:pochodna_jednej_zmiennej a ex:Topic ;
+    skos:prefLabel "Pochodna funkcji jednej zmiennej"@pl , "Derivative of a Single-Variable Function"@en ;
+    ex:dependsOn topic:granica_i_ciaglosc .
+
+topic:calka_riemanna a ex:Topic ;
+    skos:prefLabel "Całka Riemanna"@pl , "Riemann Integral"@en ;
+    ex:dependsOn topic:pochodna_jednej_zmiennej .
+
+topic:asymptotyka_o_bachmann_landau a ex:Topic ;
+    skos:prefLabel "Asymptotyka i notacja Bachmana-Landaua"@pl , "Asymptotic Notation (Big-O)"@en ;
+    ex:dependsOn topic:ciagi_i_szeregi .
+
+topic:wzor_taylora a ex:Topic ;
+    skos:prefLabel "Wzór Taylora"@pl , "Taylor's Theorem"@en ;
+    ex:dependsOn topic:pochodna_jednej_zmiennej .
+
+topic:szeregi_potegowe a ex:Topic ;
+    skos:prefLabel "Szeregi potęgowe"@pl , "Power Series"@en ;
+    ex:dependsOn topic:ciagi_i_szeregi .
+
+topic:funkcje_wielu_zmiennych a ex:Topic ;
+    skos:prefLabel "Funkcje wielu zmiennych"@pl , "Multivariable Functions"@en ;
+    ex:dependsOn topic:pochodna_jednej_zmiennej .
+
+topic:pochodne_czastkowe a ex:Topic ;
+    skos:prefLabel "Pochodne cząstkowe"@pl , "Partial Derivatives"@en ;
+    skos:broader topic:funkcje_wielu_zmiennych ;
+    ex:dependsOn topic:pochodna_jednej_zmiennej .
+
+topic:pochodna_frecheta a ex:Topic ;
+    skos:prefLabel "Pochodna Frecheta"@pl , "Fréchet Derivative"@en ;
+    skos:broader topic:funkcje_wielu_zmiennych ;
+    ex:dependsOn topic:pochodne_czastkowe .
+
+topic:gradient_i_ekstrema a ex:Topic ;
+    skos:prefLabel "Gradient i ekstrema funkcji wielu zmiennych"@pl , "Gradient and Extrema of Multivariable Functions"@en ;
+    ex:dependsOn topic:pochodne_czastkowe .
+
+topic:macierz_jakobiego a ex:Topic ;
+    skos:prefLabel "Macierz Jakobiego"@pl , "Jacobian Matrix"@en ;
+    ex:dependsOn topic:pochodne_czastkowe ;
+    ex:dependsOn topic:macierze .
+
+topic:metoda_najszybszego_spadku a ex:Topic ;
+    skos:prefLabel "Metoda najszybszego spadku (gradient descent)"@pl , "Gradient Descent"@en ;
+    ex:dependsOn topic:gradient_i_ekstrema .
+
+topic:calki_wielokrotne a ex:Topic ;
+    skos:prefLabel "Całki wielokrotne"@pl , "Multiple Integrals"@en ;
+    ex:dependsOn topic:calka_riemanna .
+
+# ── Linear Algebra ───────────────────────────────────────────
+
+topic:wektory_w_przestrzeniach_euklidesowych a ex:Topic ;
+    skos:prefLabel "Wektory w przestrzeniach euklidesowych"@pl , "Vectors in Euclidean Spaces"@en .
+
+topic:iloczyn_skalarny a ex:Topic ;
+    skos:prefLabel "Iloczyn skalarny i prostopadłość"@pl , "Dot Product and Orthogonality"@en ;
+    ex:dependsOn topic:wektory_w_przestrzeniach_euklidesowych .
+
+topic:liniowa_niezaleznosc_i_bazy a ex:Topic ;
+    skos:prefLabel "Liniowa niezależność i bazy"@pl , "Linear Independence and Bases"@en ;
+    ex:dependsOn topic:wektory_w_przestrzeniach_euklidesowych .
+
+topic:wypukloc_wektory a ex:Topic ;
+    skos:prefLabel "Wypukłość (wektory)"@pl , "Convexity (vectors)"@en ;
+    ex:dependsOn topic:wektory_w_przestrzeniach_euklidesowych .
+
+topic:geometria_prosta_i_plaszczyzna a ex:Topic ;
+    skos:prefLabel "Geometria prostych i płaszczyzn"@pl , "Geometry of Lines and Planes"@en ;
+    ex:dependsOn topic:wektory_w_przestrzeniach_euklidesowych .
+
+topic:macierze a ex:Topic ;
+    skos:prefLabel "Macierze"@pl , "Matrices"@en ;
+    ex:dependsOn topic:wektory_w_przestrzeniach_euklidesowych .
+
+topic:eliminacja_gaussa a ex:Topic ;
+    skos:prefLabel "Eliminacja Gaussa"@pl , "Gaussian Elimination"@en ;
+    ex:dependsOn topic:macierze .
+
+topic:wyznacznik_macierzy a ex:Topic ;
+    skos:prefLabel "Wyznacznik macierzy"@pl , "Matrix Determinant"@en ;
+    ex:dependsOn topic:macierze .
+
+topic:macierz_odwrotna a ex:Topic ;
+    skos:prefLabel "Macierz odwrotna"@pl , "Inverse Matrix"@en ;
+    ex:dependsOn topic:wyznacznik_macierzy .
+
+topic:uklady_rownan_liniowych a ex:Topic ;
+    skos:prefLabel "Układy równań liniowych"@pl , "Systems of Linear Equations"@en ;
+    ex:dependsOn topic:eliminacja_gaussa ;
+    ex:dependsOn topic:macierz_odwrotna .
+
+topic:tensory a ex:Topic ;
+    skos:prefLabel "Tensory"@pl , "Tensors"@en ;
+    ex:dependsOn topic:macierze .
+
+# ── Discrete Mathematics ─────────────────────────────────────
+
+topic:rekurencja a ex:Topic ;
+    skos:prefLabel "Rekurencja"@pl , "Recursion"@en ;
+    ex:dependsOn topic:funkcje_i_ich_wlasnosci .
+
+topic:kombinatoryka a ex:Topic ;
+    skos:prefLabel "Kombinatoryka"@pl , "Combinatorics"@en ;
+    ex:dependsOn topic:zbior_i_operacje_na_zbiorach .
+
+topic:zlozonosc_algorytmow a ex:Topic ;
+    skos:prefLabel "Asymptotyka i złożoność algorytmów"@pl , "Algorithm Complexity and Asymptotics"@en ;
+    ex:dependsOn topic:rekurencja ;
+    ex:dependsOn topic:asymptotyka_o_bachmann_landau .
+
+topic:drzewa_binarne a ex:Topic ;
+    skos:prefLabel "Drzewa binarne"@pl , "Binary Trees"@en ;
+    ex:dependsOn topic:rekurencja .
+
+topic:teoria_grafow a ex:Topic ;
+    skos:prefLabel "Teoria grafów"@pl , "Graph Theory"@en ;
+    ex:dependsOn topic:kombinatoryka .
+
+# ── Algorithms and Data Structures ───────────────────────────
+
+topic:podstawy_programowania a ex:Topic ;
+    skos:prefLabel "Podstawy programowania"@pl , "Programming Fundamentals"@en .
+
+topic:dowodzenie_poprawnosci_programow a ex:Topic ;
+    skos:prefLabel "Dowodzenie poprawności programów"@pl , "Program Correctness Proofs"@en ;
+    ex:dependsOn topic:indukcja_matematyczna ;
+    ex:dependsOn topic:logika_i_rachunek_zdan .
+
+topic:tablice a ex:Topic ;
+    skos:prefLabel "Tablice"@pl , "Arrays"@en ;
+    ex:dependsOn topic:podstawy_programowania .
+
+topic:listy_powiazane a ex:Topic ;
+    skos:prefLabel "Listy powiązane"@pl , "Linked Lists"@en ;
+    ex:dependsOn topic:pamiec_dynamiczna ;
+    ex:dependsOn topic:rekurencja .
+
+topic:grafy_algorytmy a ex:Topic ;
+    skos:prefLabel "Algorytmy grafowe"@pl , "Graph Algorithms"@en ;
+    ex:dependsOn topic:teoria_grafow ;
+    ex:dependsOn topic:drzewa_binarne .
+
+topic:struktury_danych_zaawansowane a ex:Topic ;
+    skos:prefLabel "Zaawansowane struktury danych"@pl , "Advanced Data Structures"@en ;
+    ex:dependsOn topic:listy_powiazane ;
+    ex:dependsOn topic:drzewa_binarne .
+
+topic:pamiec_dynamiczna a ex:Topic ;
+    skos:prefLabel "Pamięć dynamiczna"@pl , "Dynamic Memory Management"@en ;
+    ex:dependsOn topic:podstawy_programowania .
+
+# ── Programming Tools and Practices ──────────────────────────
+
+topic:git_i_github a ex:Topic ;
+    skos:prefLabel "Git i GitHub"@pl , "Git and GitHub"@en .
+
+topic:zasady_dobrego_programowania a ex:Topic ;
+    skos:prefLabel "Zasady dobrego programowania"@pl , "Good Programming Practices"@en .
+
+topic:narzedzia_wspomagajace_programowanie a ex:Topic ;
+    skos:prefLabel "Narzędzia wspomagające programowanie"@pl , "Programming Support Tools (CMake, linters)"@en .
+
+topic:debugowanie a ex:Topic ;
+    skos:prefLabel "Debugowanie"@pl , "Debugging"@en ;
+    ex:dependsOn topic:podstawy_programowania .
+
+topic:testowanie a ex:Topic ;
+    skos:prefLabel "Testowanie oprogramowania"@pl , "Software Testing"@en ;
+    ex:dependsOn topic:podstawy_programowania .
+
+topic:programowanie_w_c a ex:Topic ;
+    skos:prefLabel "Programowanie w C"@pl , "C Programming"@en ;
+    ex:dependsOn topic:podstawy_programowania .
+
+topic:projektowanie_oprogramowania a ex:Topic ;
+    skos:prefLabel "Projektowanie oprogramowania"@pl , "Software Design"@en ;
+    ex:dependsOn topic:zasady_dobrego_programowania .
+
+# ── Unix / Systems ────────────────────────────────────────────
+
+topic:bash_i_komendy_systemowe a ex:Topic ;
+    skos:prefLabel "Bash i komendy systemowe"@pl , "Bash and System Commands"@en .
+
+topic:system_plikow_unix a ex:Topic ;
+    skos:prefLabel "System plików Unix"@pl , "Unix File System"@en ;
+    ex:dependsOn topic:bash_i_komendy_systemowe .
+
+topic:zarzadzanie_procesami_unix a ex:Topic ;
+    skos:prefLabel "Zarządzanie procesami w Unix"@pl , "Unix Process Management"@en ;
+    ex:dependsOn topic:bash_i_komendy_systemowe .
+
+topic:skrypty_bashowe a ex:Topic ;
+    skos:prefLabel "Skrypty bashowe"@pl , "Bash Scripting"@en ;
+    ex:dependsOn topic:bash_i_komendy_systemowe .
+
+# ── Web Technologies ──────────────────────────────────────────
+
+topic:html_i_css a ex:Topic ;
+    skos:prefLabel "HTML i CSS"@pl , "HTML and CSS"@en .
+
+topic:javascript a ex:Topic ;
+    skos:prefLabel "JavaScript"@pl ;
+    ex:dependsOn topic:html_i_css .
+
+topic:event_loop a ex:Topic ;
+    skos:prefLabel "Event loop"@en ;
+    ex:dependsOn topic:javascript ;
+    ex:dependsOn topic:zarzadzanie_procesami_unix .
+
+topic:dom a ex:Topic ;
+    skos:prefLabel "DOM (Document Object Model)"@en ;
+    ex:dependsOn topic:drzewa_binarne ;
+    ex:dependsOn topic:javascript .
+
+# ── Concurrent Programming ────────────────────────────────────
+
+topic:watki_i_procesy a ex:Topic ;
+    skos:prefLabel "Wątki i procesy"@pl , "Threads and Processes"@en ;
+    ex:dependsOn topic:zarzadzanie_procesami_unix .
+
+topic:prawo_amdahla a ex:Topic ;
+    skos:prefLabel "Prawo Amdahla"@pl , "Amdahl's Law"@en ;
+    ex:dependsOn topic:zlozonosc_algorytmow .
+
+topic:data_race a ex:Topic ;
+    skos:prefLabel "Wyścigi danych (data race)"@pl , "Data Races"@en ;
+    ex:dependsOn topic:watki_i_procesy .
+
+topic:zakleszczenia a ex:Topic ;
+    skos:prefLabel "Zakleszczenia (deadlock)"@pl , "Deadlocks"@en ;
+    ex:dependsOn topic:watki_i_procesy .
+
+topic:mutex_i_synchronizacja a ex:Topic ;
+    skos:prefLabel "Mutex i synchronizacja"@pl , "Mutex and Synchronization"@en ;
+    ex:dependsOn topic:data_race .
+
+topic:model_pamieci_wspoldzielonej a ex:Topic ;
+    skos:prefLabel "Model pamięci współdzielonej"@pl , "Shared Memory Model"@en ;
+    ex:dependsOn topic:watki_i_procesy .
+
+topic:memory_barriers a ex:Topic ;
+    skos:prefLabel "Memory barriers"@en ;
+    ex:dependsOn topic:model_pamieci_wspoldzielonej .
+
+topic:atomiki_i_cas a ex:Topic ;
+    skos:prefLabel "Atomiki i CAS"@pl , "Atomics and CAS"@en ;
+    ex:dependsOn topic:memory_barriers .
+
+topic:lock_free_struktury_danych a ex:Topic ;
+    skos:prefLabel "Lock-free struktury danych"@pl , "Lock-Free Data Structures"@en ;
+    ex:dependsOn topic:atomiki_i_cas ;
+    ex:dependsOn topic:struktury_danych_zaawansowane .
+
+topic:hazard_pointers a ex:Topic ;
+    skos:prefLabel "Hazard pointers"@en ;
+    ex:dependsOn topic:lock_free_struktury_danych .
+
+# ─────────────────────────────────────────────────────────────
+#  LEARNING OUTCOMES
+# ─────────────────────────────────────────────────────────────
+
+lo:lo_wmi_1 a ex:LearningOutcome ;
+    skos:prefLabel "Posługuje się podstawowymi pojęciami matematycznymi (zbiory, relacje, funkcje, indukcja)"@pl ;
+    ex:mapsTo topic:zbior_i_operacje_na_zbiorach ,
+              topic:relacje_i_relacje_rownowaznosci ,
+              topic:funkcje_i_ich_wlasnosci ,
+              topic:indukcja_matematyczna .
+
+course:wstep_do_matematyki_i_informatyki ex:hasLearningOutcome lo:lo_wmi_1 .
+
+lo:lo_unix_1 a ex:LearningOutcome ;
+    skos:prefLabel "Swobodnie porusza się w środowisku Unix, pisze proste skrypty"@pl ;
+    ex:mapsTo topic:bash_i_komendy_systemowe , topic:skrypty_bashowe .
+
+course:wstep_do_systemu_unix ex:hasLearningOutcome lo:lo_unix_1 .
+
+lo:lo_wdp_1 a ex:LearningOutcome ;
+    skos:prefLabel "Stosuje dobre praktyki programowania, narzędzia i pracę zespołową z git"@pl ;
+    ex:mapsTo topic:git_i_github , topic:zasady_dobrego_programowania , topic:testowanie .
+
+course:wstep_do_programowania ex:hasLearningOutcome lo:lo_wdp_1 .
+
+lo:lo_wda_1 a ex:LearningOutcome ;
+    skos:prefLabel "Implementuje podstawowe algorytmy i struktury danych w C, dowodzi ich poprawności"@pl ;
+    ex:mapsTo topic:tablice , topic:dowodzenie_poprawnosci_programow , topic:rekurencja .
+
+course:wstep_do_algorytmow_I ex:hasLearningOutcome lo:lo_wda_1 .
+
+lo:lo_wda_2 a ex:LearningOutcome ;
+    skos:prefLabel "Implementuje zaawansowane struktury danych (listy, drzewa) w C++"@pl ;
+    ex:mapsTo topic:listy_powiazane , topic:drzewa_binarne , topic:grafy_algorytmy .
+
+course:wstep_do_algorytmow_II ex:hasLearningOutcome lo:lo_wda_2 .
+
+lo:lo_am1_1 a ex:LearningOutcome ;
+    skos:prefLabel "Oblicza granice, pochodne i całki funkcji jednej zmiennej"@pl ;
+    ex:mapsTo topic:granica_i_ciaglosc , topic:pochodna_jednej_zmiennej , topic:calka_riemanna .
+
+course:analiza_matematyczna_I ex:hasLearningOutcome lo:lo_am1_1 .
+
+lo:lo_am2_1 a ex:LearningOutcome ;
+    skos:prefLabel "Stosuje rachunek różniczkowy wielu zmiennych, gradient descent w uczeniu maszynowym"@pl ;
+    ex:mapsTo topic:gradient_i_ekstrema , topic:metoda_najszybszego_spadku , topic:macierz_jakobiego .
+
+course:analiza_matematyczna_II ex:hasLearningOutcome lo:lo_am2_1 .
+
+lo:lo_al1_1 a ex:LearningOutcome ;
+    skos:prefLabel "Rozumie geometrię wektorów, iloczyn skalarny, bazy i rzutowania"@pl ;
+    ex:mapsTo topic:wektory_w_przestrzeniach_euklidesowych , topic:iloczyn_skalarny , topic:liniowa_niezaleznosc_i_bazy .
+
+course:algebra_liniowa_I ex:hasLearningOutcome lo:lo_al1_1 .
+
+lo:lo_al2_1 a ex:LearningOutcome ;
+    skos:prefLabel "Pracuje z macierzami, wyznacznikami i układami równań liniowych"@pl ;
+    ex:mapsTo topic:macierze , topic:wyznacznik_macierzy , topic:uklady_rownan_liniowych .
+
+course:algebra_liniowa_II ex:hasLearningOutcome lo:lo_al2_1 .
+
+lo:lo_md_1 a ex:LearningOutcome ;
+    skos:prefLabel "Analizuje złożoność algorytmów, stosuje teorię grafów i kombinatorykę"@pl ;
+    ex:mapsTo topic:zlozonosc_algorytmow , topic:teoria_grafow , topic:kombinatoryka .
+
+course:matematyka_dyskretna ex:hasLearningOutcome lo:lo_md_1 .
+
+lo:lo_pw_1 a ex:LearningOutcome ;
+    skos:prefLabel "Projektuje i implementuje poprawne, wolne od zakleszczeń programy współbieżne w C++20"@pl ;
+    ex:mapsTo topic:mutex_i_synchronizacja , topic:lock_free_struktury_danych , topic:atomiki_i_cas .
+
+course:programowanie_wspolbiezne ex:hasLearningOutcome lo:lo_pw_1 .
+
+# ─────────────────────────────────────────────────────────────
+#  CROSS-CUTTING TOPIC RELATIONS (SKOS)
+# ─────────────────────────────────────────────────────────────
+
+# Asymptotic notation is shared between AM I and MD
+topic:asymptotyka_o_bachmann_landau skos:related topic:zlozonosc_algorytmow .
+
+# Recursion appears in both MD and WdA
+topic:rekurencja skos:related topic:drzewa_binarne .
+
+# Gradient descent bridges AM II and ML applications
+topic:metoda_najszybszego_spadku skos:related topic:uklady_rownan_liniowych .
+
+# Convexity in vectors relates to convexity in analysis
+topic:wypukloc_wektory skos:related topic:gradient_i_ekstrema .
