@@ -4,6 +4,7 @@
 - [Kalendarz](#kalendarz)
   - [Semestr I](#semestr-i)
   - [Semestr II](#semestr-ii)
+- [Wizualizacja grafu programu nauczania](#wizualizacja-grafu-programu-nauczania)
 
 
 # Cele studiów inżynierskich
@@ -55,3 +56,47 @@ Wszystkie przedmioty obowiązkowe. Być może należy scalić `Wstęp do algoryt
 
 `Wstęp do html, css, javascript` mógłby pojawić się dopiero na 2 roku. Jest to uzasadnione z perspektywy programowej, gdyż dla pełnego zrozumienia, jak działa `js`, potrzebne są takie pojęcia jak event loop, a dla zrozumienia czym jest DOM ogólne drzewo - a te pojęcia dopiero są usystematyzowane na 2 roku). Kolejnym argumentem za może być to, że na MIMUW te zagadnienia też pojawiają się dopiero na 4 semestrze.
 
+
+# Wizualizacja grafu programu nauczania
+
+Plik `curriculum_graph.ttl` zawiera graf wiedzy programu nauczania w formacie RDF/Turtle.
+Skrypt `scripts/visualize_curriculum_graph.py` generuje interaktywne wizualizacje HTML.
+
+## Wymagania
+
+```bash
+pip install rdflib networkx pyvis
+# lub
+pip install -r scripts/requirements.txt
+```
+
+## Użycie
+
+```bash
+# Wygeneruj wszystkie trzy widoki (domyślnie do out/graphs/)
+python scripts/visualize_curriculum_graph.py
+
+# Wybrany widok
+python scripts/visualize_curriculum_graph.py --view courses
+python scripts/visualize_curriculum_graph.py --view topics
+python scripts/visualize_curriculum_graph.py --view coverage
+
+# Filtruj krawędzie o niskiej pewności (np. tylko ≥ 0.80)
+python scripts/visualize_curriculum_graph.py --min-confidence 0.80
+
+# Pokaż efekty kształcenia (learning outcomes) w widoku coverage
+python scripts/visualize_curriculum_graph.py --view coverage --include-learning-outcomes
+
+# Zmień katalog wyjściowy
+python scripts/visualize_curriculum_graph.py --output-dir out/graphs
+```
+
+## Generowane pliki
+
+| Plik | Opis |
+|------|------|
+| `out/graphs/courses.html` | Graf zależności między kursami (requires / preparesFor / supports / relatedTo) |
+| `out/graphs/topics.html`  | Graf zależności między pojęciami (dependsOn / broader / narrower / skos:related) |
+| `out/graphs/coverage.html`| Graf bipartytowy kurs–temat (ex:covers) |
+
+Każdy plik HTML można otworzyć bezpośrednio w przeglądarce — grafy są interaktywne (przesuwalny layout, powiększanie, tooltips z informacją o pewności i źródle krawędzi).

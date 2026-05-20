@@ -118,10 +118,10 @@ ex:sourcePath a rdf:Property ;
 # ─────────────────────────────────────────────────────────────
 
 prog:inzynieria_informatyczna a ex:Program ;
-    skos:prefLabel "Studia inżynierskie – Informatyka"@pl ,
-                   "Computer Science Engineering Program"@en ;
-    dcterms:description "Two-year foundational program followed by 1.5-year specialisation and thesis."@en ;
-    ex:sourcePath "README.md" .
+    skos:prefLabel "Informatyka Stosowana (studia inżynierskie)"@pl ,
+                   "Applied Computer Science (Engineering studies)"@en ;
+    dcterms:description "Program kierunku Informatyka Stosowana: pierwsze dwa lata wspólnego fundamentu, następnie 1.5 roku specjalizacji i pracy inżynierskiej."@pl ;
+    ex:sourcePath "README.md, usos.md" .
 
 # ─────────────────────────────────────────────────────────────
 #  SEMESTERS
@@ -409,38 +409,38 @@ doc:README
 
 course:wstep_do_matematyki_i_informatyki ex:preparesFor course:matematyka_dyskretna .
 
-# --- AM I → AM II (requires, confidence 0.97) ---
+# --- AM II → AM I (requires, confidence 0.97) ---
 [] a rdf:Statement ;
-    rdf:subject   course:analiza_matematyczna_I ;
+    rdf:subject   course:analiza_matematyczna_II ;
     rdf:predicate ex:requires ;
-    rdf:object    course:analiza_matematyczna_II ;
+    rdf:object    course:analiza_matematyczna_I ;
     ex:confidence    "0.97"^^xsd:decimal ;
-    ex:evidenceNote  "Single syllabus document split across part I (single-variable) and part II (multi-variable); sequential numbering implies strict prerequisite."@en ;
+    ex:evidenceNote  "Single syllabus document split across part I (single-variable) and part II (multi-variable); part II requires prior mastery of part I."@en ;
     ex:sourcePath    "analiza_matematyczna.md" .
 
-course:analiza_matematyczna_I ex:requires course:analiza_matematyczna_II .
+course:analiza_matematyczna_II ex:requires course:analiza_matematyczna_I .
 
-# --- AL I → AL II (requires, confidence 0.97) ---
+# --- AL II → AL I (requires, confidence 0.97) ---
 [] a rdf:Statement ;
-    rdf:subject   course:algebra_liniowa_I ;
+    rdf:subject   course:algebra_liniowa_II ;
     rdf:predicate ex:requires ;
-    rdf:object    course:algebra_liniowa_II ;
+    rdf:object    course:algebra_liniowa_I ;
     ex:confidence    "0.97"^^xsd:decimal ;
-    ex:evidenceNote  "Single syllabus document; AL II builds on vectors (AL I) by introducing matrices, determinants, and linear transformations."@en ;
+    ex:evidenceNote  "Single syllabus document; AL II builds on vectors from AL I by introducing matrices, determinants, and linear transformations."@en ;
     ex:sourcePath    "algebra_liniowa.md" .
 
-course:algebra_liniowa_I ex:requires course:algebra_liniowa_II .
+course:algebra_liniowa_II ex:requires course:algebra_liniowa_I .
 
-# --- WdA I → WdA II (requires, confidence 0.95) ---
+# --- WdA II → WdA I (requires, confidence 0.95) ---
 [] a rdf:Statement ;
-    rdf:subject   course:wstep_do_algorytmow_I ;
+    rdf:subject   course:wstep_do_algorytmow_II ;
     rdf:predicate ex:requires ;
-    rdf:object    course:wstep_do_algorytmow_II ;
+    rdf:object    course:wstep_do_algorytmow_I ;
     ex:confidence    "0.95"^^xsd:decimal ;
     ex:evidenceNote  "Both described in a single document titled 'Wstęp do Algorytmów I i II'; WdA II introduces advanced data structures building on WdA I."@en ;
     ex:sourcePath    "wstęp_do_algorytmów.md" .
 
-course:wstep_do_algorytmow_I ex:requires course:wstep_do_algorytmow_II .
+course:wstep_do_algorytmow_II ex:requires course:wstep_do_algorytmow_I .
 
 # --- WMI → AM I (supports, confidence 0.80) ---
 [] a rdf:Statement ;
@@ -800,11 +800,11 @@ topic:javascript a ex:Topic ;
 topic:event_loop a ex:Topic ;
     skos:prefLabel "Event loop"@en ;
     ex:dependsOn topic:javascript ;
-    ex:dependsOn topic:zarzadzanie_procesami_unix .
+    ex:relatedTo topic:zarzadzanie_procesami_unix .
 
 topic:dom a ex:Topic ;
     skos:prefLabel "DOM (Document Object Model)"@en ;
-    ex:dependsOn topic:drzewa_binarne ;
+    skos:related topic:drzewa_binarne ;
     ex:dependsOn topic:javascript .
 
 # ── Concurrent Programming ────────────────────────────────────
