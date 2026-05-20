@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "source_repository": "IS-UMK/sylabusy",
+    "generated_by": "curriculum-knowledge-graph-agent",
+    "ontology_namespace": "https://github.com/IS-UMK/sylabusy/ontology#",
+    "turtle_file": "curriculum_graph.ttl"
+  },
+  "statistics": {
+    "programs": 1,
+    "semesters": 2,
+    "courses": 13,
+    "topics": 69,
+    "learning_outcomes": 11,
+    "documents": 9,
+    "course_prerequisite_relations": {
+      "requires": 3,
+      "preparesFor": 4,
+      "supports": 6,
+      "relatedTo": 1,
+      "total": 14
+    },
+    "topic_dependency_relations": 38,
+    "document_course_relations": 14
+  },
+  "program": {
+    "id": "prog:inzynieria_informatyczna",
+    "label_pl": "Studia inżynierskie – Informatyka",
+    "label_en": "Computer Science Engineering Program"
+  },
+  "semesters": [
+    { "id": "sem:semestr_I", "label": "Semestr I" },
+    { "id": "sem:semestr_II", "label": "Semestr II" }
+  ],
+  "courses": [
+    {
+      "id": "course:wstep_do_matematyki_i_informatyki",
+      "label_pl": "Wstęp do matematyki i informatyki",
+      "semester": "I",
+      "source": "wstęp_do_matematyki_i_informatyki.md"
+    },
+    {
+      "id": "course:wstep_do_systemu_unix",
+      "label_pl": "Wstęp do systemu Unix",
+      "semester": "I",
+      "source": "wstęp_do_systemu_unix.md"
+    },
+    {
+      "id": "course:wstep_do_programowania",
+      "label_pl": "Wstęp do programowania",
+      "semester": "I",
+      "source": "wstęp_do_programowania.md"
+    },
+    {
+      "id": "course:wstep_do_algorytmow_I",
+      "label_pl": "Wstęp do algorytmów I",
+      "semester": "I",
+      "source": "wstęp_do_algorytmów.md"
+    },
+    {
+      "id": "course:analiza_matematyczna_I",
+      "label_pl": "Analiza matematyczna I",
+      "semester": "I",
+      "source": "analiza_matematyczna.md"
+    },
+    {
+      "id": "course:algebra_liniowa_I",
+      "label_pl": "Algebra liniowa I",
+      "semester": "I",
+      "source": "algebra_liniowa.md"
+    },
+    {
+      "id": "course:projektowy_c",
+      "label_pl": "Projektowy c",
+      "semester": "II",
+      "source": "README.md"
+    },
+    {
+      "id": "course:wstep_do_html_css_js",
+      "label_pl": "Wstęp do html, css, javascript",
+      "semester": "II",
+      "source": "README.md"
+    },
+    {
+      "id": "course:matematyka_dyskretna",
+      "label_pl": "Matematyka dyskretna",
+      "semester": "II",
+      "source": "matematyka_dyskretna.md"
+    },
+    {
+      "id": "course:wstep_do_algorytmow_II",
+      "label_pl": "Wstęp do algorytmów II",
+      "semester": "II",
+      "source": "wstęp_do_algorytmów.md"
+    },
+    {
+      "id": "course:analiza_matematyczna_II",
+      "label_pl": "Analiza matematyczna II",
+      "semester": "II",
+      "source": "analiza_matematyczna.md"
+    },
+    {
+      "id": "course:algebra_liniowa_II",
+      "label_pl": "Algebra liniowa II",
+      "semester": "II",
+      "source": "algebra_liniowa.md"
+    },
+    {
+      "id": "course:programowanie_wspolbiezne",
+      "label_pl": "Programowanie współbieżne",
+      "semester": "unassigned",
+      "source": "programowanie_współbieżne.md"
+    }
+  ],
+  "course_relations": [
+    {
+      "subject": "course:wstep_do_matematyki_i_informatyki",
+      "predicate": "ex:preparesFor",
+      "object": "course:matematyka_dyskretna",
+      "confidence": 0.92,
+      "evidence": "README.md explicitly states 'kontynuacja wstępu do matematyki i informatyki'"
+    },
+    {
+      "subject": "course:analiza_matematyczna_I",
+      "predicate": "ex:requires",
+      "object": "course:analiza_matematyczna_II",
+      "confidence": 0.97,
+      "evidence": "Single syllabus document split across AM I and AM II; clear sequential dependency"
+    },
+    {
+      "subject": "course:algebra_liniowa_I",
+      "predicate": "ex:requires",
+      "object": "course:algebra_liniowa_II",
+      "confidence": 0.97,
+      "evidence": "AL II builds directly on vectors from AL I, introducing matrices and linear maps"
+    },
+    {
+      "subject": "course:wstep_do_algorytmow_I",
+      "predicate": "ex:requires",
+      "object": "course:wstep_do_algorytmow_II",
+      "confidence": 0.95,
+      "evidence": "Both described in single document; II extends I with advanced data structures"
+    },
+    {
+      "subject": "course:wstep_do_matematyki_i_informatyki",
+      "predicate": "ex:supports",
+      "object": "course:analiza_matematyczna_I",
+      "confidence": 0.80,
+      "evidence": "WMI covers sets, functions, induction – foundational for analysis"
+    },
+    {
+      "subject": "course:wstep_do_matematyki_i_informatyki",
+      "predicate": "ex:supports",
+      "object": "course:algebra_liniowa_I",
+      "confidence": 0.75,
+      "evidence": "Sets and functions underlie vector space foundations"
+    },
+    {
+      "subject": "course:wstep_do_matematyki_i_informatyki",
+      "predicate": "ex:supports",
+      "object": "course:wstep_do_algorytmow_I",
+      "confidence": 0.78,
+      "evidence": "Induction and logic needed for loop invariants and correctness proofs"
+    },
+    {
+      "subject": "course:wstep_do_systemu_unix",
+      "predicate": "ex:supports",
+      "object": "course:wstep_do_programowania",
+      "confidence": 0.78,
+      "evidence": "README: Unix teaches the dev environment; WdP uses git, CMake, linters on Unix"
+    },
+    {
+      "subject": "course:wstep_do_programowania",
+      "predicate": "ex:supports",
+      "object": "course:wstep_do_algorytmow_I",
+      "confidence": 0.82,
+      "evidence": "WdP covers good practices and testing; WdA I requires C implementations"
+    },
+    {
+      "subject": "course:matematyka_dyskretna",
+      "predicate": "ex:supports",
+      "object": "course:wstep_do_algorytmow_II",
+      "confidence": 0.88,
+      "evidence": "README explicitly links discrete math to recursive structures in WdA II"
+    },
+    {
+      "subject": "course:algebra_liniowa_II",
+      "predicate": "ex:relatedTo",
+      "object": "course:analiza_matematyczna_II",
+      "confidence": 0.75,
+      "evidence": "Jacobian matrix cross-dependency explicitly noted in analiza_matematyczna.md"
+    },
+    {
+      "subject": "course:wstep_do_algorytmow_II",
+      "predicate": "ex:preparesFor",
+      "object": "course:programowanie_wspolbiezne",
+      "confidence": 0.70,
+      "evidence": "PW covers lock-free structures requiring advanced data structure knowledge"
+    },
+    {
+      "subject": "course:wstep_do_programowania",
+      "predicate": "ex:preparesFor",
+      "object": "course:projektowy_c",
+      "confidence": 0.85,
+      "evidence": "Projektowy c requires large projects; WdP teaches workflow tools"
+    },
+    {
+      "subject": "course:wstep_do_algorytmow_I",
+      "predicate": "ex:supports",
+      "object": "course:projektowy_c",
+      "confidence": 0.72,
+      "evidence": "Projektowy c is a C project; WdA I introduces C programming"
+    }
+  ],
+  "ambiguous_low_confidence_relations": [
+    {
+      "relation": "course:wstep_do_matematyki_i_informatyki ex:supports course:algebra_liniowa_I",
+      "confidence": 0.75,
+      "reason": "AL I strongly emphasises geometric intuition, not formal set theory. The foundational link is present but weak."
+    },
+    {
+      "relation": "course:wstep_do_algorytmow_II ex:preparesFor course:programowanie_wspolbiezne",
+      "confidence": 0.70,
+      "reason": "Lock-free structures clearly require algorithms knowledge, but no explicit curriculum statement links the two courses."
+    },
+    {
+      "relation": "course:algebra_liniowa_II ex:relatedTo course:analiza_matematyczna_II",
+      "confidence": 0.75,
+      "reason": "The Jacobi matrix is explicitly mentioned but the broader AL II ↔ AM II dependency direction is ambiguous."
+    },
+    {
+      "relation": "topic:dom ex:dependsOn topic:drzewa_binarne",
+      "confidence": 0.65,
+      "reason": "README mentions DOM understanding requires tree concept, but no direct syllabus text confirms this for the HTML/CSS/JS course."
+    },
+    {
+      "relation": "topic:event_loop ex:dependsOn topic:zarzadzanie_procesami_unix",
+      "confidence": 0.60,
+      "reason": "Conceptual analogy between event loop and Unix process scheduling is plausible but not stated in source."
+    }
+  ]
+}
