@@ -1,0 +1,10 @@
+# pyvis copies vendor assets here when generating HTML
+lib/
+
+# generated visualization outputs
+out/
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo

@@ -424,7 +424,14 @@ def _inject_legend(html_path: Path) -> None:
 
 def render_html(nxg: nx.DiGraph, out_path: Path, title: str, directed: bool = True) -> None:
     net = _make_pyvis(nxg, title, directed=directed)
-    net.save_graph(str(out_path))
+    # pyvis copies vendor JS/CSS assets relative to cwd; chdir to out_path's
+    # parent so those assets land in the output directory, not the repo root.
+    old_cwd = Path.cwd()
+    os.chdir(out_path.parent)
+    try:
+        net.save_graph(out_path.name)
+    finally:
+        os.chdir(old_cwd)
     _inject_legend(out_path)
     print(f"  → {out_path}")
 
